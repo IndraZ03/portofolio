@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Dashboard adaptif display AWOS Kaltim-Kalsel dan monitoring AWS Kaltim untuk Airnav dan teknisi." />
+  <title>Monitoring AWOS &amp; AWS — Proyek</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../src/css/style.css" />
+  <link rel="stylesheet" href="../src/css/responsive.css" />
+  <link rel="stylesheet" href="../src/css/atmos-wrf.css" />
+</head>
+<body>
+  <div class="grid-bg-overlay" aria-hidden="true"></div>
+  <header class="site-header" role="banner">
+    <div class="nav-container">
+      <a href="../index.html#home" class="wordmark" aria-label="IndraZ03 Home">IndraZ03</a>
+      <nav class="nav-menu-desktop" aria-label="Main Navigation">
+        <a href="../index.html#home" class="nav-link">Home</a>
+        <a href="../index.html#projects" class="nav-link active" aria-current="page">Projects</a>
+        <a href="../index.html#about" class="nav-link">About Me</a>
+        <!-- <a href="../index.html#kind-words" class="nav-link">Kind Words</a> -->
+      </nav>
+      <a href="../index.html#contact" class="btn btn-clay nav-contact-btn">Let's Talk</a>
+      <button class="mobile-toggle" type="button" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobile-nav">
+        <div class="mobile-toggle-bars" aria-hidden="true"><span></span><span></span></div>
+      </button>
+    </div>
+  </header>
+  <nav id="mobile-nav" class="mobile-drawer" aria-label="Mobile Navigation" aria-hidden="true">
+    <a href="../index.html#home" class="nav-link">Home</a>
+    <a href="../index.html#projects" class="nav-link active">Projects</a>
+    <a href="../index.html#about" class="nav-link">About Me</a>
+    <!-- <a href="../index.html#kind-words" class="nav-link">Kind Words</a> -->
+    <a href="../index.html#contact" class="btn btn-primary" style="margin-top: 16px;">Let's Talk</a>
+  </nav>
+  <main>
+    <section class="hero-stage">
+      <div class="hero-tag"><a href="https://monitoring.metamorph.web.id" target="_blank" rel="noopener noreferrer" style="color: inherit;">monitoring.metamorph.web.id</a></div>
+      <h1 class="hero-headline">Monitoring AWOS &amp; AWS</h1>
+      <p class="hero-desc">Pengembangan dashboard adaptif untuk menampilkan AWOS di wilayah Kalimantan Timur dan Kalimantan Selatan serta AWS di Kalimantan Timur untuk teknisi dan Airnav.</p>
+    </section>
+    <div class="scroll-instruction">↓ Gulir untuk mengikuti alur proyek ↓</div>
+    <section class="scroll-wrapper" aria-label="Perjalanan proyek Monitoring AWOS dan AWS">
+      <div class="canvas" style="width: 1820px;">
+        <svg class="lines-layer" viewBox="0 0 1820 900" preserveAspectRatio="none" aria-hidden="true">
+          <path class="line-path" d="M 120 450 L 1470 450" />
+        </svg>
+        <div class="clay-element connector-dot gs-reveal" style="left: 120px; top: 450px;"></div>
+        <article class="clay-element flow-card gs-reveal" style="left: 400px; top: 450px;">
+          <button class="card-media-wrap card-image-trigger" type="button" aria-haspopup="dialog"
+            aria-controls="partner-image-modal" aria-label="Perbesar gambar Dashboard Adaptif">
+            <img src="../assets/images/awos-aws/dashboard.png" alt="Dashboard adaptif display AWOS wilayah Kalimantan Timur dan Kalimantan Selatan" />
+            <span class="card-image-hint">Klik untuk memperbesar</span>
+          </button>
+          <div class="card-body">
+            <h2 class="card-title">Dashboard Adaptif</h2>
+            <p class="card-desc">AirNav meminta adanya layanan display AWOS di wilayah Kalimantan Timur dan Kalimantan Selatan. Dari permintaan tersebut, dikembangkan dashboard adaptif yang dapat menampilkan data AWOS di wilayah Kalimantan Timur dan Kalimantan Selatan.</p>
+          </div>
+        </article>
+        <div class="clay-element connector-dot gs-reveal" style="left: 740px; top: 450px;"></div>
+        <article class="clay-element flow-card gs-reveal" style="left: 1080px; top: 450px;">
+          <button class="card-media-wrap card-image-trigger" type="button" aria-haspopup="dialog"
+            aria-controls="partner-image-modal" aria-label="Perbesar gambar Monitoring Teknisi">
+            <img src="../assets/images/awos-aws/dashboard2.png" alt="Tampilan monitoring AWS Kalimantan Timur untuk teknisi" />
+            <span class="card-image-hint">Klik untuk memperbesar</span>
+          </button>
+          <div class="card-body">
+            <h2 class="card-title">Monitoring Teknisi</h2>
+            <p class="card-desc">Dashboard juga menampilkan AWS di wilayah Kalimantan Timur agar teknisi dapat memonitor AWS dan AWOS sekaligus sesuai kebutuhan AirNav.</p>
+          </div>
+        </article>
+        <div class="clay-element connector-dot gs-reveal" style="left: 1470px; top: 450px;"></div>
+      </div>
+    </section>
+    <footer class="project-footer">
+      <a href="../index.html#projects" class="footer-btn"><span>← Kembali ke Daftar Proyek</span></a>
+    </footer>
+  </main>
+  <dialog id="partner-image-modal" class="image-modal" aria-label="Gambar Monitoring AWOS &amp; AWS diperbesar">
+    <button class="image-modal-close" type="button" aria-label="Tutup gambar" autofocus>×</button>
+    <img src="../assets/images/awos-aws/dashboard.png" alt="Dashboard adaptif display AWOS wilayah Kalimantan Timur dan Kalimantan Selatan" />
+  </dialog>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="../src/js/atmos-wrf.js"></script>
+</body>
+</html>

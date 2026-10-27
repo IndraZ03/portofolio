@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <rect width="800" height="600" rx="24" fill="#10171b"/>
+  <rect x="1" y="1" width="798" height="598" rx="23" fill="none" stroke="#f4f4f5" stroke-opacity="0.12" stroke-width="2"/>
+  <g fill="none" stroke="#f4f4f5" stroke-opacity="0.35" stroke-width="3">
+    <circle cx="400" cy="230" r="40"/>
+    <circle cx="400" cy="230" r="80" stroke-dasharray="4 12"/>
+    <path d="M 400 270 V 410 M 350 410 H 450 M 400 310 L 355 410 M 400 310 L 445 410"/>
+    <path d="M 280 150 Q 210 230 280 310 M 520 150 Q 590 230 520 310"/>
+  </g>
+  <text x="40" y="525" fill="#f4f4f5" font-family="sans-serif" font-size="28">MONITORING AWOS &amp; AWS</text>
+  <text x="40" y="565" fill="#a1a1aa" font-family="monospace" font-size="16">KALIMANTAN TIMUR / KALIMANTAN SELATAN</text>
+</svg>

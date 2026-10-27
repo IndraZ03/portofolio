@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <radialGradient id="bg1" cx="30%" cy="30%" r="85%">
+      <stop offset="0%" stop-color="#24242b"/>
+      <stop offset="50%" stop-color="#141418"/>
+      <stop offset="100%" stop-color="#0a0a0c"/>
+    </radialGradient>
+    <linearGradient id="edge1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="rgba(255,255,255,0.25)"/>
+      <stop offset="100%" stop-color="rgba(255,255,255,0.03)"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" rx="24" fill="url(#bg1)"/>
+  <rect width="798" height="598" x="1" y="1" rx="23" fill="none" stroke="url(#edge1)" stroke-width="2"/>
+  <g opacity="0.35" stroke="rgba(255,255,255,0.15)" stroke-width="1" fill="none">
+    <circle cx="400" cy="300" r="180"/>
+    <circle cx="400" cy="300" r="120"/>
+    <circle cx="400" cy="300" r="60"/>
+    <ellipse cx="400" cy="300" rx="220" ry="80"/>
+    <ellipse cx="400" cy="300" rx="80" ry="220"/>
+  </g>
+  <circle cx="400" cy="300" r="28" fill="#e4e4e7" opacity="0.9"/>
+  <circle cx="480" cy="240" r="14" fill="#71717a"/>
+  <circle cx="320" cy="360" r="10" fill="#a1a1aa"/>
+  <text x="40" y="550" fill="#a1a1aa" font-family="monospace" font-size="16" letter-spacing="2">01 // SPATIAL INTERFACE</text>
+  <text x="760" y="550" text-anchor="end" fill="#52525b" font-family="monospace" font-size="14">CSS 3D / NO-WEBGL</text>
+</svg>

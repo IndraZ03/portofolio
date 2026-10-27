@@ -1,0 +1,1144 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="ATMOS / WRF-WEB — Dari kolaborasi bisnis digital menjadi web pemodelan WRF/WRF-Chem untuk mendukung Operasi Modifikasi Cuaca." />
+  <title>ATMOS / WRF-WEB — Cerita Proyek</title>
+
+  <!-- Typography matching IndraZ03 aesthetic -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,400&display=swap"
+    rel="stylesheet" />
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="../src/css/style.css" />
+  <link rel="stylesheet" href="../src/css/responsive.css" />
+  <link rel="stylesheet" href="../src/css/atmos-wrf.css" />
+  <link rel="stylesheet" href="../src/css/atmos-wrf-workflow.css" />
+  <link rel="stylesheet" href="../src/css/atmos-wrf-features.css" />
+  <link rel="stylesheet" href="../src/css/atmos-wrf-architecture.css" />
+  <link rel="stylesheet" href="../src/css/atmos-wrf-techstack.css" />
+</head>
+
+<body>
+  <!-- Ambient grid overlay -->
+  <div class="grid-bg-overlay" aria-hidden="true"></div>
+
+  <!-- FIXED NAVBAR IDENTICAL TO MAIN SITE -->
+  <header class="site-header" role="banner">
+    <div class="nav-container">
+      <a href="../index.html#home" class="wordmark" aria-label="IndraZ03 Home">IndraZ03</a>
+      <nav class="nav-menu-desktop" aria-label="Main Navigation">
+        <a href="../index.html#home" class="nav-link">Home</a>
+        <a href="../index.html#projects" class="nav-link active" aria-current="page">Projects</a>
+        <a href="../index.html#about" class="nav-link">About Me</a>
+        <!-- <a href="../index.html#kind-words" class="nav-link">Kind Words</a> -->
+      </nav>
+      <a href="../index.html#contact" class="btn btn-clay nav-contact-btn">Let's Talk</a>
+      <button class="mobile-toggle" type="button" aria-label="Toggle navigation menu" aria-expanded="false"
+        aria-controls="mobile-nav">
+        <div class="mobile-toggle-bars" aria-hidden="true">
+          <span></span>
+          <span></span>
+        </div>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Fullscreen Drawer Navigation -->
+  <nav id="mobile-nav" class="mobile-drawer" aria-label="Mobile Navigation" aria-hidden="true">
+    <a href="../index.html#home" class="nav-link">Home</a>
+    <a href="../index.html#projects" class="nav-link active">Projects</a>
+    <a href="../index.html#about" class="nav-link">About Me</a>
+    <!-- <a href="../index.html#kind-words" class="nav-link">Kind Words</a> -->
+    <a href="../index.html#contact" class="btn btn-primary" style="margin-top: 16px;">Let's Talk</a>
+  </nav>
+
+  <main>
+    <!-- HERO INTRO -->
+    <section class="hero-stage">
+      <div class="hero-tag"><a href="https://wrf-web.cyou" target="_blank" rel="noopener noreferrer" style="color: inherit;">wrf-web.cyou</a></div>
+      <h1 class="hero-headline">ATMOS / WRF-WEB</h1>
+      <p class="hero-desc">
+        Berawal dari kolaborasi bisnis digital, ATMOS tumbuh menjadi tools berbasis web yang mempermudah
+        forecaster menjalankan WRF/WRF-Chem. Antarmuka sederhana dan bantuan AI Agent membantu mengatasi
+        kerumitan konfigurasi model untuk menghasilkan produk cuaca pendukung Operasi Modifikasi Cuaca (OMC).
+      </p>
+    </section>
+
+    <div class="scroll-instruction">↓ Gulir untuk mengikuti cerita ATMOS ↓</div>
+
+    <!-- HORIZONTAL PINNED TIMELINE (LINEAR, NO BRANCHING) -->
+    <section class="scroll-wrapper" aria-label="Perjalanan pengembangan ATMOS">
+      <div class="canvas">
+        <!-- Continuous connector behind cards -->
+        <svg class="lines-layer" viewBox="0 0 5200 900" preserveAspectRatio="none" aria-hidden="true">
+          <path class="line-path" d="M 120 450 L 4850 450" />
+        </svg>
+
+        <!-- STAGE 01: PARTNER BISNIS -->
+        <div class="clay-element connector-dot gs-reveal" style="left: 120px; top: 450px;"></div>
+        <article class="clay-element flow-card gs-reveal" style="left: 400px; top: 450px;">
+          <button class="card-media-wrap card-image-trigger" type="button" aria-haspopup="dialog"
+            aria-controls="partner-image-modal" aria-label="Perbesar gambar otomatisasi Partner Bisnis">
+            <img src="../assets/images/atmos-wrf/patner-bisnis.png" alt="Percakapan bot WhatsApp tentang jadwal dan pembuatan video TikTok otomatis" />
+            <span class="card-image-hint">Klik untuk memperbesar</span>
+          </button>
+          <div class="card-body">
+            <h2 class="card-title">Partner Bisnis</h2>
+            <p class="card-desc">
+              Yudha Satrio Oktavandi (konseptor) dan Dwi Indra Prasetyo (eksekutor) mengawali kolaborasi
+              melalui bisnis affiliate marketing. Keduanya membangun otomatisasi berbasis bot:
+              video produk dibuat dengan AI, lalu diposting secara otomatis ke TikTok untuk mempermudah proses bisnis.
+            </p>
+          </div>
+        </article>
+
+        <!-- STAGE 02: DARI BISNIS DIGITAL KE WRF -->
+        <div class="clay-element connector-dot gs-reveal" style="left: 740px; top: 450px;"></div>
+        <article class="clay-element flow-card gs-reveal" style="left: 1080px; top: 450px;">
+          <button class="card-media-wrap card-image-trigger" type="button" aria-haspopup="dialog"
+            aria-controls="partner-image-modal" aria-label="Perbesar gambar Dari Bisnis Digital ke WRF">
+            <img src="../assets/images/atmos-wrf/landing-page.png" alt="Halaman utama ATMOS untuk menjalankan model WRF berbasis SaaS" />
+            <span class="card-image-hint">Klik untuk memperbesar</span>
+          </button>
+          <div class="card-body">
+            <h2 class="card-title">Dari Bisnis Digital ke WRF</h2>
+            <p class="card-desc">
+              Saat menjalani diklat Modifikasi Cuaca, Yudha mendapat gagasan untuk menerapkan pola otomatisasi
+              dari bisnis digital ke pemodelan atmosfer. Tujuannya mempermudah proses menghasilkan produk cuaca
+              pendukung OMC di tengah keterbatasan pemodelan yang ada.
+            </p>
+          </div>
+        </article>
+
+        <!-- STAGE 03: LATAR BELAKANG MASALAH -->
+        <div class="clay-element connector-dot gs-reveal" style="left: 1420px; top: 450px;"></div>
+        <article class="clay-element flow-card gs-reveal" style="left: 1760px; top: 450px;">
+          <button class="card-media-wrap card-image-trigger" type="button" aria-haspopup="dialog"
+            aria-controls="partner-image-modal" aria-label="Perbesar gambar Latar Belakang Masalah">
+            <img src="../assets/images/atmos-wrf/atmos.png" alt="Dashboard ATMOS dengan daftar proyek dan alur proses WPS serta model WRF" />
+            <span class="card-image-hint">Klik untuk memperbesar</span>
+          </button>
+          <div class="card-body">
+            <h2 class="card-title">Latar Belakang Masalah</h2>
+            <p class="card-desc">
+              Menjalankan WRF dan WRF-Chem sulit: dokumentasi terbatas, instalasi panjang, dan forecaster
+              kehabisan waktu hanya untuk menangani error program. Dari situ muncul ide membuat tools
+              yang user-friendly: forecaster cukup melihat tampilan web yang sederhana dan tinggal klik
+              untuk menjalankannya tanpa berhadapan langsung dengan program.
+            </p>
+          </div>
+        </article>
+
+        <!-- STAGE 04: NAMELIST DAN ERROR RUNNING -->
+        <div class="clay-element connector-dot gs-reveal" style="left: 2100px; top: 450px;"></div>
+        <article class="clay-element flow-card gs-reveal" style="left: 2440px; top: 450px;">
+          <button class="card-media-wrap card-image-trigger" type="button" aria-haspopup="dialog"
+            aria-controls="partner-image-modal" aria-label="Perbesar gambar Namelist dan Error Running">
+            <img src="../assets/images/atmos-wrf/namelist%20%26%20error%20running.png" alt="Dashboard ATMOS menampilkan kegagalan WRF, konfigurasi namelist.input, dan log eksekusi" />
+            <span class="card-image-hint">Klik untuk memperbesar</span>
+          </button>
+          <div class="card-body">
+            <h2 class="card-title">Namelist dan Error Running</h2>
+            <p class="card-desc">
+              Ada dua masalah utama: parameter WRF/WRF-Chem sangat banyak serta pengaturannya rumit.
+              Terdapat setup tertentu untuk WRF-Chem, dan pembuatan namelist.wps maupun namelist.input
+              masih manual sehingga sering error karena pengguna kurang teliti (berdasarkan pengalaman nyata).
+            </p>
+          </div>
+        </article>
+
+        <!-- STAGE 05: BANTUAN AI AGENT -->
+        <div class="clay-element connector-dot gs-reveal" style="left: 2780px; top: 450px;"></div>
+        <article class="clay-element flow-card gs-reveal" style="left: 3120px; top: 450px;">
+          <button class="card-media-wrap card-image-trigger" type="button" aria-haspopup="dialog"
+            aria-controls="partner-image-modal" aria-label="Perbesar gambar AI Agent ATMOS">
+            <img src="../assets/images/atmos-wrf/atmosagent.png" alt="ATMOS AI Agent menjelaskan parameter konfigurasi namelist dan hasil simulasi WRF" />
+            <span class="card-image-hint">Klik untuk memperbesar</span>
+          </button>
+          <div class="card-body">
+            <h2 class="card-title">AI Agent ATMOS</h2>
+            <p class="card-desc">
+              Indra mengusulkan menambahkan fitur AI Agent yang juga telah membantu dalam pengembangan web ATMOS.
+              AI Agent mampu memberikan saran konfigurasi namelist sesuai produk yang ingin ditampilkan pengguna.
+              Jika terjadi error karena pengisian namelist yang salah, AI Agent ATMOS akan mengoreksi namelist tersebut.
+            </p>
+          </div>
+        </article>
+
+        <!-- STAGE 06: HAL DI LUAR EKSPEKTASI -->
+        <div class="clay-element connector-dot gs-reveal" style="left: 3460px; top: 450px;"></div>
+        <article class="clay-element flow-card gs-reveal" style="left: 3800px; top: 450px;">
+          <button class="card-media-wrap card-image-trigger" type="button" aria-haspopup="dialog"
+            aria-controls="partner-image-modal" aria-label="Perbesar gambar Hal di Luar Ekspektasi">
+            <img src="../assets/images/atmos-wrf/hal%20di%20luar%20ekspetasi.png" alt="Presentasi AWWM 2026: Perencanaan Potensial ATMOS AI untuk Pengembangan Autonomous Cloud Seeding (UAV)" />
+            <span class="card-image-hint">Klik untuk memperbesar</span>
+          </button>
+          <div class="card-body">
+            <h2 class="card-title">Hal di Luar Ekspektasi</h2>
+            <p class="card-desc">
+              Saat presentasi tugas akhir diklat, penguji dari DMC sangat tertarik. ATMOS kemudian digunakan
+              pada kegiatan OMC dengan memanfaatkan wrfout untuk menghasilkan Cloud Opportunity Index yang
+              dikembangkan Yudha. Hasil prakiraan WRF sangat memuaskan dan mendapat apresiasi Direktur Operasional
+              Modifikasi Cuaca sehingga Yudha diarahkan presentasi di AWWM 2026.
+            </p>
+            <p class="card-desc">
+              Sempat diragukan oleh Mr. Duncan karena waktu running WRF hanya 2 jam. Namun setelah dijelaskan
+              bahwa domainnya wilayah kecil, jangka waktu pendek, dan resolusi rendah, Mr. Duncan mengapresiasi
+              keterbatasan yang ada.
+            </p>
+          </div>
+        </article>
+
+        <!-- STAGE 07: KEBERLANJUTAN -->
+        <div class="clay-element connector-dot gs-reveal" style="left: 4140px; top: 450px;"></div>
+        <article class="clay-element flow-card gs-reveal" style="left: 4480px; top: 450px;">
+          <button class="card-media-wrap card-image-trigger" type="button" aria-haspopup="dialog"
+            aria-controls="partner-image-modal" aria-label="Perbesar gambar Keberlanjutan">
+            <img src="../assets/images/atmos-wrf/keberlanjutan.png" alt="Peta prakiraan kelayakan semai higroskopis untuk kegiatan Operasi Modifikasi Cuaca" />
+            <span class="card-image-hint">Klik untuk memperbesar</span>
+          </button>
+          <div class="card-body">
+            <h2 class="card-title">Keberlanjutan</h2>
+            <p class="card-desc">
+              ATMOS masih digunakan untuk menjalankan WRF dalam kegiatan OMC 09–18 Oktober 2026
+              untuk menghasilkan produk kelayakan semai higroskopis, Cloud Opportunity Index,
+              laju pertumbuhan awan, dan updraft maksimum.
+            </p>
+          </div>
+        </article>
+
+        <!-- FINAL TERMINAL PIN -->
+        <div class="clay-element connector-dot gs-reveal" style="left: 4850px; top: 450px;"></div>
+      </div>
+    </section>
+
+    <!-- SECTION: HOW IT WORKS (ALUR MODELING ATMOS / WRF-WEB) -->
+    <section class="atmos-workflow" aria-labelledby="workflow-heading">
+      <div class="workflow-eyebrow">Alur Kerja Sistem</div>
+      <h2 id="workflow-heading">How It Works</h2>
+      <p class="workflow-intro">
+        Delapan tahap orkestrasi pemodelan atmosfer numerik dari penyiapan domain wilayah hingga analisis luaran visual NetCDF di antarmuka web.
+      </p>
+
+      <div class="workflow-layout">
+        <ol class="workflow-steps">
+          <!-- STEP 01 -->
+          <li class="workflow-step" data-step="1" data-state="upcoming">
+            <span class="workflow-node" aria-hidden="true">01</span>
+            <div class="workflow-step-copy">
+              <span class="workflow-step-status">Tahap 01 · Workspace</span>
+              <h3>Create a Project</h3>
+              <p>
+                Inisialisasi workspace simulasi dengan konfigurasi parameter, penentuan direktori kerja mandiri di filesystem, dan pencatatan metadata proyek di basis data.
+              </p>
+            </div>
+            <figure class="workflow-visual" aria-label="Visual pembuatan proyek">
+              <div class="workflow-diagram">
+                <span class="workflow-token is-emphasis">New Project</span>
+                <span class="workflow-arrow">→</span>
+                <span class="workflow-token">Directory Workspace</span>
+                <span class="workflow-arrow">→</span>
+                <span class="workflow-token">Base Configuration</span>
+              </div>
+              <figcaption>Alokasi workspace penyimpanan dan isolasi berkas simulasi per skenario.</figcaption>
+            </figure>
+          </li>
+
+          <!-- STEP 02 -->
+          <li class="workflow-step" data-step="2" data-state="upcoming">
+            <span class="workflow-node" aria-hidden="true">02</span>
+            <div class="workflow-step-copy">
+              <span class="workflow-step-status">Tahap 02 · Wilayah</span>
+              <h3>Define Model Domains</h3>
+              <p>
+                Domain Wizard interaktif berbasis peta mempermudah penarikan batas koordinat wilayah, resolusi spasial, pemilihan proyeksi peta, dan konfigurasi nesting domain (d01, d02) menjadi berkas <code>namelist.wps</code>.
+              </p>
+            </div>
+            <figure class="workflow-visual" aria-label="Visual definisi domain">
+              <div class="workflow-diagram">
+                <span class="workflow-token is-emphasis">Map Interactive Wizard</span>
+                <span class="workflow-arrow">→</span>
+                <span class="workflow-token">Grid Nesting (d01 / d02)</span>
+                <span class="workflow-arrow">→</span>
+                <span class="workflow-token">namelist.wps</span>
+              </div>
+              <figcaption>Visualisasi batas grid tanpa harus menghitung titik tengah grid secara manual.</figcaption>
+            </figure>
+          </li>
+
+          <!-- STEP 03 -->
+          <li class="workflow-step" data-step="3" data-state="upcoming">
+            <span class="workflow-node" aria-hidden="true">03</span>
+            <div class="workflow-step-copy">
+              <span class="workflow-step-status">Tahap 03 · Input Data</span>
+              <h3>Prepare Input Data</h3>
+              <p>
+                Pemilihan dan pengunduhan data batas meteorologi global (seperti GFS atau FNL) yang dikelola melalui background download jobs, serta data emisi tambahan untuk kebutuhan pemodelan kimia.
+              </p>
+            </div>
+            <figure class="workflow-visual" aria-label="Visual asupan data">
+              <div class="workflow-diagram">
+                <span class="workflow-token is-emphasis">Dataset Source (GFS / FNL)</span>
+                <span class="workflow-arrow">→</span>
+                <span class="workflow-token">Background Downloader</span>
+                <span class="workflow-arrow">→</span>
+                <span class="workflow-token">Staged Input GRIB</span>
+              </div>
+              <figcaption>Pemantauan proses unduhan dataset meteorologi secara asinkron di latar belakang.</figcaption>
+            </figure>
+          </li>
+
+          <!-- STEP 04 -->
+          <li class="workflow-step" data-step="4" data-state="upcoming">
+            <span class="workflow-node" aria-hidden="true">04</span>
+            <div class="workflow-step-copy">
+              <span class="workflow-step-status">Tahap 04 · WPS</span>
+              <h3>Run WPS Preprocessing</h3>
+              <p>
+                Eksekusi berurutan modul pra-pemrosesan: <code>geogrid</code> memetakan data topografi permukaan, <code>ungrib</code> mengekstrak berkas meteorologi, dan <code>metgrid</code> menginterpolasi data ke domain grid model.
+              </p>
+            </div>
+            <figure class="workflow-visual" aria-label="Visual alur WPS">
+              <div class="workflow-diagram">
+                <span class="workflow-token">geogrid.exe (geo_em)</span>
+                <span class="workflow-arrow">→</span>
+                <span class="workflow-token">ungrib.exe</span>
+                <span class="workflow-arrow">→</span>
+                <span class="workflow-token is-emphasis">metgrid.exe (met_em)</span>
+              </div>
+              <figcaption>Data meteorologi global disesuaikan secara horizontal dengan grid wilayah kajian.</figcaption>
+            </figure>
+          </li>
+
+          <!-- STEP 05 -->
+          <li class="workflow-step" data-step="5" data-state="upcoming">
+            <span class="workflow-node" aria-hidden="true">05</span>
+            <div class="workflow-step-copy">
+              <span class="workflow-step-status">Tahap 05 · Inisialisasi</span>
+              <h3>Initialize the Model</h3>
+              <p>
+                Modul <code>real.exe</code> memproses berkas <code>met_em</code> dan konfigurasi fisika <code>namelist.input</code> untuk menghasilkan kondisi inisial dan batas simulasi (<code>wrfinput</code> dan <code>wrfbdy</code>).
+              </p>
+            </div>
+            <figure class="workflow-visual" aria-label="Visual inisialisasi REAL">
+              <div class="workflow-diagram">
+                <span class="workflow-token">met_em*</span>
+                <span class="workflow-arrow">+</span>
+                <span class="workflow-token">namelist.input</span>
+                <span class="workflow-arrow">→</span>
+                <span class="workflow-token is-emphasis">real.exe</span>
+                <span class="workflow-arrow">→</span>
+                <span class="workflow-token">wrfinput / wrfbdy</span>
+              </div>
+              <figcaption>Kondisi atmosfer 3D vertikal disiapkan sebelum perhitungan numerik dimulai.</figcaption>
+            </figure>
+          </li>
+
+          <!-- STEP 06: OPTIONAL CHEM -->
+          <li class="workflow-step" data-step="6" data-state="upcoming">
+            <span class="workflow-node optional" aria-hidden="true">06</span>
+            <div class="workflow-step-copy">
+              <span class="workflow-step-status">Tahap 06 · Opsional (WRF-Chem)</span>
+              <h3>Prepare Atmospheric Chemistry</h3>
+              <p>
+                <strong>Khusus WRF-Chem:</strong> preparasi modul kimia atmosfer (seperti bioemisi MEGAN, inventarisasi emisi antropogenik, dan kondisi batas WACCM via mozbc). Simulasi meteorologi standar melewati tahap ini langsung ke eksekusi WRF.
+              </p>
+            </div>
+            <figure class="workflow-visual" aria-label="Visual cabang kimia atmosfer">
+              <div class="workflow-stack">
+                <div class="workflow-diagram">
+                  <span class="workflow-token is-optional">Jalur Kimia: mozbc / MEGAN / anthro</span>
+                  <span class="workflow-arrow">→</span>
+                  <span class="workflow-token">wrfchemi*</span>
+                </div>
+                <div class="workflow-diagram">
+                  <span class="workflow-token is-emphasis">Jalur Cuaca Biasa: Bypass langsung ke wrf.exe</span>
+                </div>
+              </div>
+              <figcaption>Cabang terisolasi: komponen kimia hanya aktif jika skenario emisi dipilih.</figcaption>
+            </figure>
+          </li>
+
+          <!-- STEP 07 -->
+          <li class="workflow-step" data-step="7" data-state="upcoming">
+            <span class="workflow-node" aria-hidden="true">07</span>
+            <div class="workflow-step-copy">
+              <span class="workflow-step-status">Tahap 07 · Eksekusi</span>
+              <h3>Execute WRF Simulation</h3>
+              <p>
+                Pelaksanaan integrasi numerik dinamika atmosfer menggunakan <code>wrf.exe</code> (MPI parallel processing). Status node, laju integrasi per time-step, dan log sistem dapat dipantau di dasbor hingga menghasilkan berkas NetCDF (<code>wrfout</code>).
+              </p>
+            </div>
+            <figure class="workflow-visual" aria-label="Visual eksekusi WRF">
+              <div class="workflow-diagram">
+                <span class="workflow-token">wrf.exe (MPI Core)</span>
+                <span class="workflow-arrow">→</span>
+                <span class="workflow-token is-emphasis">Log &amp; Progress Monitor</span>
+                <span class="workflow-arrow">→</span>
+                <span class="workflow-token">wrfout_d01* (NetCDF)</span>
+              </div>
+              <figcaption>Komputasi numerik intensif dijalankan di backend server dengan logging terstruktur.</figcaption>
+            </figure>
+          </li>
+
+          <!-- STEP 08 -->
+          <li class="workflow-step" data-step="8" data-state="upcoming">
+            <span class="workflow-node" aria-hidden="true">08</span>
+            <div class="workflow-step-copy">
+              <span class="workflow-step-status">Tahap 08 · Analisis</span>
+              <h3>Explore &amp; Analyze Results</h3>
+              <p>
+                Hasil luaran NetCDF dieksplorasi secara visual melalui NC Viewer terintegrasi: peta sebaran parameter 2D, irisan vertikal atmosfer, grafik time series titik observasi, serta kalkulasi Cloud Opportunity Index untuk mendukung kegiatan OMC.
+              </p>
+            </div>
+            <figure class="workflow-visual" aria-label="Visual analisis hasil">
+              <div class="workflow-diagram">
+                <span class="workflow-token">wrfout NetCDF</span>
+                <span class="workflow-arrow">→</span>
+                <span class="workflow-token is-emphasis">NC Viewer (Peta / Irisan Vertikal)</span>
+                <span class="workflow-arrow">→</span>
+                <span class="workflow-token">Produk OMC</span>
+              </div>
+              <figcaption>Transformasi data biner NetCDF menjadi visualisasi informatif tanpa perlu ekspor manual.</figcaption>
+            </figure>
+          </li>
+        </ol>
+
+        <!-- DESKTOP STICKY PANEL -->
+        <aside class="workflow-panel" aria-hidden="true">
+          <div class="workflow-visual">
+            <span class="workflow-panel-label">Tahap 01 · Workspace</span>
+            <h4 class="workflow-panel-title">Create a Project</h4>
+            <div class="workflow-panel-body" style="margin-top: 16px;">
+              <!-- Disinkronkan via JavaScript dari tahap aktif -->
+            </div>
+          </div>
+        </aside>
+      </div>
+
+      <p class="workflow-note">
+        Catatan sistem: Tahap pemrosesan dijalankan dan dipantau per node (Start / Stop) untuk transparansi komputasi. Tahap Kimia Atmosfer (Tahap 06) bersifat opsional dan hanya diaktifkan untuk riset polutan atau aerosol WRF-Chem.
+      </p>
+    </section>
+
+    <!-- SECTION: KEY FEATURES (ATMOS PLATFORM CAPABILITIES) -->
+    <section class="atmos-features" aria-labelledby="features-heading">
+      <div class="features-eyebrow">Kapabilitas Utama</div>
+      <h2 id="features-heading">Key Features</h2>
+      <p class="features-intro">
+        Tujuh pilar kapabilitas dalam platform ATMOS yang menjembatani otomasi alur pemodelan atmosfer, pemrosesan numerik intensif, dan analisis spasial berbasis web.
+      </p>
+
+      <div class="features-list">
+        <!-- FEATURE 01: PROJECT & DATA MANAGEMENT -->
+        <article class="feature-item">
+          <div class="feature-copy">
+            <span class="feature-number">FEATURE 01</span>
+            <h3>Project &amp; Data Management</h3>
+            <p class="feature-desc">
+              Organisasi simulasi numerik berbasis direktori independen dan katalog dataset terpadu dengan pelacakan proses unduh asinkron di latar belakang.
+            </p>
+            <ul class="feature-proofs">
+              <li>Struktur workspace modular memisahkan konfigurasi, dataset, dan keluaran NetCDF per proyek.</li>
+              <li>Dukungan katalog dataset multi-sumber: GFS, ERA5, FNL, ECMWF IFS/HRES, WACCM, dan MEGAN.</li>
+              <li>Pencatatan status asinkron <code>download_jobs</code> dengan sinkronisasi otomatis rentang tanggal pada namelist.</li>
+            </ul>
+          </div>
+          <figure class="feature-media">
+            <span class="feature-media-badge">Schematic Overview</span>
+            <div class="feature-schematic">
+              <div class="schematic-row">
+                <span class="schematic-cell">Source Catalog</span>
+                <span class="schematic-arrow">→</span>
+                <span class="schematic-cell active">Background Downloader</span>
+                <span class="schematic-arrow">→</span>
+                <span class="schematic-cell">Job Tracker DB</span>
+              </div>
+              <div class="schematic-row">
+                <span class="schematic-arrow">└─</span>
+                <span class="schematic-cell active">Isolated Project Workspace</span>
+                <span class="schematic-arrow">→</span>
+                <span class="schematic-cell dim">Auto-Set Namelist Range</span>
+              </div>
+            </div>
+            <figcaption>Manajemen berkas terisolasi: setiap simulasi memiliki siklus hidup dan dependensi dataset sendiri.</figcaption>
+          </figure>
+        </article>
+
+        <!-- FEATURE 02: INTERACTIVE DOMAIN WIZARD (REVERSE) -->
+        <article class="feature-item reverse">
+          <div class="feature-copy">
+            <span class="feature-number">FEATURE 02</span>
+            <h3>Interactive Domain Wizard</h3>
+            <p class="feature-desc">
+              Konfigurasi batas spasial, resolusi grid, proyeksi peta, dan nesting domain hierarkis secara interaktif berbasis Leaflet tanpa perhitungan manual koordinat grid.
+            </p>
+            <ul class="feature-proofs">
+              <li>Visualisasi spasial langsung untuk parent dan nested domain (d01, d02).</li>
+              <li>Otomatisasi kalkulasi titik tengah, rasio grid spacing, dan parameter proyeksi Lambert/Mercator.</li>
+              <li>Kompilasi instan menjadi berkas konfigurasi baku <code>namelist.wps</code> yang siap diproses geogrid.</li>
+            </ul>
+          </div>
+          <figure class="feature-media">
+            <span class="feature-media-badge">Schematic Overview</span>
+            <div class="feature-schematic">
+              <div class="schematic-row">
+                <span class="schematic-cell">Leaflet Map Canvas</span>
+                <span class="schematic-arrow">──BBox──→</span>
+                <span class="schematic-cell active">Grid Math Calculator</span>
+              </div>
+              <div class="schematic-row">
+                <span class="schematic-cell active">Parent / Child Nesting</span>
+                <span class="schematic-arrow">→</span>
+                <span class="schematic-cell">namelist.wps Generator</span>
+                <span class="schematic-arrow">→</span>
+                <span class="schematic-cell">WPS Staging</span>
+              </div>
+            </div>
+            <figcaption>Antarmuka visual peta menggantikan pengisian manual ratusan parameter grid numerik mentah.</figcaption>
+          </figure>
+        </article>
+
+        <!-- FEATURE 03: WRF EXECUTION DASHBOARD -->
+        <article class="feature-item">
+          <div class="feature-copy">
+            <span class="feature-number">FEATURE 03</span>
+            <h3>WRF Execution Dashboard</h3>
+            <p class="feature-desc">
+              Dasbor kontrol terpadu untuk mengeksekusi pipeline meteorologi secara transparan per tahap, dilengkapi pemantauan status node dan log real-time.
+            </p>
+            <ul class="feature-proofs">
+              <li>Orkestrasi alur baku berurutan: <code>geogrid → ungrib → metgrid → real → wrf</code>.</li>
+              <li>Kontrol granular per modul (Start / Stop / Restart) untuk investigasi dan diagnostik kendala komputasi.</li>
+              <li>Penyajian tail log ringan dari sistem berkas untuk meminimalkan beban memori browser.</li>
+            </ul>
+          </div>
+          <figure class="feature-media">
+            <span class="feature-media-badge">Schematic Overview</span>
+            <div class="feature-schematic">
+              <div class="schematic-row">
+                <span class="schematic-cell">geogrid</span>
+                <span class="schematic-arrow">→</span>
+                <span class="schematic-cell">ungrib</span>
+                <span class="schematic-arrow">→</span>
+                <span class="schematic-cell">metgrid</span>
+                <span class="schematic-arrow">→</span>
+                <span class="schematic-cell active">real.exe</span>
+                <span class="schematic-arrow">→</span>
+                <span class="schematic-cell active">wrf.exe</span>
+              </div>
+              <div class="schematic-row">
+                <span class="schematic-cell dim">Per-Node Daemon Control</span>
+                <span class="schematic-arrow">/</span>
+                <span class="schematic-cell">Async Process Tail Log</span>
+                <span class="schematic-arrow">→</span>
+                <span class="schematic-cell active">wrfout NetCDF</span>
+              </div>
+            </div>
+            <figcaption>Pengendalian proses komputasi HPC modular dengan visibilitas status transparan di setiap titik.</figcaption>
+          </figure>
+        </article>
+
+        <!-- FEATURE 04: ATMOSPHERIC CHEMISTRY MODELING (REVERSE) -->
+        <article class="feature-item reverse">
+          <div class="feature-copy">
+            <span class="feature-number">FEATURE 04</span>
+            <h3>Atmospheric Chemistry Modeling</h3>
+            <p class="feature-desc">
+              Ekspansi pemodelan cuaca konvensional menjadi simulasi kualitas udara dan aerosol regional dengan integrasi preparasi kimia atmosfer WRF-Chem.
+            </p>
+            <ul class="feature-proofs">
+              <li>Penyisipan modul <code>chem</code> opsional antara <code>real</code> dan <code>wrf</code> tanpa merusak alur cuaca standar.</li>
+              <li>Orkestrasi perangkat kimia: <code>mozbc</code> (kondisi batas WACCM), <code>MEGAN</code> (bioemisi), dan <code>anthro_emis</code>.</li>
+              <li>Dukungan konfigurasi mekanisme kimia atmosfer terdefinisi seperti RADM2SORG.</li>
+            </ul>
+          </div>
+          <figure class="feature-media">
+            <span class="feature-media-badge">Schematic Overview</span>
+            <div class="feature-schematic">
+              <div class="schematic-row">
+                <span class="schematic-cell">WACCM (mozbc)</span>
+                <span class="schematic-arrow">+</span>
+                <span class="schematic-cell">Bioemisi (MEGAN)</span>
+                <span class="schematic-arrow">+</span>
+                <span class="schematic-cell">Anthro Emis</span>
+              </div>
+              <div class="schematic-row">
+                <span class="schematic-arrow">└──→</span>
+                <span class="schematic-cell active">wrfchemi* Generator</span>
+                <span class="schematic-arrow">→</span>
+                <span class="schematic-cell active">WRF-Chem MPI Engine</span>
+              </div>
+            </div>
+            <figcaption>Cabang terisolasi: preparasi kimia intensif dijalankan khusus untuk studi pencemaran dan aerosol.</figcaption>
+          </figure>
+        </article>
+
+        <!-- FEATURE 05: NETCDF ANALYSIS WORKSPACE -->
+        <article class="feature-item">
+          <div class="feature-copy">
+            <span class="feature-number">FEATURE 05</span>
+            <h3>NetCDF Analysis Workspace</h3>
+            <p class="feature-desc">
+              Eksplorasi luaran simulasi 3D berformat NetCDF langsung dari peramban web: pemetaan lapisan atmosfer, inspeksi nilai titik, grafik time series, dan irisan vertikal.
+            </p>
+            <ul class="feature-proofs">
+              <li>Kompatibel dengan luaran <code>wrfout</code>, <code>geo_em</code>, <code>met_em</code>, serta berkas NetCDF eksternal.</li>
+              <li>Kalkulasi parameter komposit otomatis, seperti akumulasi curah hujan (<code>RAINC + RAINNC + RAINSH</code>).</li>
+              <li>Fitur irisan vertikal atmosfer dan overlay spasial batas Daerah Aliran Sungai (DAS) serta radar CMAX.</li>
+            </ul>
+          </div>
+          <figure class="feature-media">
+            <span class="feature-media-badge">Schematic Overview</span>
+            <div class="feature-schematic">
+              <div class="schematic-row">
+                <span class="schematic-cell">wrfout Multi-Dim</span>
+                <span class="schematic-arrow">→</span>
+                <span class="schematic-cell active">Python NetCDF Engine</span>
+                <span class="schematic-arrow">→</span>
+                <span class="schematic-cell">Web NC Viewer</span>
+              </div>
+              <div class="schematic-row">
+                <span class="schematic-arrow">├──</span>
+                <span class="schematic-cell active">2D Surface Mapping</span>
+                <span class="schematic-arrow">├──</span>
+                <span class="schematic-cell">Vertical Slice Profiler</span>
+                <span class="schematic-arrow">└──</span>
+                <span class="schematic-cell">Station Time Series</span>
+              </div>
+            </div>
+            <figcaption>Analisis data biner atmosfer skala besar secara interaktif tanpa instalasi perangkat lunak lokal tambahan.</figcaption>
+          </figure>
+        </article>
+
+        <!-- FEATURE 06: WEATHER VISUALIZATION (REVERSE) -->
+        <article class="feature-item reverse">
+          <div class="feature-copy">
+            <span class="feature-number">FEATURE 06</span>
+            <h3>Weather Visualization</h3>
+            <p class="feature-desc">
+              Transformasi luaran numerik mentah menjadi produk peta cuaca operasional siap pakai dengan palet standar meteorologi BMKG dan komparasi observasi.
+            </p>
+            <ul class="feature-proofs">
+              <li>Pewarnaan kontur curah hujan presisi sesuai standar klasifikasi intensitas BMKG TP.</li>
+              <li>Akses terpadu ke luaran model global operasional ECMWF HRES dan NWP BMKG untuk pembanding.</li>
+              <li>Integrasi layer observasi nyata: kanal inframerah dan True Color Satelit Himawari serta radar cuaca.</li>
+            </ul>
+          </div>
+          <figure class="feature-media">
+            <span class="feature-media-badge">Schematic Overview</span>
+            <div class="feature-schematic">
+              <div class="schematic-row">
+                <span class="schematic-cell">WRF Numerical Fields</span>
+                <span class="schematic-arrow">→</span>
+                <span class="schematic-cell active">BMKG TP Standard Colorbar</span>
+                <span class="schematic-arrow">→</span>
+                <span class="schematic-cell">Operational Map</span>
+              </div>
+              <div class="schematic-row">
+                <span class="schematic-arrow">└── Observasi:</span>
+                <span class="schematic-cell active">Himawari Satellite Tiles</span>
+                <span class="schematic-arrow">+</span>
+                <span class="schematic-cell">CMAX Radar Layers</span>
+              </div>
+            </div>
+            <figcaption>Penyajian visual meteorologi terstandarisasi untuk mendukung analisis prediktif cuaca ekstrem.</figcaption>
+          </figure>
+        </article>
+
+        <!-- FEATURE 07: MONITORING & REPRODUCIBLE PROJECTS -->
+        <article class="feature-item">
+          <div class="feature-copy">
+            <span class="feature-number">FEATURE 07</span>
+            <h3>Execution Monitoring &amp; Project History</h3>
+            <p class="feature-desc">
+              Pelacakan komprehensif riwayat eksekusi komputasi panjang, audit konfigurasi namelist, dan pemeliharaan artefak simulasi yang terstruktur.
+            </p>
+            <ul class="feature-proofs">
+              <li>Pembaruan status eksekusi job dan progres iterasi waktu secara efisien via WebSocket.</li>
+              <li>Pemisahan ketat berkas proyek (konfigurasi, data mentah, luaran, dan log) untuk menjamin reproduktibilitas riset.</li>
+              <li>Penghematan ruang penyimpanan disk host melalui pemanfaatan symlink berkas statis geografi dan tabel lookup.</li>
+            </ul>
+          </div>
+          <figure class="feature-media">
+            <span class="feature-media-badge">Schematic Overview</span>
+            <div class="feature-schematic">
+              <div class="schematic-row">
+                <span class="schematic-cell">Host Process Daemon</span>
+                <span class="schematic-arrow">──WS / DB──→</span>
+                <span class="schematic-cell active">Frontend Live Telemetry</span>
+              </div>
+              <div class="schematic-row">
+                <span class="schematic-cell active">Symlinked Static Tables</span>
+                <span class="schematic-arrow">+</span>
+                <span class="schematic-cell">Snapshot Namelist</span>
+                <span class="schematic-arrow">→</span>
+                <span class="schematic-cell">Audit &amp; Reproduce</span>
+              </div>
+            </div>
+            <figcaption>Pondasi keandalan riset: setiap simulasi dapat diaudit kembali dengan jejak konfigurasi yang utuh.</figcaption>
+          </figure>
+        </article>
+      </div>
+    </section>
+
+    <!-- SECTION: SYSTEM ARCHITECTURE (ATMOS INTERACTIVE EXPLORER) -->
+    <section class="atmos-architecture" aria-labelledby="arch-heading">
+      <div class="arch-eyebrow">Struktur Sistem</div>
+      <h2 id="arch-heading">System Architecture</h2>
+      <p class="arch-intro">
+        Arsitektur modular yang memisahkan antarmuka kontrol, orkestrasi backend FastAPI, persistensi berkas komputasi, dan eksekusi numerik berkinerja tinggi.
+      </p>
+
+      <!-- Layer filters -->
+      <nav class="arch-layers-nav" aria-label="Filter Layer Arsitektur">
+        <button type="button" class="arch-layer-btn active" data-layer="all">Semua Layer</button>
+        <button type="button" class="arch-layer-btn" data-layer="presentation">Presentation</button>
+        <button type="button" class="arch-layer-btn" data-layer="app">Application</button>
+        <button type="button" class="arch-layer-btn" data-layer="state">State &amp; Storage</button>
+        <button type="button" class="arch-layer-btn" data-layer="compute">Compute Engine</button>
+        <button type="button" class="arch-layer-btn" data-layer="sources">Data &amp; Visuals</button>
+      </nav>
+
+      <!-- Architecture Canvas -->
+      <div class="arch-canvas">
+        <div class="arch-zones-grid">
+          <!-- ZONE 1: PRESENTATION & APP -->
+          <div class="arch-zone" data-layer="presentation">
+            <div class="arch-zone-header">
+              <span class="arch-zone-title">01 · Presentation &amp; API</span>
+              <span class="arch-zone-desc">Client &amp; Control</span>
+            </div>
+            <div class="arch-nodes-list">
+              <button type="button" class="arch-node" data-node="browser">
+                <div class="arch-node-top">
+                  <span class="arch-node-name">Web Interface</span>
+                  <span class="arch-node-tag">Jinja2 + Alpine</span>
+                </div>
+                <span class="arch-node-role">Wizard domain peta Leaflet &amp; dasbor kontrol</span>
+              </button>
+
+              <button type="button" class="arch-node selected" data-node="fastapi">
+                <div class="arch-node-top">
+                  <span class="arch-node-name">FastAPI Core</span>
+                  <span class="arch-node-tag">Python ASGI</span>
+                </div>
+                <span class="arch-node-role">REST API, Pydantic validator, &amp; orchestrator</span>
+              </button>
+
+              <button type="button" class="arch-node" data-node="bgtasks">
+                <div class="arch-node-top">
+                  <span class="arch-node-name">BackgroundTasks</span>
+                  <span class="arch-node-tag">Host Async</span>
+                </div>
+                <span class="arch-node-role">Download dataset &amp; monitoring eksekusi</span>
+              </button>
+
+              <button type="button" class="arch-node" data-node="ws">
+                <div class="arch-node-top">
+                  <span class="arch-node-name">WRF Telemetry WS</span>
+                  <span class="arch-node-tag">WebSocket</span>
+                </div>
+                <span class="arch-node-role">Live progress status &amp; tailing log proses</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- ZONE 2: STATE & COMPUTE -->
+          <div class="arch-zone" data-layer="state">
+            <div class="arch-zone-header">
+              <span class="arch-zone-title">02 · State &amp; Storage</span>
+              <span class="arch-zone-desc">Durable Artifacts</span>
+            </div>
+            <div class="arch-nodes-list">
+              <button type="button" class="arch-node" data-node="postgres">
+                <div class="arch-node-top">
+                  <span class="arch-node-name">PostgreSQL</span>
+                  <span class="arch-node-tag">SQLAlchemy 2</span>
+                </div>
+                <span class="arch-node-role">Metadata proyek, status job, &amp; katalog satelit</span>
+              </button>
+
+              <button type="button" class="arch-node" data-node="filesystem">
+                <div class="arch-node-top">
+                  <span class="arch-node-name">Project Workspace</span>
+                  <span class="arch-node-tag">Local FS</span>
+                </div>
+                <span class="arch-node-role">Isolasi namelist, GRIB mentah, &amp; wrfout NetCDF</span>
+              </button>
+
+              <button type="button" class="arch-node" data-node="objectstorage">
+                <div class="arch-node-top">
+                  <span class="arch-node-name">Object Storage</span>
+                  <span class="arch-node-tag">S3 / MinIO</span>
+                </div>
+                <span class="arch-node-role">Pengarsipan jangka panjang berkas NetCDF (Opsional)</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- ZONE 3: SCIENTIFIC COMPUTE & SOURCES -->
+          <div class="arch-zone" data-layer="compute">
+            <div class="arch-zone-header">
+              <span class="arch-zone-title">03 · Compute &amp; Analysis</span>
+              <span class="arch-zone-desc">HPC &amp; Visualization</span>
+            </div>
+            <div class="arch-nodes-list">
+              <button type="button" class="arch-node" data-node="wps">
+                <div class="arch-node-top">
+                  <span class="arch-node-name">WPS 4.7 Binaries</span>
+                  <span class="arch-node-tag">geogrid/ungrib/metgrid</span>
+                </div>
+                <span class="arch-node-role">Topografi &amp; interpolasi kisi meteorologi</span>
+              </button>
+
+              <button type="button" class="arch-node" data-node="wrfreal">
+                <div class="arch-node-top">
+                  <span class="arch-node-name">WRF 4.8 &amp; REAL</span>
+                  <span class="arch-node-tag">OpenMPI Core</span>
+                </div>
+                <span class="arch-node-role">Kondisi batas 3D &amp; integrasi persamaan fluida</span>
+              </button>
+
+              <button type="button" class="arch-node" data-node="chem">
+                <div class="arch-node-top">
+                  <span class="arch-node-name">WRF-Chem Preprocessors</span>
+                  <span class="arch-node-tag">mozbc/MEGAN/anthro</span>
+                </div>
+                <span class="arch-node-role">Inisialisasi kimia atmosfer &amp; bioemisi (Opsional)</span>
+              </button>
+
+              <button type="button" class="arch-node" data-node="viewer">
+                <div class="arch-node-top">
+                  <span class="arch-node-name">NC Viewer &amp; Products</span>
+                  <span class="arch-node-tag">Python &amp; Leaflet</span>
+                </div>
+                <span class="arch-node-role">Peta BMKG TP, irisan vertikal, &amp; chart</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Node Inspector Panel -->
+        <aside class="arch-inspector" aria-label="Detail Komponen Arsitektur">
+          <div class="arch-inspector-header">
+            <div>
+              <h4 class="arch-inspector-title">FastAPI Core</h4>
+              <span class="arch-inspector-tag">APPLICATION · PYTHON ASGI</span>
+            </div>
+            <button type="button" class="arch-inspector-reset">Reset Fokus</button>
+          </div>
+          <p class="arch-inspector-desc">
+            Menyediakan endpoint RESTful API, validasi skema input Pydantic, koordinasi proyek, pengawasan status berkas, dan penyedia data.
+          </p>
+          <div class="arch-inspector-meta">
+            <div class="arch-meta-item">
+              <span class="arch-meta-label">Asupan / Input</span>
+              <span class="arch-meta-val arch-meta-inputs">HTTP Requests &amp; WebSocket Clients</span>
+            </div>
+            <div class="arch-meta-item">
+              <span class="arch-meta-label">Luaran / Output</span>
+              <span class="arch-meta-val arch-meta-outputs">PostgreSQL, Local Filesystem, BackgroundTasks</span>
+            </div>
+          </div>
+        </aside>
+      </div>
+
+      <!-- Architectural Decisions -->
+      <div class="arch-decisions">
+        <h3>Architectural Decisions</h3>
+        <div class="arch-decisions-grid">
+          <article class="arch-decision-card">
+            <span class="arch-decision-num">DECISION 01</span>
+            <h4>FastAPI Native Background Tasks vs. Distributed Queue</h4>
+            <p>
+              Tugas berdurasi panjang seperti download data dan pemanggilan model diorkestrasi menggunakan BackgroundTasks internal Python. Menghilangkan kompleksitas operasional Redis atau Celery pada server simulasi mandiri.
+            </p>
+          </article>
+          <article class="arch-decision-card">
+            <span class="arch-decision-num">DECISION 02</span>
+            <h4>Direct Filesystem Staging for HPC Binaries</h4>
+            <p>
+              Modul numerik WPS dan WRF bekerja langsung membaca dan menulis berkas fisik (GRIB, intermediate, dan NetCDF). Penggunaan disk lokal menjamin throughput I/O tinggi yang esensial untuk perhitungan matriks fluida.
+            </p>
+          </article>
+          <article class="arch-decision-card">
+            <span class="arch-decision-num">DECISION 03</span>
+            <h4>Modular Symlinked Binaries, Isolated Workspaces</h4>
+            <p>
+              Executable dan tabel geografi statis digunakan bersama melalui symlink sistem berkas, sedangkan konfigurasi namelist, dataset masukan, dan hasil NetCDF diisolasi ketat dalam direktori proyek masing-masing.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: TECH STACK (ATMOS EDITORIAL TECHNOLOGY INDEX) -->
+    <section class="atmos-techstack" aria-labelledby="stack-heading">
+      <div class="stack-eyebrow">Indeks Teknologi</div>
+      <h2 id="stack-heading">Tech Stack</h2>
+      <p class="stack-intro">
+        Indeks terstruktur atas dependensi perangkat lunak, pustaka ilmiah geospasial, dan mesin komputasi yang menopang siklus hidup pemodelan ATMOS.
+      </p>
+
+      <!-- Category Filter Rail -->
+      <nav class="stack-nav" aria-label="Filter Kategori Teknologi">
+        <button type="button" class="stack-nav-btn active" data-target="all">Semua Kategori</button>
+        <button type="button" class="stack-nav-btn" data-target="backend">Backend &amp; App</button>
+        <button type="button" class="stack-nav-btn" data-target="interface">Interface &amp; Geo</button>
+        <button type="button" class="stack-nav-btn" data-target="data">Data &amp; State</button>
+        <button type="button" class="stack-nav-btn" data-target="processing">Scientific Data</button>
+        <button type="button" class="stack-nav-btn" data-target="compute">Modeling &amp; Compute</button>
+      </nav>
+
+      <!-- Technology Groups -->
+      <div class="stack-groups">
+        <!-- GROUP 1: BACKEND -->
+        <article class="stack-group" id="backend">
+          <header class="stack-group-header">
+            <h3 class="stack-group-title">Application &amp; Backend</h3>
+            <p class="stack-group-desc">Fondasi layanan web asynchronous, validasi skema, dan orkestrasi perintah sistem.</p>
+          </header>
+          <table class="stack-table" aria-label="Tabel Aplikasi & Backend">
+            <thead>
+              <tr>
+                <th style="width: 32%;">Teknologi</th>
+                <th>Peran di ATMOS</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><span class="stack-tech-name">Python 3</span><span class="stack-tech-tag">Runtime</span></td>
+                <td class="stack-tech-role">Bahasa utama backend, otomasi eksekusi model, dan pemrosesan data ilmiah atmosfer.</td>
+              </tr>
+              <tr>
+                <td><span class="stack-tech-name">FastAPI</span><span class="stack-tech-tag">Web Core</span></td>
+                <td class="stack-tech-role">Penyedia REST API asynchronous, routing dinamis, dan pengontrol background jobs.</td>
+              </tr>
+              <tr>
+                <td><span class="stack-tech-name">Uvicorn</span><span class="stack-tech-tag">ASGI</span></td>
+                <td class="stack-tech-role">Server aplikasi ASGI berkinerja tinggi untuk melayani HTTP requests dan koneksi WebSocket.</td>
+              </tr>
+              <tr>
+                <td><span class="stack-tech-name">Pydantic</span><span class="stack-tech-tag">Validation</span></td>
+                <td class="stack-tech-role">Validasi data masukan namelist, parameter domain grid, dan penegakan skema payload API.</td>
+              </tr>
+              <tr>
+                <td><span class="stack-tech-name">SQLAlchemy 2</span><span class="stack-tech-tag">ORM</span></td>
+                <td class="stack-tech-role">Abstraksi akses basis data relasional untuk pencatatan proyek, riwayat run, dan status unduh.</td>
+              </tr>
+              </tbody>
+          </table>
+        </article>
+
+        <!-- GROUP 2: INTERFACE & GEOSPATIAL -->
+        <article class="stack-group" id="interface">
+          <header class="stack-group-header">
+            <h3 class="stack-group-title">Interface &amp; Geospatial</h3>
+            <p class="stack-group-desc">Antarmuka pengguna responsif dan visualisasi spasial berbasis standar pemetaan web.</p>
+          </header>
+          <table class="stack-table" aria-label="Tabel Interface & Geospatial">
+            <thead>
+              <tr>
+                <th style="width: 32%;">Teknologi</th>
+                <th>Peran di ATMOS</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><span class="stack-tech-name">Jinja2</span><span class="stack-tech-tag">Template</span></td>
+                <td class="stack-tech-role">Server-side template rendering yang ringan dan efisien untuk antarmuka web dasbor.</td>
+              </tr>
+              <tr>
+                <td><span class="stack-tech-name">Alpine.js</span><span class="stack-tech-tag">Reactivity</span></td>
+                <td class="stack-tech-role">Reaktivitas sisi klien yang minimalis untuk tab kontrol, modal, dan status live telemetri.</td>
+              </tr>
+              <tr>
+                <td><span class="stack-tech-name">Leaflet</span><span class="stack-tech-tag">Web GIS</span></td>
+                <td class="stack-tech-role">Peta interaktif untuk Domain Wizard (penarikan batas koordinat) dan penjelajah layer spasial.</td>
+              </tr>
+              <tr>
+                <td><span class="stack-tech-name">proj4</span><span class="stack-tech-tag">Projection</span></td>
+                <td class="stack-tech-role">Transformasi proyeksi koordinat antara WGS84 web map dan proyeksi Lambert/Mercator grid WRF.</td>
+              </tr>
+              <tr>
+                <td><span class="stack-tech-name">GeoPandas &amp; Shapely</span><span class="stack-tech-tag">Spatial Math</span></td>
+                <td class="stack-tech-role">Manipulasi geometri spasial batas poligon DAS, wilayah konsesi kehutanan, dan masking wilayah.</td>
+              </tr>
+            </tbody>
+          </table>
+        </article>
+
+        <!-- GROUP 3: DATA & STATE -->
+        <article class="stack-group" id="data">
+          <header class="stack-group-header">
+            <h3 class="stack-group-title">Data &amp; Persistence</h3>
+            <p class="stack-group-desc">Penyimpanan metadata relasional dan manajemen sistem berkas untuk throughput simulasi tinggi.</p>
+          </header>
+          <table class="stack-table" aria-label="Tabel Data & Persistence">
+            <thead>
+              <tr>
+                <th style="width: 32%;">Teknologi</th>
+                <th>Peran di ATMOS</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><span class="stack-tech-name">PostgreSQL</span><span class="stack-tech-tag">Primary DB</span></td>
+                <td class="stack-tech-role">Penyimpanan relasional untuk entitas proyek, status unduhan GRIB, riwayat eksekusi, dan katalog satelit.</td>
+              </tr>
+              <tr>
+                <td><span class="stack-tech-name">Local Filesystem</span><span class="stack-tech-tag">Storage</span></td>
+                <td class="stack-tech-role">Penyimpanan direktori kerja berkecepatan tinggi untuk berkas biner GRIB mentah dan luaran NetCDF.</td>
+              </tr>
+              <tr>
+                <td><span class="stack-tech-name">boto3</span><span class="stack-tech-tag">Object Storage</span></td>
+                <td class="stack-tech-role">Klien integrasi opsional ke MinIO / S3 / Ceph untuk cold storage pengarsipan jangka panjang.</td>
+              </tr>
+            </tbody>
+          </table>
+        </article>
+
+        <!-- GROUP 4: SCIENTIFIC DATA PROCESSING -->
+        <article class="stack-group" id="processing">
+          <header class="stack-group-header">
+            <h3 class="stack-group-title">Scientific Data Processing</h3>
+            <p class="stack-group-desc">Pustaka ilmiah pengolah berkas biner meteorologi, sensor satelit, dan komputasi array.</p>
+          </header>
+          <table class="stack-table" aria-label="Tabel Scientific Data Processing">
+            <thead>
+              <tr>
+                <th style="width: 32%;">Teknologi</th>
+                <th>Peran di ATMOS</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><span class="stack-tech-name">netCDF4</span><span class="stack-tech-tag">Dataset I/O</span></td>
+                <td class="stack-tech-role">Pembacaan dan ekstraksi matriks multidimensi dari berkas wrfout, met_em, dan geo_em.</td>
+              </tr>
+              <tr>
+                <td><span class="stack-tech-name">ecCodes</span><span class="stack-tech-tag">GRIB Parser</span></td>
+                <td class="stack-tech-role">Inspeksi metadata, level ketinggian isobar, dan validasi rentang waktu data GRIB meteorologi.</td>
+              </tr>
+              <tr>
+                <td><span class="stack-tech-name">NumPy &amp; Matplotlib</span><span class="stack-tech-tag">Numerical</span></td>
+                <td class="stack-tech-role">Perhitungan statistik array (akumulasi hujan) dan rendering grafis irisan vertikal atmosfer.</td>
+              </tr>
+              <tr>
+                <td><span class="stack-tech-name">Satpy &amp; Pillow</span><span class="stack-tech-tag">Imagery</span></td>
+                <td class="stack-tech-role">Komposisi kanal True Color dan kalibrasi kecerahan termal citra satelit cuaca Himawari.</td>
+              </tr>
+              <tr>
+                <td><span class="stack-tech-name">CDS API &amp; ecmwf-opendata</span><span class="stack-tech-tag">Ingest</span></td>
+                <td class="stack-tech-role">Klien pengunduhan otomatis data reanalisis ERA5 dan luaran model global ECMWF IFS.</td>
+              </tr>
+            </tbody>
+          </table>
+        </article>
+
+        <!-- GROUP 5: ATMOSPHERIC MODELING & COMPUTE -->
+        <article class="stack-group" id="compute">
+          <header class="stack-group-header">
+            <h3 class="stack-group-title">Atmospheric Modeling &amp; Compute</h3>
+            <p class="stack-group-desc">Mesin pemodelan numerik atmosfer, pra-pemrosesan geografi, dan modul kimia terintegrasi.</p>
+          </header>
+          <table class="stack-table" aria-label="Tabel Atmospheric Modeling & Compute">
+            <thead>
+              <tr>
+                <th style="width: 32%;">Teknologi</th>
+                <th>Peran di ATMOS</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><span class="stack-tech-name">WRF 4.8.0</span><span class="stack-tech-tag">Weather Engine</span></td>
+                <td class="stack-tech-role">Model komputasi numerik dinamika fluida non-hidrostatik atmosfer untuk prediksi cuaca.</td>
+              </tr>
+              <tr>
+                <td><span class="stack-tech-name">WPS 4.7.0</span><span class="stack-tech-tag">Preprocessing</span></td>
+                <td class="stack-tech-role">Rangkaian geogrid, ungrib, dan metgrid untuk persiapan kisi domain dan input meteorologi.</td>
+              </tr>
+              <tr>
+                <td><span class="stack-tech-name">WRF-Chem</span><span class="stack-tech-tag">Chemistry Engine</span></td>
+                <td class="stack-tech-role">Ekstensi pemodelan kimia atmosfer simultan untuk simulasi konsentrasi polutan dan aerosol.</td>
+              </tr>
+              <tr>
+                <td><span class="stack-tech-name">mozbc &amp; MEGAN</span><span class="stack-tech-tag">Chemi Ingest</span></td>
+                <td class="stack-tech-role">Preparasi kondisi batas kimia global (WACCM) dan estimasi fluks emisi biogenik vegetasi.</td>
+              </tr>
+              <tr>
+                <td><span class="stack-tech-name">OpenMPI 4.1.6</span><span class="stack-tech-tag">Parallel Core</span></td>
+                <td class="stack-tech-role">Lingkungan komputasi terdistribusi memori untuk eksekusi proses numerik paralel di host server.</td>
+              </tr>
+            </tbody>
+          </table>
+        </article>
+      </div>
+
+      <!-- Engineering Tradeoffs Spotlight -->
+      <div class="stack-insights">
+        <div class="stack-insights-header">
+          <span class="stack-insights-eyebrow">Sorotan Rekayasa</span>
+          <h3>Engineering Rationale</h3>
+        </div>
+        <div class="stack-insights-grid">
+          <div class="stack-insight-card">
+            <h4>Server-Rendered UI vs Heavy SPA</h4>
+            <p>
+              Kombinasi Jinja2 dan Alpine.js menjaga overhead bundle klien tetap nol. Aplikasi fokus pada kendali eksekusi komputasi tanpa beban hydration framework SPA yang kompleks.
+            </p>
+          </div>
+          <div class="stack-insight-card">
+            <h4>Durable Job Telemetry via PostgreSQL &amp; WebSocket</h4>
+            <p>
+              Status eksekusi dan parameter namelist tersimpan aman di database relasional, sementara pembaruan log per detik dihantarkan ringan melalui saluran WebSocket langsung ke browser.
+            </p>
+          </div>
+          <div class="stack-insight-card">
+            <h4>Local Filesystem Throughput for Scientific I/O</h4>
+            <p>
+              Proses numerik menghasilkan puluhan gigabyte data biner per run. Akses disk lokal langsung jauh lebih efisien dibanding abstraksi cloud storage selama fase komputasi aktif berlangsung.
+            </p>
+          </div>
+          <div class="stack-insight-card">
+            <h4>Symlinked Binaries with Isolated Workspaces</h4>
+            <p>
+              Kompilasi binary WPS dan WRF yang berat digunakan bersama melalui symlink sistem berkas, menjamin efisiensi ruang simpan disk seraya mengisolasi penuh direktori luaran per simulasi.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="project-footer">
+      <a href="../index.html#projects" class="footer-btn">
+        <span>← Kembali ke Daftar Proyek</span>
+      </a>
+    </footer>
+  </main>
+
+  <dialog id="partner-image-modal" class="image-modal" aria-label="Gambar Partner Bisnis diperbesar">
+    <button class="image-modal-close" type="button" aria-label="Tutup gambar" autofocus>×</button>
+    <img src="../assets/images/atmos-wrf/patner-bisnis.png" alt="Percakapan bot WhatsApp tentang jadwal dan pembuatan video TikTok otomatis" />
+  </dialog>
+
+  <!-- GSAP & ScrollTrigger CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+  <!-- Flow Script -->
+  <script src="../src/js/atmos-wrf.js"></script>
+  <script src="../src/js/atmos-wrf-workflow.js"></script>
+  <script src="../src/js/atmos-wrf-architecture.js"></script>
+  <script src="../src/js/atmos-wrf-techstack.js"></script>
+</body>
+
+</html>

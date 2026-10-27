@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Monitoring METAR, SYNOP dan TAFOR — Monitoring status pengiriman BMKGSoftv2 via Bot WhatsApp dan PC Observasi serta dukungan OMC." />
+  <title>Monitoring METAR, SYNOP dan TAFOR — Proyek</title>
+
+  <!-- Typography matching IndraZ03 aesthetic -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,400&display=swap"
+    rel="stylesheet" />
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="../src/css/style.css" />
+  <link rel="stylesheet" href="../src/css/responsive.css" />
+  <link rel="stylesheet" href="../src/css/atmos-wrf.css" />
+</head>
+
+<body>
+  <!-- Ambient grid overlay -->
+  <div class="grid-bg-overlay" aria-hidden="true"></div>
+
+  <!-- FIXED NAVBAR IDENTICAL TO MAIN SITE -->
+  <header class="site-header" role="banner">
+    <div class="nav-container">
+      <a href="../index.html#home" class="wordmark" aria-label="IndraZ03 Home">IndraZ03</a>
+      <nav class="nav-menu-desktop" aria-label="Main Navigation">
+        <a href="../index.html#home" class="nav-link">Home</a>
+        <a href="../index.html#projects" class="nav-link active" aria-current="page">Projects</a>
+        <a href="../index.html#about" class="nav-link">About Me</a>
+        <!-- <a href="../index.html#kind-words" class="nav-link">Kind Words</a> -->
+      </nav>
+      <a href="../index.html#contact" class="btn btn-clay nav-contact-btn">Let's Talk</a>
+      <button class="mobile-toggle" type="button" aria-label="Toggle navigation menu" aria-expanded="false"
+        aria-controls="mobile-nav">
+        <div class="mobile-toggle-bars" aria-hidden="true">
+          <span></span>
+          <span></span>
+        </div>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Fullscreen Drawer Navigation -->
+  <nav id="mobile-nav" class="mobile-drawer" aria-label="Mobile Navigation" aria-hidden="true">
+    <a href="../index.html#home" class="nav-link">Home</a>
+    <a href="../index.html#projects" class="nav-link active">Projects</a>
+    <a href="../index.html#about" class="nav-link">About Me</a>
+    <!-- <a href="../index.html#kind-words" class="nav-link">Kind Words</a> -->
+    <a href="../index.html#contact" class="btn btn-primary" style="margin-top: 16px;">Let's Talk</a>
+  </nav>
+
+  <main>
+    <!-- HERO INTRO -->
+    <section class="hero-stage">
+      <div class="hero-tag">Observasi / Otomatisasi</div>
+      <h1 class="hero-headline">MONITORING METAR, SYNOP DAN TAFOR</h1>
+      <p class="hero-desc">
+        Sistem pemantauan ketepatan pengiriman data METAR, SYNOP dan TAFOR dari BMKGSoftv2 melalui bot WhatsApp grup
+        dan pembatasan akses PC Observasi, sekaligus mendukung pengiriman data periodik untuk Operasi Modifikasi Cuaca.
+      </p>
+    </section>
+
+    <div class="scroll-instruction">↓ Gulir untuk mengikuti alur proyek ↓</div>
+
+    <!-- HORIZONTAL PINNED TIMELINE -->
+    <section class="scroll-wrapper" aria-label="Perjalanan proyek Monitoring METAR, SYNOP dan TAFOR">
+      <div class="canvas" style="width: 2500px;">
+        <!-- Continuous connector behind cards -->
+        <svg class="lines-layer" viewBox="0 0 2500 900" preserveAspectRatio="none" aria-hidden="true">
+          <path class="line-path" d="M 120 450 L 2150 450" />
+        </svg>
+
+        <!-- STAGE 01 -->
+        <div class="clay-element connector-dot gs-reveal" style="left: 120px; top: 450px;"></div>
+        <article class="clay-element flow-card gs-reveal" style="left: 400px; top: 450px;">
+          <button class="card-media-wrap card-image-trigger" type="button" aria-haspopup="dialog"
+            aria-controls="partner-image-modal" aria-label="Perbesar gambar BMKGSoft Merah">
+            <img src="../assets/images/metar-synop/bmkgsoftmerah.png" alt="Tabel monitoring BMKGSoftv2 dengan penanda merah pada pengiriman METAR yang terlambat" />
+            <span class="card-image-hint">Klik untuk memperbesar</span>
+          </button>
+          <div class="card-body">
+            <h2 class="card-title">BMKGSoft Merah</h2>
+            <p class="card-desc">
+              Seringnya keterlambatan pengiriman data METAR, SYNOP dan TAFOR melatarbelakangi ide untuk membuat sistem monitoring terintegrasi langsung di grup WhatsApp tim Observasi serta di komputer PC Observasi.
+            </p>
+          </div>
+        </article>
+
+        <!-- STAGE 02 -->
+        <div class="clay-element connector-dot gs-reveal" style="left: 740px; top: 450px;"></div>
+        <article class="clay-element flow-card gs-reveal" style="left: 1080px; top: 450px;">
+          <button class="card-media-wrap card-image-trigger card-image-slideshow" type="button" aria-haspopup="dialog"
+            aria-controls="partner-image-modal" aria-label="Perbesar dua foto Bot WhatsApp dan Kunci PC"
+            data-gallery='[{"src":"../assets/images/metar-synop/layar-merah.png","alt":"Layar PC Observasi terkunci warna merah saat kewajiban aktif pengiriman METAR belum selesai"},{"src":"../assets/images/metar-synop/bot-wa.png","alt":"Pesan bot WhatsApp mengenai status pengiriman METAR, SYNOP, dan TAFOR"}]'>
+            <img src="../assets/images/metar-synop/layar-merah.png" alt="Layar PC Observasi terkunci warna merah saat kewajiban aktif pengiriman METAR belum selesai" />
+            <span class="card-image-hint">Klik (2 foto)</span>
+          </button>
+          <div class="card-body">
+            <h2 class="card-title">Bot WhatsApp &amp; Kunci PC</h2>
+            <p class="card-desc">
+              Bot WhatsApp secara rutin mengirimkan status pengiriman METAR, SYNOP dan TAFOR dari BMKGSoftv2 beserta menit kirimnya.
+            </p>
+            <p class="card-desc">
+              Ketika laporan belum terkirim tepat waktu, bot mengirim peringatan ke grup WhatsApp dan memblokir akses komputer PC Obs sebelum data berhasil dikirim ke BMKGSoftv2.
+            </p>
+          </div>
+        </article>
+
+        <!-- STAGE 03 -->
+        <div class="clay-element connector-dot gs-reveal" style="left: 1420px; top: 450px;"></div>
+        <article class="clay-element flow-card gs-reveal" style="left: 1760px; top: 450px;">
+          <button class="card-media-wrap card-image-trigger" type="button" aria-haspopup="dialog"
+            aria-controls="partner-image-modal" aria-label="Perbesar gambar Dukungan Koordinasi OMC">
+            <img src="../assets/images/metar-synop/koordinasi-omc.png" alt="Laporan METAR beserta terjemahannya dikirim ke grup koordinasi OMC melalui WhatsApp" />
+            <span class="card-image-hint">Klik untuk memperbesar</span>
+          </button>
+          <div class="card-body">
+            <h2 class="card-title">Dukungan Koordinasi OMC</h2>
+            <p class="card-desc">
+              Karena terintegrasi dengan WhatsApp, bot ini juga difungsikan untuk menunjang kegiatan Operasi Modifikasi Cuaca (OMC) dengan mengirimkan laporan METAR secara periodik langsung ke grup koordinasi OMC.
+            </p>
+          </div>
+        </article>
+
+        <!-- FINAL PIN -->
+        <div class="clay-element connector-dot gs-reveal" style="left: 2150px; top: 450px;"></div>
+      </div>
+    </section>
+
+    <footer class="project-footer">
+      <a href="../index.html#projects" class="footer-btn">
+        <span>← Kembali ke Daftar Proyek</span>
+      </a>
+    </footer>
+  </main>
+
+  <dialog id="partner-image-modal" class="image-modal" aria-label="Gambar Monitoring METAR, SYNOP dan TAFOR diperbesar">
+    <button class="image-modal-close" type="button" aria-label="Tutup gambar" autofocus>×</button>
+    <img src="../assets/images/metar-synop/bmkgsoftmerah.png" alt="Tabel monitoring BMKGSoftv2" />
+    <div class="modal-gallery-nav" hidden>
+      <button class="modal-nav-btn modal-nav-prev" type="button" aria-label="Gambar sebelumnya">‹</button>
+      <button class="modal-nav-btn modal-nav-next" type="button" aria-label="Gambar berikutnya">›</button>
+      <span class="modal-nav-counter" role="status" aria-live="polite">1 / 2</span>
+    </div>
+  </dialog>
+
+  <!-- GSAP & ScrollTrigger CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+  <!-- Flow Script -->
+  <script src="../src/js/atmos-wrf.js"></script>
+</body>
+
+</html>

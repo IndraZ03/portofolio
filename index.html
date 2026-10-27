@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="IndraZ03 — Automation & High-Performance Web Engineering. Streamlining workflows, business process simplification, snappy web interfaces, and NWP exploration." />
+  <title>IndraZ03 — Automation &amp; High-Performance Web Engineering</title>
+
+  <!-- Fonts for Story Section matching LessRain Horizon CodePen -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,400&display=swap"
+    rel="stylesheet" />
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="src/css/style.css" />
+  <link rel="stylesheet" href="src/css/story.css" />
+  <link rel="stylesheet" href="src/css/responsive.css" />
+</head>
+
+<body>
+  <!-- Accessibility skip link -->
+  <a href="#projects" class="skip-link">Skip to Projects</a>
+
+  <!-- Ambient grid & subtle backlight overlay -->
+  <div class="grid-bg-overlay" aria-hidden="true"></div>
+  <div class="ambient-glow" aria-hidden="true"></div>
+
+  <!-- FIXED NAVBAR -->
+  <header class="site-header" role="banner">
+    <div class="nav-container">
+      <!-- STRICT: Exact IndraZ03 text wordmark, no svg, no icons -->
+      <a href="#home" class="wordmark" aria-label="IndraZ03 Home">IndraZ03</a>
+
+      <!-- Desktop Pill Navigation -->
+      <nav class="nav-menu-desktop" aria-label="Main Navigation">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#about" class="nav-link">About Me</a>
+        <!-- <a href="#kind-words" class="nav-link">Kind Words</a> -->
+      </nav>
+
+      <a href="#contact" class="btn btn-clay nav-contact-btn">Let's Talk</a>
+
+      <!-- Accessible Mobile Menu Toggle -->
+      <button class="mobile-toggle" type="button" aria-label="Toggle navigation menu" aria-expanded="false"
+        aria-controls="mobile-nav">
+        <div class="mobile-toggle-bars" aria-hidden="true">
+          <span></span>
+          <span></span>
+        </div>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Fullscreen Drawer Navigation -->
+  <nav id="mobile-nav" class="mobile-drawer" aria-label="Mobile Navigation" aria-hidden="true">
+    <a href="#home" class="nav-link">Home</a>
+    <a href="#projects" class="nav-link">Projects</a>
+    <a href="#about" class="nav-link">About Me</a>
+    <!-- <a href="#kind-words" class="nav-link">Kind Words</a> -->
+    <a href="#contact" class="btn btn-primary" style="margin-top: 16px;">Let's Talk</a>
+  </nav>
+
+  <!-- MAIN CONTENT -->
+  <main id="main-content">
+    <!-- 1. HERO SECTION (#home) -->
+    <section id="home" class="hero-section" aria-label="Introduction">
+      <div class="hero-content">
+        <h1 class="title-xl hero-headline">
+          Streamlining workflows through automation &amp; high-performance web engineering.
+        </h1>
+        <p class="body-lead hero-subheadline">
+          Focused on business process simplification, zero-lag interactive web experiences, and exploring NWP modeling.
+          Building systems that are fast, intuitive, and remarkably lean.
+        </p>
+      </div>
+    </section>
+
+    <!-- 2. PROJECTS 3D SPHERE SECTION (#projects) -->
+    <section id="projects" class="projects-section" aria-label="Featured Projects Gallery">
+      <div class="projects-sticky-scene">
+        <!-- 3D Perspective Viewport -->
+        <div class="sphere-viewport" aria-hidden="false">
+          <div class="sphere-stage">
+            <!-- Dynamic 3D cards injected via sphere.js -->
+          </div>
+        </div>
+
+        <!-- Floating Active Project Detail Panel -->
+        <article class="project-detail-panel" aria-live="polite">
+          <div class="detail-meta-row">
+            <span class="detail-category">NWP &amp; Simulation / Web Engineering</span>
+            <span class="detail-year">2025–2026</span>
+          </div>
+          <h2 class="detail-title">ATMOS / WRF-WEB</h2>
+          <p class="detail-summary">
+            Kolaborasi Yudha Satrio Oktavandi dan Dwi Indra Prasetyo: menyederhanakan konfigurasi namelist dan eksekusi WRF/WRF-Chem lewat antarmuka web, koreksi AI Agent, hingga menghasilkan produk OMC.
+          </p>
+          <div class="detail-actions">
+            <a href="projects/atmos-wrf.html" class="btn btn-clay btn-detail-action btn-view-project">
+              Lihat Proyek ↗
+            </a>
+          </div>
+        </article>
+
+        <!-- Accessible fallback grid (visible for prefers-reduced-motion or screen readers) -->
+        <div class="projects-accessible-grid">
+          <!-- Injected via main.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. ABOUT ME SECTION (#about) -->
+    <section id="about" class="about-section" aria-label="About Me">
+      <div class="section-wrapper">
+        <div class="about-grid">
+          <!-- Sidebar: Avatar card & quick stats -->
+          <aside class="about-sidebar">
+            <div class="about-avatar-card">
+              <div class="about-avatar-frame">
+                <img class="about-avatar-img" src="assets/images/profile/indra.webp" alt="Dwi Indra Prasetyo" loading="lazy" />
+                <div class="about-avatar-vignette" aria-hidden="true"></div>
+              </div>
+            </div>
+            <div id="about-stats-container" class="about-stats-list">
+              <!-- Rendered via main.js -->
+            </div>
+          </aside>
+
+          <!-- Main editorial content -->
+          <div class="about-content">
+            <div>
+              <h2 class="title-lg" style="margin-top: 8px;">Dwi Indra Prasetyo</h2>
+            </div>
+
+            <div id="about-bio-container" class="about-bio-paragraphs">
+              <!-- Rendered via main.js -->
+            </div>
+
+            <div class="about-skills-section">
+              <h3 class="title-md">Technical Foundation</h3>
+              <div id="skills-category-container" class="skills-category-grid">
+                <!-- Rendered via main.js -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- STORY JOURNEY: Horizon Canvas with Atmospheric Day-to-Storm Cycle (Sticky Viewport) -->
+      <div id="story_wrapper" aria-label="Learning Journey Story">
+        <div class="story-vignette-top" aria-hidden="true"></div>
+        <div class="story-vignette-bottom" aria-hidden="true"></div>
+
+        <!-- Sticky WebGL scene container: stays pinned while content scrolls over it -->
+        <div class="story-viewport" aria-hidden="true">
+          <canvas id="webgl_canvas"></canvas>
+
+          <div id="scene_strip" aria-hidden="true">
+            <div class="scene-dot active"></div>
+            <div class="scene-dot"></div>
+            <div class="scene-dot"></div>
+            <div class="scene-dot"></div>
+            <div class="scene-dot"></div>
+          </div>
+        </div>
+
+        <!-- Scrollable Story Chapters -->
+        <div id="scroll_container">
+          <section id="s0" class="story-section">
+            <div class="text-card">
+              <div class="tag">2021 — Selenium</div>
+              <h1>THE<br>STARTING<br>POINT</h1>
+              <p class="body-text">
+                Sparked back in high school learning Python to automate social media follow-for-follow loops with
+                Selenium, then scripting crypto trading bots right as the DOGE and Shiba Inu altcoin hype peaked.
+              </p>
+            </div>
+          </section>
+
+          <section id="s1" class="story-section">
+            <div class="text-card right">
+              <div class="h-line"></div>
+              <div class="tag">2022–2023 — IoT &amp; Robotics</div>
+              <h2>IOT &amp; AUTONOMOUS<br>FLIGHT</h2>
+              <p class="body-text">
+                Studied Meteorological, Climatological &amp; Geophysical Instrumentation. Focused on low-cost IoT
+                microcontroller prototyping and joined the UAV community, mastering ArduPilot for autonomous flight
+                missions and leading our team as Team Leader to the National Finals at Kontes Robot Terbang Indonesia
+                (KRTI) 2022–2023.
+              </p>
+            </div>
+          </section>
+
+          <section id="s2" class="story-section">
+            <div class="text-card">
+              <div class="h-line"></div>
+              <div class="tag">2023 — Data Science &amp; ML</div>
+              <h2>DATA SCIENCE &amp;<br>MACHINE LEARNING</h2>
+              <p class="body-text">
+                Awarded the Digital Talent Scholarship (Talent Scouting Academy) for Machine Learning and Data Mining in
+                Data Science. Underwent intensive training in applied statistics, EDA, outlier and missing value
+                handling, Classical ML, Deep Learning, and Time Series Analysis.
+              </p>
+            </div>
+          </section>
+
+          <section id="s3" class="story-section">
+            <div class="text-card right">
+              <div class="h-line"></div>
+              <div class="tag">2025 — Graduation &amp; Honors</div>
+              <h2>ACADEMIC<br>JOURNEY</h2>
+              <p class="body-text">
+                Graduated with the distinction of Best Graduate (Rank 2) across the entire Meteorology, Climatology, and
+                Geophysics Instrumentation (MCG-Instrumentation) major. Honored with the prestigious Taruna Kriyasadana
+                award for consistently holding the highest GPA in the department across semesters 5, 6, and 7.
+              </p>
+            </div>
+          </section>
+
+          <section id="s4" class="story-section">
+            <div class="text-card center">
+              <div class="h-line"></div>
+              <div class="tag">2025–2026 — NWP &amp; Agentic AI</div>
+              <h2>RISING<br>HORIZON</h2>
+              <p class="body-text">
+                Assigned as a Technician at Stasiun Meteorologi Kelas I Sultan Aji Muhammad Sulaiman Balikpapan. Driving
+                a culture shift toward Agentic Coding, automating iterative operational workflows, and developing custom
+                automation hardware. Together with Yudha Satrio Oktavandi, co-founded the Metamorph Innovation Team at
+                the operational unit to transition manual bottlenecks into self-healing, automated pipelines while
+                championing AI literacy and AI Agent workflows. Within 10 months, entrusted to join the Weather
+                Modification Operation Team (Tim Operasi Modifikasi Cuaca) at Stasiun Meteorologi Kelas I Sultan Aji
+                Muhammad Sulaiman Sepinggan.
+              </p>
+            </div>
+          </section>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. KIND WORDS SECTION (#kind-words) - TEMPORARILY COMMENTED OUT
+    <section id="kind-words" class="kind-words-section" aria-label="Testimonials">
+      <div class="section-wrapper">
+        <div class="kind-words-header">
+          <h2 class="title-lg">What Collaborators Say</h2>
+          <p class="body-lead" style="margin: 12px auto 0;">
+            Transparent sample quotes illustrating peer feedback and collaboration style.
+          </p>
+        </div>
+
+        <div id="testimonials-container" class="testimonials-grid">
+        </div>
+      </div>
+    </section>
+    -->
+
+    <!-- 5. CONTACT & CONSTELLATION SECTION (#contact) -->
+    <section id="contact" class="contact-section" aria-label="Contact">
+      <!-- Ambient constellation cards layer -->
+      <div class="constellation-ambient-layer" aria-hidden="true">
+        <div class="constellation-card">
+          <img src="assets/projects/project-01.svg" alt="" />
+        </div>
+        <div class="constellation-card">
+          <img src="assets/projects/project-02.svg" alt="" />
+        </div>
+        <div class="constellation-card">
+          <img src="assets/projects/project-03.svg" alt="" />
+        </div>
+        <div class="constellation-card">
+          <img src="assets/projects/project-04.svg" alt="" />
+        </div>
+      </div>
+
+      <div class="section-wrapper" style="position: relative; z-index: 2; padding-bottom: 20px;">
+        <div class="contact-card-centered">
+          <h2 class="title-lg">Let's Build Something Together</h2>
+          <p class="body-lead">
+            Have a project in mind, an interesting idea, or just want to connect? Reach out anytime.
+          </p>
+          <div class="contact-actions">
+            <a href="#projects" class="btn btn-clay">Explore My Projects</a>
+            <button id="btn-contact-action" type="button" class="btn btn-primary">
+              Let's connect!
+            </button>
+          </div>
+          <div id="socials-container" class="social-pills-row">
+            <!-- Rendered via main.js -->
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-container">
+      <div class="footer-left">
+        <span class="wordmark" style="padding: 0;">IndraZ03</span>
+      </div>
+
+      <div class="footer-nav">
+        <a href="#home">Home</a>
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+        <!-- <a href="#kind-words">Kind Words</a> -->
+        <button type="button" class="footer-top-btn" aria-label="Scroll back to top">
+          Back to Top ↑
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- GSAP & ScrollTrigger from reliable CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+  <!-- Main ES Module application -->
+  <script type="module" src="src/js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,284 @@
+/* ==========================================================================
+   ATMOS / WRF-WEB HOW IT WORKS WORKFLOW STYLES
+   Vertical scroll-driven pipeline matching portfolio dark clay tokens
+   ========================================================================== */
+
+.atmos-workflow {
+  position: relative;
+  z-index: 2;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 96px 32px 64px;
+  border-top: 1px solid var(--border-subtle);
+}
+
+.atmos-workflow .workflow-eyebrow,
+.atmos-workflow .workflow-step-status,
+.atmos-workflow .workflow-panel-label {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.atmos-workflow h2 {
+  margin: 12px 0 20px;
+  font-family: var(--font-display);
+  font-size: clamp(2.8rem, 6vw, 4.6rem);
+  line-height: 1;
+  letter-spacing: 0.02em;
+  color: var(--text-primary);
+}
+
+.atmos-workflow .workflow-intro {
+  max-width: 720px;
+  color: var(--text-muted);
+  line-height: 1.7;
+}
+
+.atmos-workflow .workflow-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 64px;
+  margin-top: 64px;
+  align-items: start;
+}
+
+.atmos-workflow .workflow-steps {
+  position: relative;
+  list-style: none;
+  min-width: 0;
+}
+
+.atmos-workflow .workflow-steps::before,
+.atmos-workflow .workflow-steps::after {
+  content: "";
+  position: absolute;
+  left: 19px;
+  top: var(--workflow-line-top, 20px);
+  height: var(--workflow-line-height, calc(100% - 40px));
+  width: 1px;
+  background: var(--border-highlight);
+  pointer-events: none;
+}
+
+.atmos-workflow .workflow-steps::after {
+  display: none;
+  background: var(--text-primary);
+  transform-origin: top;
+  transform: scaleY(var(--flow-progress, 0));
+}
+
+.atmos-workflow.is-enhanced .workflow-steps::after {
+  display: block;
+}
+
+.atmos-workflow .workflow-step {
+  position: relative;
+  padding: 0 0 72px 64px;
+  min-width: 0;
+}
+
+.atmos-workflow .workflow-step:last-child {
+  padding-bottom: 0;
+}
+
+.atmos-workflow .workflow-node {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 40px;
+  height: 40px;
+  display: grid;
+  place-items: center;
+  border: 1px solid var(--border-highlight);
+  border-radius: var(--radius-full);
+  background: var(--bg-primary);
+  color: var(--text-muted);
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  transition: color 0.25s ease, border-color 0.25s ease, background-color 0.25s ease;
+}
+
+.atmos-workflow .workflow-node.optional {
+  border-style: dashed;
+}
+
+.atmos-workflow .workflow-step-copy {
+  border-top: 1px solid var(--border-highlight);
+  padding-top: 12px;
+  transition: border-color 0.25s ease;
+}
+
+.atmos-workflow h3 {
+  margin: 10px 0 14px;
+  font-family: var(--font-display);
+  font-size: clamp(1.8rem, 3vw, 2.3rem);
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+  color: var(--text-primary);
+}
+
+.atmos-workflow .workflow-step-copy > p {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+.atmos-workflow .workflow-step[data-state="active"] .workflow-node {
+  background: var(--text-primary);
+  border-color: var(--text-primary);
+  color: var(--bg-primary);
+}
+
+.atmos-workflow .workflow-step[data-state="completed"] .workflow-node,
+.atmos-workflow .workflow-step[data-state="active"] .workflow-step-copy {
+  border-color: var(--text-primary);
+}
+
+.atmos-workflow .workflow-step[data-state="active"] .workflow-step-status,
+.atmos-workflow .workflow-step[data-state="completed"] .workflow-node {
+  color: var(--text-primary);
+}
+
+.atmos-workflow .workflow-visual {
+  margin-top: 24px;
+  padding: 24px;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-highlight);
+  border-radius: var(--radius-md);
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.atmos-workflow .workflow-diagram {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+}
+
+.atmos-workflow .workflow-stack {
+  display: grid;
+  gap: 10px;
+  min-width: 0;
+}
+
+.atmos-workflow .workflow-token {
+  display: inline-block;
+  padding: 8px 12px;
+  border: 1px solid var(--border-highlight);
+  border-radius: var(--radius-sm);
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  max-width: 100%;
+  color: var(--text-primary);
+}
+
+.atmos-workflow .workflow-token.is-emphasis {
+  border-color: var(--border-active);
+  background: var(--bg-clay);
+}
+
+.atmos-workflow .workflow-token.is-optional {
+  border-style: dashed;
+  color: var(--text-muted);
+}
+
+.atmos-workflow .workflow-arrow {
+  color: var(--text-muted);
+  font-family: var(--font-mono);
+}
+
+.atmos-workflow .workflow-visual figcaption {
+  margin-top: 20px;
+  padding-top: 16px;
+  border-top: 1px solid var(--border-subtle);
+  color: var(--text-muted);
+  font-size: 0.8rem;
+  line-height: 1.6;
+}
+
+.atmos-workflow .workflow-panel {
+  display: none;
+  min-width: 0;
+}
+
+.atmos-workflow .workflow-panel-title {
+  margin: 14px 0 0;
+  font-family: var(--font-display);
+  font-size: 2rem;
+  line-height: 1.1;
+  color: var(--text-primary);
+}
+
+.atmos-workflow .workflow-note {
+  margin: 48px 0 0 64px;
+  padding-top: 24px;
+  border-top: 1px solid var(--border-subtle);
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  line-height: 1.7;
+  max-width: 680px;
+}
+
+@media (min-width: 1025px) {
+  .atmos-workflow.is-enhanced .workflow-layout {
+    grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr);
+  }
+
+  .atmos-workflow.is-enhanced .workflow-step {
+    min-height: 280px;
+  }
+
+  .atmos-workflow.is-enhanced .workflow-step:last-child {
+    min-height: 220px;
+  }
+
+  .atmos-workflow.is-enhanced .workflow-step > .workflow-visual {
+    display: none;
+  }
+
+  .atmos-workflow.is-enhanced .workflow-panel {
+    display: block;
+    position: sticky;
+    top: calc(var(--header-height) + 32px);
+  }
+}
+
+@media (max-width: 768px) {
+  .atmos-workflow {
+    padding: 64px 16px 40px;
+  }
+
+  .atmos-workflow .workflow-layout {
+    margin-top: 40px;
+  }
+
+  .atmos-workflow .workflow-step {
+    padding-left: 52px;
+    padding-bottom: 48px;
+  }
+
+  .atmos-workflow .workflow-visual {
+    padding: 16px;
+  }
+
+  .atmos-workflow .workflow-token {
+    padding: 6px 8px;
+  }
+
+  .atmos-workflow .workflow-note {
+    margin-left: 52px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .atmos-workflow *,
+  .atmos-workflow *::before,
+  .atmos-workflow *::after {
+    transition: none !important;
+    animation: none !important;
+  }
+}

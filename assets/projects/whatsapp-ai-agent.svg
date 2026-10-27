@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <rect width="800" height="600" rx="24" fill="#101b17"/>
+  <rect x="1" y="1" width="798" height="598" rx="23" fill="none" stroke="#f4f4f5" stroke-opacity="0.12" stroke-width="2"/>
+  <g fill="none" stroke="#f4f4f5" stroke-opacity="0.25" stroke-width="2">
+    <path d="M 280 130 H 520 Q 560 130 560 170 V 310 Q 560 350 520 350 H 350 L 280 400 V 350 Q 240 350 240 310 V 170 Q 240 130 280 130 Z"/>
+    <circle cx="330" cy="240" r="14"/>
+    <circle cx="400" cy="240" r="14"/>
+    <circle cx="470" cy="240" r="14"/>
+    <path d="M 400 130 V 90 M 560 240 H 610 M 240 240 H 190" stroke-dasharray="4 8"/>
+  </g>
+  <text x="40" y="525" fill="#f4f4f5" font-family="sans-serif" font-size="28">WHATSAPP AI AGENT</text>
+  <text x="40" y="565" fill="#a1a1aa" font-family="monospace" font-size="16">ATMOS AGENT / METAMORPH</text>
+</svg>

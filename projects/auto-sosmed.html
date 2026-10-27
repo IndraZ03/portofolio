@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Otomatisasi unggahan Instagram melalui integrasi MeteoFactory, Google Drive, dan Meta API." />
+  <title>Auto Sosmed Metamorph — Proyek</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../src/css/style.css" />
+  <link rel="stylesheet" href="../src/css/responsive.css" />
+  <link rel="stylesheet" href="../src/css/atmos-wrf.css" />
+  <link rel="stylesheet" href="../src/css/auto-sosmed-workflow.css" />
+  <link rel="stylesheet" href="../src/css/auto-sosmed-features.css" />
+  <link rel="stylesheet" href="../src/css/auto-sosmed-architecture.css" />
+  <link rel="stylesheet" href="../src/css/auto-sosmed-techstack.css" />
+</head>
+<body>
+  <div class="grid-bg-overlay" aria-hidden="true"></div>
+  <header class="site-header" role="banner">
+    <div class="nav-container">
+      <a href="../index.html#home" class="wordmark" aria-label="IndraZ03 Home">IndraZ03</a>
+      <nav class="nav-menu-desktop" aria-label="Main Navigation">
+        <a href="../index.html#home" class="nav-link">Home</a>
+        <a href="../index.html#projects" class="nav-link active" aria-current="page">Projects</a>
+        <a href="../index.html#about" class="nav-link">About Me</a>
+        <!-- <a href="../index.html#kind-words" class="nav-link">Kind Words</a> -->
+      </nav>
+      <a href="../index.html#contact" class="btn btn-clay nav-contact-btn">Let's Talk</a>
+      <button class="mobile-toggle" type="button" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobile-nav">
+        <div class="mobile-toggle-bars" aria-hidden="true"><span></span><span></span></div>
+      </button>
+    </div>
+  </header>
+  <nav id="mobile-nav" class="mobile-drawer" aria-label="Mobile Navigation" aria-hidden="true">
+    <a href="../index.html#home" class="nav-link">Home</a>
+    <a href="../index.html#projects" class="nav-link active">Projects</a>
+    <a href="../index.html#about" class="nav-link">About Me</a>
+    <!-- <a href="../index.html#kind-words" class="nav-link">Kind Words</a> -->
+    <a href="../index.html#contact" class="btn btn-primary" style="margin-top: 16px;">Let's Talk</a>
+  </nav>
+  <main>
+    <section class="hero-stage">
+      <div class="hero-tag"><a href="https://sosmed.metamorph.web.id" target="_blank" rel="noopener noreferrer" style="color: inherit;">sosmed.metamorph.web.id</a></div>
+      <h1 class="hero-headline">Auto Sosmed Metamorph</h1>
+      <p class="hero-desc">Otomatisasi unggahan Instagram melalui web yang menghubungkan MeteoFactory, Google Drive, dan Meta API. Mempermudah publikasi konten UPT dengan pilihan jenis konten yang fleksibel.</p>
+    </section>
+    <div class="scroll-instruction">↓ Gulir untuk mengikuti alur proyek ↓</div>
+    <section class="scroll-wrapper" aria-label="Perjalanan proyek Auto Sosmed Metamorph">
+      <div class="canvas" style="width: 2500px;">
+        <svg class="lines-layer" viewBox="0 0 2500 900" preserveAspectRatio="none" aria-hidden="true">
+          <path class="line-path" d="M 120 450 L 2150 450" />
+        </svg>
+        <div class="clay-element connector-dot gs-reveal" style="left: 120px; top: 450px;"></div>
+        <article class="clay-element flow-card gs-reveal" style="left: 400px; top: 450px;">
+          <button class="card-media-wrap card-image-trigger" type="button" aria-haspopup="dialog"
+            aria-controls="partner-image-modal" aria-label="Perbesar gambar Kebutuhan Publikasi UPT">
+            <img src="../assets/images/auto-sosmed/kebutuhan.png" alt="Profil Instagram BMKG Kaltim dan postingan prakiraan cuaca yang padat" />
+            <span class="card-image-hint">Klik untuk memperbesar</span>
+          </button>
+          <div class="card-body">
+            <h2 class="card-title">Kebutuhan Publikasi UPT</h2>
+            <p class="card-desc">Padatnya konten yang harus diunggah oleh UPT memberikan ide untuk membuat otomatisasi unggahan konten Instagram.</p>
+          </div>
+        </article>
+        <div class="clay-element connector-dot gs-reveal" style="left: 740px; top: 450px;"></div>
+        <article class="clay-element flow-card gs-reveal" style="left: 1080px; top: 450px;">
+          <button class="card-media-wrap card-image-trigger" type="button" aria-haspopup="dialog"
+            aria-controls="partner-image-modal" aria-label="Perbesar gambar Integrasi Sumber Konten">
+            <img src="../assets/images/auto-sosmed/autososmed.png" alt="Dasbor Auto-sosmed menampilkan saluran terhubung, urutan event, dan jadwal publikasi" />
+            <span class="card-image-hint">Klik untuk memperbesar</span>
+          </button>
+          <div class="card-body">
+            <h2 class="card-title">Integrasi Sumber Konten</h2>
+            <p class="card-desc">MeteoFactory dan Google Drive dihubungkan ke Meta API menggunakan web server untuk mendukung otomatisasi unggahan Instagram.</p>
+          </div>
+        </article>
+        <div class="clay-element connector-dot gs-reveal" style="left: 1420px; top: 450px;"></div>
+        <article class="clay-element flow-card gs-reveal" style="left: 1760px; top: 450px;">
+          <button class="card-media-wrap card-image-trigger" type="button" aria-haspopup="dialog"
+            aria-controls="partner-image-modal" aria-label="Perbesar gambar Web yang Fleksibel">
+            <img src="../assets/images/auto-sosmed/web%20fleksibel.png" alt="Dasbor web Auto-sosmed berdampingan dengan notifikasi bot WhatsApp pelaporan otomatis" />
+            <span class="card-image-hint">Klik untuk memperbesar</span>
+          </button>
+          <div class="card-body">
+            <h2 class="card-title">Web yang Fleksibel</h2>
+            <p class="card-desc">Unggahan konten Instagram dapat dilakukan secara otomatis melalui web yang user-friendly dan fleksibel untuk menambahkan jenis konten.</p>
+          </div>
+        </article>
+        <div class="clay-element connector-dot gs-reveal" style="left: 2150px; top: 450px;"></div>
+      </div>
+    </section>
+
+    <!-- SECTION: HOW IT WORKS (ALUR KERJA AUTO-SOSMED) -->
+    <section class="sosmed-workflow" aria-labelledby="workflow-heading">
+      <div class="workflow-eyebrow">Alur Kerja Sistem</div>
+      <h2 id="workflow-heading">How It Works</h2>
+      <p class="workflow-intro">
+        Enam tahap pemrosesan otomatis dari penerimaan berkas hingga pelaporan hasil. Alur memastikan hanya konten yang lolos filter dan aturan penjadwalan yang diproses ke platform Meta.
+      </p>
+
+      <div class="workflow-layout">
+        <ol class="workflow-steps">
+          <!-- TAHAP 01 -->
+          <li class="workflow-step" data-step="1" data-state="upcoming">
+            <span class="workflow-node" aria-hidden="true">01</span>
+            <div class="workflow-step-copy">
+              <span class="workflow-step-status">Tahap 01 · Asupan</span>
+              <h3>Content Arrives</h3>
+              <p>
+                Konten masuk melalui lampiran email IMAP atau folder lokal yang disinkronkan oleh Google Drive Desktop. Worker aplikasi memeriksa folder lokal hasil sinkronisasi, bukan melalui koneksi langsung ke cloud Google Drive.
+              </p>
+            </div>
+            <figure class="workflow-visual" aria-label="Visual asupan konten">
+              <div class="workflow-diagram">
+                <span class="workflow-token is-emphasis">Email IMAP</span>
+                <span class="workflow-arrow">+</span>
+                <span class="workflow-token is-emphasis">Folder Lokal (GDrive Desktop)</span>
+                <span class="workflow-arrow">→</span>
+                <span class="workflow-token">Worker Intake</span>
+              </div>
+              <figcaption>Dua pintu masuk diarahkan ke satu antrean pemeriksaan lokal.</figcaption>
+            </figure>
+          </li>
+
+          <!-- TAHAP 02 -->
+          <li class="workflow-step" data-step="2" data-state="upcoming">
+            <span class="workflow-node" aria-hidden="true">02</span>
+            <div class="workflow-step-copy">
+              <span class="workflow-step-status">Tahap 02 · Validasi</span>
+              <h3>Rules &amp; Validation</h3>
+              <p>
+                Worker mencocokkan subjek email, nama berkas, format media, dan aturan saluran. Berkas yang tidak sesuai kriteria dilewati (skipped) dan tidak dipaksakan untuk terbit.
+              </p>
+            </div>
+            <figure class="workflow-visual" aria-label="Visual pencocokan aturan">
+              <div class="workflow-stack">
+                <div class="workflow-diagram">
+                  <span class="workflow-token is-emphasis">Format &amp; Nama Berkas Cocok</span>
+                  <span class="workflow-arrow">→</span>
+                  <span class="workflow-token">Lolos ke Storage</span>
+                </div>
+                <div class="workflow-diagram">
+                  <span class="workflow-token is-secondary">Tidak Memenuhi Pola</span>
+                  <span class="workflow-arrow">→</span>
+                  <span class="workflow-token is-secondary">Dilewati (Skipped)</span>
+                </div>
+              </div>
+              <figcaption>Hanya media yang valid yang dialokasikan ke tahap pembuatan event.</figcaption>
+            </figure>
+          </li>
+
+          <!-- TAHAP 03 -->
+          <li class="workflow-step" data-step="3" data-state="upcoming">
+            <span class="workflow-node" aria-hidden="true">03</span>
+            <div class="workflow-step-copy">
+              <span class="workflow-step-status">Tahap 03 · Event</span>
+              <h3>Create Publication Event</h3>
+              <p>
+                Media yang lolos disalin ke direktori penyimpanan tetap. Sistem membuat entri event baru di database dengan status <code>SCHEDULED</code> beserta target waktu publikasi.
+              </p>
+            </div>
+            <figure class="workflow-visual" aria-label="Visual pembuatan event">
+              <div class="workflow-diagram">
+                <span class="workflow-token">Berkas Fisik → Storage</span>
+                <span class="workflow-arrow">|</span>
+                <span class="workflow-token is-emphasis">Status: SCHEDULED</span>
+              </div>
+              <figcaption>Pemisahan berkas fisik di penyimpanan lokal dan metadata di database.</figcaption>
+            </figure>
+          </li>
+
+          <!-- TAHAP 04 -->
+          <li class="workflow-step" data-step="4" data-state="upcoming">
+            <span class="workflow-node" aria-hidden="true">04</span>
+            <div class="workflow-step-copy">
+              <span class="workflow-step-status">Tahap 04 · Penjadwalan</span>
+              <h3>Wait for the Right Time</h3>
+              <p>
+                Scheduler berjalan secara periodik untuk memeriksa event berstatus <code>SCHEDULED</code> yang telah jatuh tempo, slot harian saluran, dan batasan batas laju publikasi.
+              </p>
+            </div>
+            <figure class="workflow-visual" aria-label="Visual penjadwalan">
+              <div class="workflow-diagram">
+                <span class="workflow-token">SCHEDULED</span>
+                <span class="workflow-arrow">→</span>
+                <span class="workflow-token is-emphasis">Waktu Cocok &amp; Slot Siap</span>
+                <span class="workflow-arrow">→</span>
+                <span class="workflow-token">PROCESSING</span>
+              </div>
+              <figcaption>Pencegahan penumpukan unggahan dalam satu jendela waktu yang sama.</figcaption>
+            </figure>
+          </li>
+
+          <!-- TAHAP 05 -->
+          <li class="workflow-step" data-step="5" data-state="upcoming">
+            <span class="workflow-node" aria-hidden="true">05</span>
+            <div class="workflow-step-copy">
+              <span class="workflow-step-status">Tahap 05 · Publikasi</span>
+              <h3>Publish to Instagram</h3>
+              <p>
+                Worker mempersiapkan media dan mengirimkan perintah penerbitan menggunakan Meta Graph API resmi. Status diperbarui selama proses pengunggahan berlangsung.
+              </p>
+            </div>
+            <figure class="workflow-visual" aria-label="Visual publikasi Meta">
+              <div class="workflow-diagram">
+                <span class="workflow-token">Worker Media</span>
+                <span class="workflow-arrow">→</span>
+                <span class="workflow-token is-emphasis">Meta Graph API</span>
+                <span class="workflow-arrow">→</span>
+                <span class="workflow-token">Feed Instagram</span>
+              </div>
+              <figcaption>Komunikasi langsung ke endpoint Meta untuk verifikasi container media.</figcaption>
+            </figure>
+          </li>
+
+          <!-- TAHAP 06 -->
+          <li class="workflow-step" data-step="6" data-state="upcoming">
+            <span class="workflow-node" aria-hidden="true">06</span>
+            <div class="workflow-step-copy">
+              <span class="workflow-step-status">Tahap 06 · Pencatatan</span>
+              <h3>Track the Outcome</h3>
+              <p>
+                Hasil dicatat sebagai <code>PUBLISHED</code> atau <code>FAILED</code> lengkap dengan log audit. Sistem kemudian mengirimkan ringkasan status ke grup WhatsApp melalui GREEN-API.
+              </p>
+            </div>
+            <figure class="workflow-visual" aria-label="Visual pelaporan dan log">
+              <div class="workflow-stack">
+                <div class="workflow-diagram">
+                  <span class="workflow-token is-emphasis">Status: PUBLISHED / FAILED</span>
+                  <span class="workflow-arrow">+</span>
+                  <span class="workflow-token">Audit Log</span>
+                </div>
+                <div class="workflow-diagram">
+                  <span class="workflow-token is-secondary">Notifikasi WhatsApp (GREEN-API)</span>
+                </div>
+              </div>
+              <figcaption>Pelaporan real-time ke pengelola tanpa harus login ke dasbor.</figcaption>
+            </figure>
+          </li>
+        </ol>
+
+        <!-- DESKTOP STICKY PANEL -->
+        <aside class="workflow-panel" aria-hidden="true">
+          <div class="workflow-visual">
+            <span class="workflow-panel-label">Tahap 01 · Asupan</span>
+            <h4 class="workflow-panel-title">Content Arrives</h4>
+            <div class="workflow-panel-body" style="margin-top: 16px;">
+              <!-- Disinkronkan via JavaScript dari tahap aktif -->
+            </div>
+          </div>
+        </aside>
+      </div>
+
+      <p class="workflow-note">
+        Catatan sistem: Integrasi otomatisasi saat ini aktif untuk Instagram Feed. Jalur Threads belum diposisikan sebagai alur publikasi penuh secara otomatis.
+      </p>
+    </section>
+
+    <!-- SECTION: KEY FEATURES (SHOWCASE KAPABILITAS AUTO-SOSMED) -->
+    <section class="sosmed-features" aria-labelledby="features-heading">
+      <div class="features-eyebrow">Kapabilitas Utama</div>
+      <h2 id="features-heading">Key Features</h2>
+      <p class="features-intro">
+        Enam pilar teknis dalam arsitektur Auto-Sosmed yang mendukung keandalan asupan berkas, fleksibilitas jadwal, dan pemantauan terpusat.
+      </p>
+
+      <div class="features-list">
+        <!-- FEATURE 01: EMAIL INTAKE -->
+        <article class="feature-item">
+          <div class="feature-copy">
+            <span class="feature-number">FEATURE 01</span>
+            <h3>Email Content Intake (IMAP)</h3>
+            <p class="feature-desc">
+              Worker latar belakang secara berkala melakukan polling email baru via IMAP, memfilter subjek dan lampiran berdasarkan aturan saluran, lalu mengamankan berkas valid ke sistem.
+            </p>
+            <ul class="feature-proofs">
+              <li>Pencocokan subjek presisi (exact / contains) sesuai kebutuhan kanal.</li>
+              <li>Filter lampiran berbasis ekstensi media dan pola penamaan berkas.</li>
+              <li>Baseline UID terrekam untuk mencegah pemrosesan ulang email arsip lama.</li>
+            </ul>
+          </div>
+          <figure class="feature-media">
+            <span class="feature-media-badge">Schematic Overview</span>
+            <div class="feature-schematic">
+              <div class="schematic-row">
+                <span class="schematic-cell">IMAP Polling</span>
+                <span class="schematic-arrow">→</span>
+                <span class="schematic-cell active">Subject Filter</span>
+                <span class="schematic-arrow">→</span>
+                <span class="schematic-cell">Attachment Match</span>
+              </div>
+              <div class="schematic-row">
+                <span class="schematic-arrow">└─</span>
+                <span class="schematic-cell active">Accept Media</span>
+                <span class="schematic-arrow">/</span>
+                <span class="schematic-cell dim">Ignore Non-Target</span>
+              </div>
+            </div>
+            <figcaption>Asupan email terisolasi: hanya lampiran yang cocok yang diteruskan ke antrean.</figcaption>
+          </figure>
+        </article>
+
+        <!-- FEATURE 02: DRIVE FOLDER INTAKE (REVERSE) -->
+        <article class="feature-item reverse">
+          <div class="feature-copy">
+            <span class="feature-number">FEATURE 02</span>
+            <h3>Drive-Synced Folder Monitoring</h3>
+            <p class="feature-desc">
+              Pemanfaatan Google Drive Desktop untuk sinkronisasi cloud ke folder lokal. Worker mendeteksi berkas baru langsung dari filesystem lokal tanpa ketergantungan API webhook eksternal.
+            </p>
+            <ul class="feature-proofs">
+              <li>Pemindaian lokal cepat tanpa mengonsumsi kuota API Google Drive.</li>
+              <li>Pemeriksaan stabilitas berkas untuk mencegah membaca file yang masih diunduh.</li>
+              <li>Pencatatan state file yang sudah diproses agar tidak terduplikasi.</li>
+            </ul>
+          </div>
+          <figure class="feature-media">
+            <span class="feature-media-badge">Schematic Overview</span>
+            <div class="feature-schematic">
+              <div class="schematic-row">
+                <span class="schematic-cell">Cloud Drive</span>
+                <span class="schematic-arrow">──Sync──→</span>
+                <span class="schematic-cell active">Folder Lokal PC</span>
+              </div>
+              <div class="schematic-row">
+                <span class="schematic-cell active">Local FS Worker</span>
+                <span class="schematic-arrow">→</span>
+                <span class="schematic-cell">Size &amp; Stability Check</span>
+                <span class="schematic-arrow">→</span>
+                <span class="schematic-cell">Storage Intake</span>
+              </div>
+            </div>
+            <figcaption>Pola offline-first: worker membaca disk lokal yang disinkronkan otomatis oleh OS client.</figcaption>
+          </figure>
+        </article>
+
+        <!-- FEATURE 03: CONFIGURABLE CHANNELS & SCHEDULING -->
+        <article class="feature-item">
+          <div class="feature-copy">
+            <span class="feature-number">FEATURE 03</span>
+            <h3>Rule-Based Scheduling</h3>
+            <p class="feature-desc">
+              Wizard saluran memungkinkan operator menetapkan aturan sumber, media target, format caption dinamis, dan jadwal publikasi spesifik dalam zona waktu WITA.
+            </p>
+            <ul class="feature-proofs">
+              <li>Wizard 4-langkah: Informasi, Sumber Konten, Konfigurasi Format, Konfirmasi.</li>
+              <li>Dua metode jadwal: penundaan adaptif setelah asupan atau waktu posting harian tetap.</li>
+              <li>Validasi slot harian untuk mencegah tabrakan jam tayang antar saluran.</li>
+            </ul>
+          </div>
+          <figure class="feature-media">
+            <span class="feature-media-badge">Schematic Overview</span>
+            <div class="feature-schematic">
+              <div class="schematic-row">
+                <span class="schematic-cell">Saluran Wizard</span>
+                <span class="schematic-arrow">→</span>
+                <span class="schematic-cell active">Rule &amp; Caption Meta</span>
+              </div>
+              <div class="schematic-row">
+                <span class="schematic-cell">Jadwal WITA</span>
+                <span class="schematic-arrow">→</span>
+                <span class="schematic-cell active">Status SCHEDULED</span>
+                <span class="schematic-arrow">→</span>
+                <span class="schematic-cell">Daily Slot Evaluator</span>
+              </div>
+            </div>
+            <figcaption>Event tersimpan terstruktur: pemisahan definisi jadwal dan eksekusi antrean.</figcaption>
+          </figure>
+        </article>
+
+        <!-- FEATURE 04: AUTOMATED INSTAGRAM PUBLISHING (REVERSE) -->
+        <article class="feature-item reverse">
+          <div class="feature-copy">
+            <span class="feature-number">FEATURE 04</span>
+            <h3>Automated Instagram Publishing</h3>
+            <p class="feature-desc">
+              Integrasi langsung ke Meta Graph API untuk publikasi otomatis berbagai tipe media visual dengan pipeline persiapan otomatis.
+            </p>
+            <ul class="feature-proofs">
+              <li>Mendukung single image, carousel multi-foto hingga 10 gambar, dan Story.</li>
+              <li>Video Reels didukung melalui pemrosesan dan verifikasi spesifikasi via FFmpeg.</li>
+              <li>Transisi status transparan: PROCESSING → UPLOADING → PUBLISHED.</li>
+            </ul>
+          </div>
+          <figure class="feature-media">
+            <span class="feature-media-badge">Schematic Overview</span>
+            <div class="feature-schematic">
+              <div class="schematic-row">
+                <span class="schematic-cell">Media Prep (FFmpeg)</span>
+                <span class="schematic-arrow">→</span>
+                <span class="schematic-cell active">Meta Container API</span>
+              </div>
+              <div class="schematic-row">
+                <span class="schematic-cell active">Publish ID Verification</span>
+                <span class="schematic-arrow">→</span>
+                <span class="schematic-cell">Feed / Story Instagram</span>
+              </div>
+            </div>
+            <figcaption>Komunikasi aman melalui endpoint resmi Meta dengan penyesuaian rasio media otomatis.</figcaption>
+          </figure>
+        </article>
+
+        <!-- FEATURE 05: MONITORING & AUDIT LOGS -->
+        <article class="feature-item">
+          <div class="feature-copy">
+            <span class="feature-number">FEATURE 05</span>
+            <h3>Event Monitoring &amp; Activity Logs</h3>
+            <p class="feature-desc">
+              Dasbor monitoring menyajikan status setiap tahapan event secara komprehensif, dilengkapi jejak audit mendalam untuk mempermudah identifikasi masalah.
+            </p>
+            <ul class="feature-proofs">
+              <li>Siklus status lengkap: SCHEDULED, PROCESSING, UPLOADING, PUBLISHED, FAILED.</li>
+              <li>Pencatatan riwayat polling IMAP/Drive dan log respon dari API Meta.</li>
+              <li>Pencegahan retry buta: mendeteksi kegagalan parsial untuk verifikasi manual operator.</li>
+            </ul>
+          </div>
+          <figure class="feature-media">
+            <span class="feature-media-badge">Schematic Overview</span>
+            <div class="feature-schematic">
+              <div class="schematic-row">
+                <span class="schematic-cell">Event Lifecycle</span>
+                <span class="schematic-arrow">→</span>
+                <span class="schematic-cell active">Audit Trail / Debug Logs</span>
+              </div>
+              <div class="schematic-row">
+                <span class="schematic-cell active">State Check</span>
+                <span class="schematic-arrow">→</span>
+                <span class="schematic-cell">Operator Dashboard Inspector</span>
+              </div>
+            </div>
+            <figcaption>Traceability penuh untuk setiap berkas: asal sumber, waktu proses, hingga ID posting.</figcaption>
+          </figure>
+        </article>
+
+        <!-- FEATURE 06: WHATSAPP PROCESS NOTIFICATIONS (REVERSE) -->
+        <article class="feature-item reverse">
+          <div class="feature-copy">
+            <span class="feature-number">FEATURE 06</span>
+            <h3>WhatsApp Process Notifications</h3>
+            <p class="feature-desc">
+              Integrasi GREEN-API memberikan pembaruan instan ke grup WhatsApp terkait jalannya proses publikasi, memberikan ketenangan tanpa perlu memantau dasbor terus-menerus.
+            </p>
+            <ul class="feature-proofs">
+              <li>Notifikasi otomatis pada awal pemrosesan dan saat unggahan selesai.</li>
+              <li>Laporan kegagalan segera dikirimkan jika terjadi penolakan format dari Meta API.</li>
+              <li>Komunikasi asinkron: kegagalan transmisi WhatsApp tidak menggugurkan hasil posting.</li>
+            </ul>
+          </div>
+          <figure class="feature-media">
+            <span class="feature-media-badge">Schematic Overview</span>
+            <div class="feature-schematic">
+              <div class="schematic-row">
+                <span class="schematic-cell">Publish Outcome</span>
+                <span class="schematic-arrow">→</span>
+                <span class="schematic-cell active">GREEN-API Service</span>
+              </div>
+              <div class="schematic-row">
+                <span class="schematic-arrow">└─→</span>
+                <span class="schematic-cell active">WhatsApp Group Tim Metamorph</span>
+              </div>
+            </div>
+            <figcaption>Kanal notifikasi sekunder: menjaga visibilitas operasional bagi seluruh tim pemangku kepentingan.</figcaption>
+          </figure>
+        </article>
+      </div>
+    </section>
+
+    <!-- SECTION: SYSTEM ARCHITECTURE (DIAGRAM ARSITEKTUR & KOMPONEN) -->
+    <section class="sosmed-architecture" aria-labelledby="arch-heading">
+      <div class="arch-eyebrow">Desain Sistem &amp; Komponen</div>
+      <h2 id="arch-heading">System Architecture</h2>
+      <p class="arch-intro">
+        Pemisahan tegas antara Control Plane (UI &amp; API), State Storage (PostgreSQL &amp; Berkas Lokal), serta Independent Background Workers untuk menjamin keandalan pengiriman tanpa bergantung pada status browser operator.
+      </p>
+
+      <!-- Layer Filter Navigation -->
+      <div class="arch-layers-nav" role="toolbar" aria-label="Filter Lapisan Arsitektur">
+        <button class="arch-layer-btn active" type="button" data-layer="all">Semua Lapisan</button>
+        <button class="arch-layer-btn" type="button" data-layer="control">Control Plane</button>
+        <button class="arch-layer-btn" type="button" data-layer="intake">Asupan Berkas</button>
+        <button class="arch-layer-btn" type="button" data-layer="state">State &amp; Media</button>
+        <button class="arch-layer-btn" type="button" data-layer="publishing">Publikasi (Meta)</button>
+        <button class="arch-layer-btn" type="button" data-layer="feedback">Log &amp; Notifikasi</button>
+      </div>
+
+      <!-- Architecture Canvas -->
+      <div class="arch-canvas">
+        <div class="arch-zones-grid">
+          <!-- ZONA A: CONTROL & ENTRY -->
+          <div class="arch-zone" data-zone="control">
+            <div class="arch-zone-header">
+              <span class="arch-zone-title">Control Plane</span>
+              <span class="arch-zone-badge">Web &amp; API</span>
+            </div>
+            <div class="arch-nodes-stack">
+              <button class="arch-node" type="button" data-id="dashboard" data-layer="control" aria-label="Detail Operator Dashboard">
+                <span class="arch-node-name">Operator Dashboard <span class="arch-node-type">UI</span></span>
+                <span class="arch-node-sub">Next.js + React Management</span>
+              </button>
+              <button class="arch-node" type="button" data-id="api" data-layer="control" aria-label="Detail API and Services">
+                <span class="arch-node-name">API &amp; Services <span class="arch-node-type">BACKEND</span></span>
+                <span class="arch-node-sub">Next.js Route Handlers</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- ZONA B: BACKGROUND WORKERS & INTAKE -->
+          <div class="arch-zone" data-zone="intake">
+            <div class="arch-zone-header">
+              <span class="arch-zone-title">Background Intake</span>
+              <span class="arch-zone-badge">Workers</span>
+            </div>
+            <div class="arch-nodes-stack">
+              <button class="arch-node" type="button" data-id="imap" data-layer="intake" aria-label="Detail IMAP Worker">
+                <span class="arch-node-name">IMAP Worker <span class="arch-node-type">DAEMON</span></span>
+                <span class="arch-node-sub">Email Polling &amp; Baseline UID</span>
+              </button>
+              <button class="arch-node" type="button" data-id="drive" data-layer="intake" aria-label="Detail Google Drive Desktop">
+                <span class="arch-node-name">Drive Desktop <span class="arch-node-type">CLIENT</span></span>
+                <span class="arch-node-sub">Cloud Sync → Local Directory</span>
+              </button>
+              <button class="arch-node" type="button" data-id="folder" data-layer="intake" aria-label="Detail Folder Poller">
+                <span class="arch-node-name">Folder Poller <span class="arch-node-type">DAEMON</span></span>
+                <span class="arch-node-sub">Local FS Scan &amp; Stability Check</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- ZONA C: STATE, STORAGE & PUBLISH -->
+          <div class="arch-zone" data-zone="delivery">
+            <div class="arch-zone-header">
+              <span class="arch-zone-title">Delivery &amp; Observability</span>
+              <span class="arch-zone-badge">Egress</span>
+            </div>
+            <div class="arch-nodes-stack">
+              <button class="arch-node" type="button" data-id="postgres" data-layer="state" aria-label="Detail PostgreSQL State">
+                <span class="arch-node-name">PostgreSQL (Prisma) <span class="arch-node-type">STATE</span></span>
+                <span class="arch-node-sub">Event Queue, Channels &amp; Config</span>
+              </button>
+              <button class="arch-node" type="button" data-id="storage" data-layer="state" aria-label="Detail Local Media Storage">
+                <span class="arch-node-name">Local Media Storage <span class="arch-node-type">DISK</span></span>
+                <span class="arch-node-sub">Physical Images &amp; Reels MP4</span>
+              </button>
+              <button class="arch-node" type="button" data-id="publisher" data-layer="publishing" aria-label="Detail Publishing Worker">
+                <span class="arch-node-name">Publishing Worker <span class="arch-node-type">DAEMON</span></span>
+                <span class="arch-node-sub">Schedule Dispatcher (WITA)</span>
+              </button>
+              <button class="arch-node" type="button" data-id="meta" data-layer="publishing" aria-label="Detail Meta Graph API">
+                <span class="arch-node-name">Meta Graph API <span class="arch-node-type">PRIMARY</span></span>
+                <span class="arch-node-sub">Official Instagram Delivery</span>
+              </button>
+              <button class="arch-node" type="button" data-id="green" data-layer="feedback" aria-label="Detail GREEN-API WhatsApp">
+                <span class="arch-node-name">GREEN-API (WhatsApp) <span class="arch-node-type">FEEDBACK</span></span>
+                <span class="arch-node-sub">Operator Instant Alert</span>
+              </button>
+              <button class="arch-node" type="button" data-id="logs" data-layer="feedback" aria-label="Detail Audit Logs">
+                <span class="arch-node-name">Audit Logs <span class="arch-node-type">DIAGNOSTIC</span></span>
+                <span class="arch-node-sub">Traceability &amp; Error Recovery</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Dynamic Flow Indicator -->
+        <div class="arch-flow-guide">
+          <span style="color: var(--text-dim);">Aliran Komunikasi:</span>
+          <span class="arch-flow-pill">Operator / Web</span>
+          <span>→</span>
+          <span class="arch-flow-pill">Next.js API</span>
+          <span>→</span>
+          <span class="arch-flow-pill">PostgreSQL &amp; Storage</span>
+          <span>←</span>
+          <span class="arch-flow-pill">Background Workers</span>
+          <span>→</span>
+          <span class="arch-flow-pill">Meta API &amp; WhatsApp</span>
+        </div>
+
+        <!-- Node Detail Inspector -->
+        <div class="arch-inspector" aria-live="polite">
+          <div class="arch-inspector-header">
+            <div class="arch-inspector-meta">
+              <span class="arch-inspector-tag">SYSTEM OVERVIEW</span>
+            </div>
+            <button class="arch-inspector-reset" type="button" hidden>Reset Pilihan</button>
+          </div>
+          <h3 class="arch-inspector-title">Pilih Komponen Arsitektur</h3>
+          <p class="arch-inspector-desc">
+            Klik atau pilih komponen arsitektur pada diagram di atas untuk melihat peran teknis, input, dan output aliran datanya.
+          </p>
+          <div class="arch-inspector-connections">
+            <span>Klik node mana pun untuk mengunci detail</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Architectural Decisions -->
+      <div class="arch-decisions">
+        <div class="arch-decision-card">
+          <span class="arch-decision-num">DECISION 01</span>
+          <h4>PostgreSQL-Backed Queue</h4>
+          <p>
+            Antrean event dijadwalkan dan disimpan langsung di PostgreSQL menggunakan Prisma, menghindari kompleksitas operasional message broker tambahan seperti Redis atau RabbitMQ.
+          </p>
+        </div>
+        <div class="arch-decision-card">
+          <span class="arch-decision-num">DECISION 02</span>
+          <h4>Worker Isolation</h4>
+          <p>
+            Worker asupan (IMAP &amp; Folder Poller) dan worker publikasi berjalan sebagai proses mandiri. Kegagalan rendering pada frontend web tidak memutus siklus pemrosesan latar belakang.
+          </p>
+        </div>
+        <div class="arch-decision-card">
+          <span class="arch-decision-num">DECISION 03</span>
+          <h4>Filesystem-Based Drive Sync</h4>
+          <p>
+            Memanfaatkan aplikasi Google Drive Desktop bawaan OS untuk sinkronisasi cloud, sehingga worker cukup memindai disk lokal tanpa risiko terhambat kuota API Google Drive.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: TECH STACK (EDITORIAL TECHNOLOGY INDEX) -->
+    <section class="sosmed-techstack" aria-labelledby="stack-heading">
+      <div class="stack-eyebrow">Fondasi Teknologi</div>
+      <h2 id="stack-heading">Tech Stack</h2>
+      <p class="stack-intro">
+        Dibangun dengan tumpukan web modern yang dipisahkan secara tegas dari pipeline worker latar belakang. Dasbor mengelola konfigurasi, sementara proses independen menangani asupan berkas, penjadwalan event, dan publikasi Meta.
+      </p>
+
+      <!-- Category Filter Rail -->
+      <div class="stack-nav" role="toolbar" aria-label="Filter Kategori Teknologi">
+        <button class="stack-nav-btn active" type="button" data-target="all">Semua Kategori</button>
+        <button class="stack-nav-btn" type="button" data-target="group-app">Application</button>
+        <button class="stack-nav-btn" type="button" data-target="group-data">Data &amp; Scheduling</button>
+        <button class="stack-nav-btn" type="button" data-target="group-intake">Content Ingestion</button>
+        <button class="stack-nav-btn" type="button" data-target="group-media">Publishing &amp; Media</button>
+        <button class="stack-nav-btn" type="button" data-target="group-ops">Operations &amp; Supervision</button>
+      </div>
+
+      <!-- Technology Groups -->
+      <div class="stack-groups">
+        <!-- 1. APPLICATION -->
+        <div class="stack-group" id="group-app">
+          <div class="stack-group-header">
+            <h3>01. Application &amp; Interface</h3>
+            <p class="stack-group-desc">Antarmuka operator web responsif dan penanganan API rute internal untuk operasional saluran.</p>
+          </div>
+          <div class="stack-items-list">
+            <div class="stack-item">
+              <div class="stack-tech-name">
+                <span class="stack-tech-title">Next.js</span>
+                <span class="stack-tech-version">v16.3.4 (App Router)</span>
+              </div>
+              <p class="stack-tech-role">Fondasi framework untuk dashboard operator terpusat dan API Route Handlers internal.</p>
+              <span class="stack-tech-badge primary">Core Web</span>
+            </div>
+            <div class="stack-item">
+              <div class="stack-tech-name">
+                <span class="stack-tech-title">React</span>
+                <span class="stack-tech-version">v19.2.8 / DOM</span>
+              </div>
+              <p class="stack-tech-role">Penyusunan komponen antarmuka dinamis untuk wizard konfigurasi saluran dan pemantauan event.</p>
+              <span class="stack-tech-badge">UI Library</span>
+            </div>
+            <div class="stack-item">
+              <div class="stack-tech-name">
+                <span class="stack-tech-title">TypeScript</span>
+                <span class="stack-tech-version">v5.x</span>
+              </div>
+              <p class="stack-tech-role">Type safety ketat pada definisi schema saluran, payload event, dan kontrak komunikasi antar worker.</p>
+              <span class="stack-tech-badge">Language</span>
+            </div>
+            <div class="stack-item">
+              <div class="stack-tech-name">
+                <span class="stack-tech-title">Tailwind CSS</span>
+                <span class="stack-tech-version">v4.x</span>
+              </div>
+              <p class="stack-tech-role">Styling utilitas modern untuk tata letak dasbor yang bersih dan adaptif di berbagai resolusi layar.</p>
+              <span class="stack-tech-badge">Styling</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. DATA & SCHEDULING -->
+        <div class="stack-group" id="group-data">
+          <div class="stack-group-header">
+            <h3>02. Data &amp; Scheduling</h3>
+            <p class="stack-group-desc">Penyimpanan state relasional, antrean event terjadwal, dan jejak audit aktivitas.</p>
+          </div>
+          <div class="stack-items-list">
+            <div class="stack-item">
+              <div class="stack-tech-name">
+                <span class="stack-tech-title">PostgreSQL</span>
+                <span class="stack-tech-version">Relational Database</span>
+              </div>
+              <p class="stack-tech-role">Menyimpan konfigurasi saluran, antrean event dengan status (SCHEDULED, PROCESSING, dll.), dan log audit.</p>
+              <span class="stack-tech-badge primary">Primary State</span>
+            </div>
+            <div class="stack-item">
+              <div class="stack-tech-name">
+                <span class="stack-tech-title">Prisma ORM</span>
+                <span class="stack-tech-version">v7.10.0 + PG Adapter</span>
+              </div>
+              <p class="stack-tech-role">Pemodelan skema relasional tipe-aman dan abstraksi query database yang efisien.</p>
+              <span class="stack-tech-badge">Data Layer</span>
+            </div>
+            <div class="stack-item">
+              <div class="stack-tech-name">
+                <span class="stack-tech-title">Node.js Workers</span>
+                <span class="stack-tech-version">Long-running Daemons</span>
+              </div>
+              <p class="stack-tech-role">Runtime proses latar belakang mandiri untuk mengklaim event jatuh tempo dan mengeksekusi pipeline.</p>
+              <span class="stack-tech-badge">Execution</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. CONTENT INGESTION -->
+        <div class="stack-group" id="group-intake">
+          <div class="stack-group-header">
+            <h3>03. Content Ingestion</h3>
+            <p class="stack-group-desc">Penerimaan berkas otomatis melalui integrasi email dan pemindaian direktori disk lokal.</p>
+          </div>
+          <div class="stack-items-list">
+            <div class="stack-item">
+              <div class="stack-tech-name">
+                <span class="stack-tech-title">ImapFlow</span>
+                <span class="stack-tech-version">v1.7.8</span>
+              </div>
+              <p class="stack-tech-role">Klien IMAP modern untuk polling pesan berkala, tracking baseline UID, dan ekstraksi pesan baru.</p>
+              <span class="stack-tech-badge primary">Email Intake</span>
+            </div>
+            <div class="stack-item">
+              <div class="stack-tech-name">
+                <span class="stack-tech-title">Mailparser</span>
+                <span class="stack-tech-version">v3.9.20</span>
+              </div>
+              <p class="stack-tech-role">Mengekstrak metadata subjek serta memisahkan berkas lampiran biner secara aman ke direktori penampungan.</p>
+              <span class="stack-tech-badge">Stream Parser</span>
+            </div>
+            <div class="stack-item">
+              <div class="stack-tech-name">
+                <span class="stack-tech-title">Google Drive Desktop</span>
+                <span class="stack-tech-version">Native Client Sync</span>
+              </div>
+              <p class="stack-tech-role">Menyinkronkan cloud ke folder lokal; worker membaca sistem berkas lokal tanpa terkena limit kuota API cloud.</p>
+              <span class="stack-tech-badge">Filesystem Sync</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4. PUBLISHING & MEDIA -->
+        <div class="stack-group" id="group-media">
+          <div class="stack-group-header">
+            <h3>04. Publishing &amp; Media</h3>
+            <p class="stack-group-desc">Validasi media visual dan transmisi aman ke antarmuka resmi Instagram.</p>
+          </div>
+          <div class="stack-items-list">
+            <div class="stack-item">
+              <div class="stack-tech-name">
+                <span class="stack-tech-title">Meta Graph API</span>
+                <span class="stack-tech-version">Official REST API</span>
+              </div>
+              <p class="stack-tech-role">Penyedia publikasi resmi (Jalur Utama) untuk single post, carousel multi-foto, dan format Reels.</p>
+              <span class="stack-tech-badge primary">Meta Provider</span>
+            </div>
+            <div class="stack-item">
+              <div class="stack-tech-name">
+                <span class="stack-tech-title">FFmpeg / FFprobe</span>
+                <span class="stack-tech-version">Media Utilities</span>
+              </div>
+              <p class="stack-tech-role">Validasi rasio aspek, pemeriksaan durasi video Reels, serta penyesuaian bitrate sebelum unggahan.</p>
+              <span class="stack-tech-badge">Processing</span>
+            </div>
+            <div class="stack-item">
+              <div class="stack-tech-name">
+                <span class="stack-tech-title">Internal Python Engine</span>
+                <span class="stack-tech-version">ig_auto_schedule.py</span>
+              </div>
+              <p class="stack-tech-role">Jalur alternatif berbasis sesi cookie untuk skenario khusus saat endpoint resmi dibatasi.</p>
+              <span class="stack-tech-badge">Fallback Route</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 5. OPERATIONS & SUPERVISION -->
+        <div class="stack-group" id="group-ops">
+          <div class="stack-group-header">
+            <h3>05. Operations &amp; Supervision</h3>
+            <p class="stack-group-desc">Pengawasan daemons pada OS host dan integrasi notifikasi pesan langsung ke tim pengelola.</p>
+          </div>
+          <div class="stack-items-list">
+            <div class="stack-item">
+              <div class="stack-tech-name">
+                <span class="stack-tech-title">GREEN-API</span>
+                <span class="stack-tech-version">WhatsApp Gateway</span>
+              </div>
+              <p class="stack-tech-role">Mengirimkan konfirmasi eksekusi dan laporan peringatan galat langsung ke grup WhatsApp tim operasional.</p>
+              <span class="stack-tech-badge primary">Notifications</span>
+            </div>
+            <div class="stack-item">
+              <div class="stack-tech-name">
+                <span class="stack-tech-title">Windows Task Scheduler</span>
+                <span class="stack-tech-version">OS Job Manager</span>
+              </div>
+              <p class="stack-tech-role">Menjaga siklus hidup worker asupan dan scheduler agar tetap berjalan otomatis saat sistem booting.</p>
+              <span class="stack-tech-badge">Process Manager</span>
+            </div>
+            <div class="stack-item">
+              <div class="stack-tech-name">
+                <span class="stack-tech-title">Playwright</span>
+                <span class="stack-tech-version">v1.63.0</span>
+              </div>
+              <p class="stack-tech-role">Otomatisasi pengujian alur interaktif dan verifikasi sesi browser pada jalur integrasi khusus.</p>
+              <span class="stack-tech-badge">Session Tooling</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Engineering Spotlight -->
+      <div class="stack-notes-box">
+        <h4>Engineering Insights &amp; Tradeoffs</h4>
+        <div class="stack-notes-grid">
+          <div class="stack-note-item">
+            <span class="stack-note-title">Database-Backed Queue</span>
+            <p class="stack-note-desc">
+              Pemanfaatan PostgreSQL secara langsung sebagai antrean event mengeliminasi ketergantungan pada message broker terpisah (seperti Redis atau Kafka), menyederhanakan arsitektur pemeliharaan.
+            </p>
+          </div>
+          <div class="stack-note-item">
+            <span class="stack-note-title">Separated Background Execution</span>
+            <p class="stack-note-desc">
+              Dasbor web hanya berfungsi sebagai panel kontrol deklaratif; seluruh asupan berkas dan publikasi dieksekusi secara asinkron oleh worker terpisah yang tahan terhadap gangguan koneksi web client.
+            </p>
+          </div>
+          <div class="stack-note-item">
+            <span class="stack-note-title">Local Media, Relational Meta</span>
+            <p class="stack-note-desc">
+              Berkas media fisik disimpan di penyimpanan disk lokal terstruktur, sementara database hanya mengelola status dan path, menjaga ukuran basis data tetap ringan dan cepat.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="project-footer">
+      <a href="../index.html#projects" class="footer-btn"><span>← Kembali ke Daftar Proyek</span></a>
+    </footer>
+  </main>
+  <dialog id="partner-image-modal" class="image-modal" aria-label="Gambar Auto Sosmed Metamorph diperbesar">
+    <button class="image-modal-close" type="button" aria-label="Tutup gambar" autofocus>×</button>
+    <img src="../assets/images/auto-sosmed/kebutuhan.png" alt="Profil Instagram BMKG Kaltim dan postingan prakiraan cuaca yang padat" />
+  </dialog>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="../src/js/atmos-wrf.js"></script>
+  <script src="../src/js/auto-sosmed-workflow.js"></script>
+  <script src="../src/js/auto-sosmed-architecture.js"></script>
+  <script src="../src/js/auto-sosmed-techstack.js"></script>
+</body>
+</html>

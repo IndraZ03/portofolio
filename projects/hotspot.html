@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Peta Sebaran Hotspot — Peta sebaran hotspot untuk Tim Datin dan stakeholder, dilengkapi akses Google Maps serta overlay angin dan area konsesi." />
+  <title>Peta Sebaran Hotspot — Proyek</title>
+
+  <!-- Typography matching IndraZ03 aesthetic -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,400&display=swap"
+    rel="stylesheet" />
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="../src/css/style.css" />
+  <link rel="stylesheet" href="../src/css/responsive.css" />
+  <link rel="stylesheet" href="../src/css/atmos-wrf.css" />
+  <link rel="stylesheet" href="../src/css/whatsapp-workflow.css" />
+  <link rel="stylesheet" href="../src/css/project-case-study.css" />
+</head>
+
+<body>
+  <!-- Ambient grid overlay -->
+  <div class="grid-bg-overlay" aria-hidden="true"></div>
+
+  <!-- FIXED NAVBAR IDENTICAL TO MAIN SITE -->
+  <header class="site-header" role="banner">
+    <div class="nav-container">
+      <a href="../index.html#home" class="wordmark" aria-label="IndraZ03 Home">IndraZ03</a>
+      <nav class="nav-menu-desktop" aria-label="Main Navigation">
+        <a href="../index.html#home" class="nav-link">Home</a>
+        <a href="../index.html#projects" class="nav-link active" aria-current="page">Projects</a>
+        <a href="../index.html#about" class="nav-link">About Me</a>
+        <!-- <a href="../index.html#kind-words" class="nav-link">Kind Words</a> -->
+      </nav>
+      <a href="../index.html#contact" class="btn btn-clay nav-contact-btn">Let's Talk</a>
+      <button class="mobile-toggle" type="button" aria-label="Toggle navigation menu" aria-expanded="false"
+        aria-controls="mobile-nav">
+        <div class="mobile-toggle-bars" aria-hidden="true">
+          <span></span>
+          <span></span>
+        </div>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Fullscreen Drawer Navigation -->
+  <nav id="mobile-nav" class="mobile-drawer" aria-label="Mobile Navigation" aria-hidden="true">
+    <a href="../index.html#home" class="nav-link">Home</a>
+    <a href="../index.html#projects" class="nav-link active">Projects</a>
+    <a href="../index.html#about" class="nav-link">About Me</a>
+    <!-- <a href="../index.html#kind-words" class="nav-link">Kind Words</a> -->
+    <a href="../index.html#contact" class="btn btn-primary" style="margin-top: 16px;">Let's Talk</a>
+  </nav>
+
+  <main>
+    <!-- HERO INTRO -->
+    <section class="hero-stage">
+      <div class="hero-tag"><a href="https://kaltim.bmkg.go.id/koordinat-hotspot" target="_blank" rel="noopener noreferrer" style="color: inherit;">kaltim.bmkg.go.id/koordinat-hotspot</a></div>
+      <h1 class="hero-headline">PETA SEBARAN HOTSPOT</h1>
+      <p class="hero-desc">
+        Peta sebaran hotspot untuk mempermudah Tim Datin dan stakeholder dalam mendeteksi titik panas,
+        dilengkapi rute langsung Google Maps pada setiap titik hotspot serta overlay angin dan area konsesi untuk mendukung OMC dan water bombing.
+      </p>
+    </section>
+
+    <div class="scroll-instruction">↓ Gulir untuk mengikuti alur proyek ↓</div>
+
+    <!-- HORIZONTAL PINNED TIMELINE -->
+    <section class="scroll-wrapper" aria-label="Perjalanan proyek Peta Sebaran Hotspot">
+      <div class="canvas" style="width: 2500px;">
+        <!-- Continuous connector behind cards -->
+        <svg class="lines-layer" viewBox="0 0 2500 900" preserveAspectRatio="none" aria-hidden="true">
+          <path class="line-path" d="M 120 450 L 2150 450" />
+        </svg>
+
+        <!-- STAGE 01 -->
+        <div class="clay-element connector-dot gs-reveal" style="left: 120px; top: 450px;"></div>
+        <article class="clay-element flow-card gs-reveal" style="left: 400px; top: 450px;">
+          <button class="card-media-wrap card-image-trigger" type="button" aria-haspopup="dialog"
+            aria-controls="partner-image-modal" aria-label="Perbesar gambar Kebutuhan Tim Datin">
+            <img src="../assets/images/hotspot/peta%20hotspot.png" alt="Peta sebaran titik panas Kaltim oleh BMKG Kaltim" />
+            <span class="card-image-hint">Klik untuk memperbesar</span>
+          </button>
+          <div class="card-body">
+            <h2 class="card-title">Kebutuhan Tim Datin</h2>
+            <p class="card-desc">
+              Selama ini, plotting hotspot masih dilakukan secara manual dan harus menjalankan script yang memakan waktu untuk mengolah datanya.
+            </p>
+            <p class="card-desc">
+              Ketua Tim Datin mengajak saya mengembangkan peta sebaran hotspot agar Tim Datin dan stakeholder dapat lebih cepat serta mudah mendeteksi titik panas.
+            </p>
+          </div>
+        </article>
+
+        <!-- STAGE 02 -->
+        <div class="clay-element connector-dot gs-reveal" style="left: 740px; top: 450px;"></div>
+        <article class="clay-element flow-card gs-reveal" style="left: 1080px; top: 450px;">
+          <button class="card-media-wrap card-image-trigger" type="button" aria-haspopup="dialog"
+            aria-controls="partner-image-modal" aria-label="Perbesar gambar Akses Rute Google Maps">
+            <img src="../assets/images/hotspot/google-maps.png" alt="Pop-up info titik hotspot dengan tombol Buka di Google Maps untuk melihat rute" />
+            <span class="card-image-hint">Klik untuk memperbesar</span>
+          </button>
+          <div class="card-body">
+            <h2 class="card-title">Akses Rute Google Maps</h2>
+            <p class="card-desc">
+              Klik titik hotspot untuk membuka pop-up informasi, lalu pilih tombol Buka di Google Maps untuk melihat lokasi hotspot tersebut beserta rute menuju titiknya.
+            </p>
+          </div>
+        </article>
+
+        <!-- STAGE 03 -->
+        <div class="clay-element connector-dot gs-reveal" style="left: 1420px; top: 450px;"></div>
+        <article class="clay-element flow-card gs-reveal" style="left: 1760px; top: 450px;">
+          <button class="card-media-wrap card-image-trigger" type="button" aria-haspopup="dialog"
+            aria-controls="partner-image-modal" aria-label="Perbesar gambar Overlay Angin dan Area Konsesi">
+            <img src="../assets/images/hotspot/peta-hotspot-dan-area-konsesi.png" alt="Peta sebaran hotspot dengan layer overlay konsesi tambang dan arah angin" />
+            <span class="card-image-hint">Klik untuk memperbesar</span>
+          </button>
+          <div class="card-body">
+            <h2 class="card-title">Overlay Angin &amp; Area Konsesi</h2>
+            <p class="card-desc">
+              Overlay angin dan area konsesi ditambahkan untuk mendukung Operasi Modifikasi Cuaca (OMC) dan water bombing.
+            </p>
+          </div>
+        </article>
+
+        <!-- FINAL PIN -->
+        <div class="clay-element connector-dot gs-reveal" style="left: 2150px; top: 450px;"></div>
+      </div>
+    </section>
+
+    <section id="how-it-works" class="wa-workflow" data-case-workflow aria-labelledby="hotspot-workflow-title">
+      <span class="workflow-eyebrow">How It Works · From sync to interactive map</span><h2 id="hotspot-workflow-title">Sinkronisasi data, konteks di peta.</h2><p class="workflow-intro">Modul Koordinat Hotspot pada web BMKG Kaltim memisahkan snapshot terbaru, produk peta wilayah, angin model, dan histori. Visual berikut merupakan ilustrasi statis, bukan data live.</p>
+      <div class="workflow-layout"><ol class="workflow-steps">
+        <li class="workflow-step"><span class="workflow-node" aria-hidden="true">01</span><div class="workflow-step-copy"><span class="workflow-step-status">Tahap 01 · Scheduled ingestion</span><h3>Scheduled Data Sync</h3><p>Cron mengambil TSV hotspot dari sumber FTP BMKG pada menit 05 dan 35. Bila file belum tersedia, job mencoba tanggal sebelumnya dengan batas tertentu.</p></div><figure class="workflow-visual"><div class="workflow-diagram"><span class="workflow-token">FTP · hotspot TSV</span><span class="workflow-arrow" aria-hidden="true">→</span><span class="workflow-token is-emphasis">Cron + sync job</span></div><figcaption>Illustrative flow · tidak menampilkan host atau kredensial sumber.</figcaption></figure></li>
+        <li class="workflow-step"><span class="workflow-node" aria-hidden="true">02</span><div class="workflow-step-copy"><span class="workflow-step-status">Tahap 02 · Parse &amp; validate</span><h3>Validate the Incoming Points</h3><p>Parser memeriksa struktur TSV, koordinat, wilayah KALIMANTAN TIMUR, tanggal, dan confidence. Titik tidak valid dilewati; validasi format bukan jaminan kejadian kebakaran.</p></div><figure class="workflow-visual"><div class="workflow-diagram"><span class="workflow-token">Raw TSV</span><span class="workflow-arrow" aria-hidden="true">→</span><span class="workflow-token">Validasi struktur / koordinat</span><span class="workflow-arrow" aria-hidden="true">→</span><span class="workflow-token is-emphasis">Titik lolos validasi</span></div><figcaption>Illustrative flow · tanpa titik geolokasi rekaan.</figcaption></figure></li>
+        <li class="workflow-step"><span class="workflow-node" aria-hidden="true">03</span><div class="workflow-step-copy"><span class="workflow-step-status">Tahap 03 · Persist snapshot</span><h3>Keep the Latest Snapshot</h3><p>Hasil terbaru di-upsert ke MySQL hotspot_data pada satu row id=1. Kegagalan sinkronisasi tidak menghapus snapshot terakhir; halaman realtime tidak mengunduh FTP pada setiap kunjungan.</p></div><figure class="workflow-visual"><div class="workflow-diagram"><span class="workflow-token">Sync berhasil</span><span class="workflow-arrow" aria-hidden="true">→</span><span class="workflow-token is-emphasis">MySQL · hotspot_data · id=1</span></div><figcaption>Illustrative flow · snapshot terbaru, bukan event stream histori.</figcaption></figure></li>
+        <li class="workflow-step"><span class="workflow-node" aria-hidden="true">04</span><div class="workflow-step-copy"><span class="workflow-step-status">Tahap 04 · Map products</span><h3>Prepare Regional Maps</h3><p>Renderer Python menghasilkan gambar peta wilayah dan PDF. Cache berdasarkan hash menghindari rendering ulang yang tidak perlu; manifest terbaru dipublikasikan secara atomik.</p></div><figure class="workflow-visual"><div class="workflow-diagram"><span class="workflow-token">Data hotspot</span><span class="workflow-arrow" aria-hidden="true">→</span><span class="workflow-token">Python / Matplotlib</span><span class="workflow-arrow" aria-hidden="true">→</span><span class="workflow-token is-emphasis">Gambar / PDF / latest.json</span></div><figcaption>Illustrative flow · produk peta regional disiapkan di server, bukan oleh Leaflet.</figcaption></figure></li>
+        <li class="workflow-step"><span class="workflow-node conditional" aria-hidden="true">05</span><div class="workflow-step-copy"><span class="workflow-step-status">Tahap 05 · Separate wind branch</span><h3>Align Model Wind</h3><p>Setelah sync hotspot berhasil, job angin mengambil ECMWF IFS U10/V10. Waktu valid diselaraskan dengan interpolasi atau nearest sesuai kebutuhan; wind.json ditulis atomik. Kegagalan angin tidak menggagalkan hasil hotspot.</p></div><figure class="workflow-visual"><div class="workflow-stack"><span class="workflow-token">Hotspot sync sukses · mencoba wind job</span><span class="workflow-token is-conditional">ECMWF GRIB2 · ecCodes · atomic wind.json</span></div><figcaption>Illustrative flow · angin model bukan prediksi pergerakan api atau asap.</figcaption></figure></li>
+        <li class="workflow-step"><span class="workflow-node" aria-hidden="true">06</span><div class="workflow-step-copy"><span class="workflow-step-status">Tahap 06 · Client rendering</span><h3>Serve the Interactive Map</h3><p>API menyajikan snapshot MySQL, GeoJSON lokal, dan wind JSON melalui jalur terpisah. Leaflet mengelola marker/popup WITA dan layer konteks; canvas WebGL khusus merender partikel angin.</p></div><figure class="workflow-visual"><div class="workflow-stack"><span class="workflow-token">Snapshot API + GeoJSON · Leaflet markers</span><span class="workflow-token is-emphasis">Wind API · custom GPU WebGL canvas</span></div><figcaption>Illustrative flow · lifecycle angin dipisahkan dari marker. UI realtime refresh setiap lima menit, bukan streaming subdetik.</figcaption></figure></li>
+        <li class="workflow-step"><span class="workflow-node" aria-hidden="true">07</span><div class="workflow-step-copy"><span class="workflow-step-status">Tahap 07 · Explore &amp; export</span><h3>Explore History &amp; Export</h3><p>Pengguna memilih rentang histori hingga 31 hari, konteks konsesi/gambut, galeri peta wilayah, atau ekspor PDF. Histori memuat tanggal yang belum tercache hingga 10 tanggal per request dan menonaktifkan angin.</p></div><figure class="workflow-visual"><div class="workflow-stack"><span class="workflow-token">History request · cache DB / missing dates ke FTP</span><span class="workflow-token">Layer konteks · regional maps · PDF</span></div><figcaption>Illustrative flow · histori tidak sepenuhnya precomputed. Angin kembali ke pengaturan sebelumnya saat mode realtime dipilih.</figcaption></figure></li>
+      </ol><aside class="workflow-panel" aria-label="Visual tahap hotspot"><span class="workflow-panel-label">Data lifecycle</span><h3 class="workflow-panel-title">Scheduled Data Sync</h3><div class="workflow-panel-body"></div></aside></div><p class="workflow-note">Snapshot terakhir tetap berguna saat sumber gagal, dengan timestamp yang harus dibaca sesuai konteks. Koordinat Hotspot berbeda dari GeoHotspot termal Himawari B07. Angin model dan polygon konsesi tidak membuktikan penyebab kebakaran atau legalitas wilayah.</p>
+    </section>
+
+    <section id="key-features" class="cs-section cs-features" aria-labelledby="hotspot-features-title"><span class="cs-eyebrow">Key Features · Cartographic chapters</span><h2 id="hotspot-features-title">Baca titik, telusuri konteks.</h2><p class="cs-intro">Enam kemampuan untuk membaca snapshot, membandingkan histori, dan mengakses produk peta tanpa mencampur sumber datanya.</p><div class="cs-editorial-layout"><nav class="cs-index" aria-label="Indeks fitur hotspot"><a class="cs-index-link" href="#hotspot-feature-map">01 · Hotspot map</a><a class="cs-index-link" href="#hotspot-feature-history">02 · History</a><a class="cs-index-link" href="#hotspot-feature-wind">03 · Wind overlay</a><a class="cs-index-link" href="#hotspot-feature-context">04 · Spatial context</a><a class="cs-index-link" href="#hotspot-feature-reports">05 · Maps &amp; PDF</a><a class="cs-index-link" href="#hotspot-feature-refresh">06 · Data refresh</a></nav><div class="cs-chapters">
+      <article id="hotspot-feature-map" class="cs-chapter"><span class="cs-chapter-num">FEATURE 01 / REALTIME SNAPSHOT</span><h3>Real-time Hotspot Map</h3><p class="cs-chapter-desc">Peta Leaflet pada imagery basemap menampilkan marker confidence rendah/hijau, sedang/kuning, dan tinggi/merah. Popup menyediakan detail titik dan tautan Google Maps.</p><ul class="cs-proofs"><li>Koordinat, kab/kota, kecamatan, satelit, confidence, serta timestamp WITA.</li><li>Refresh antarmuka setiap lima menit saat realtime, bukan streaming sensor per detik.</li></ul><figure class="cs-media-frame"><span class="cs-media-badge">Screenshot proyek · Bukan data live</span><img src="../assets/images/hotspot/google-maps.png" alt="Popup titik hotspot dengan informasi lokasi dan tautan Google Maps" loading="lazy" decoding="async" /><figcaption>Popup untuk membaca detail lokasi dan membuka peta eksternal.</figcaption></figure></article>
+      <article id="hotspot-feature-history" class="cs-chapter"><span class="cs-chapter-num">FEATURE 02 / HISTORICAL EXPLORER</span><h3>Historical Hotspot Explorer</h3><p class="cs-chapter-desc">Rentang hingga 31 hari menggabungkan titik dari tanggal terpilih. Tanggal yang belum tersedia di database dapat diambil dari arsip sumber, hingga 10 tanggal per request.</p><ul class="cs-proofs"><li>Mode histori dan realtime memiliki kebutuhan waktu yang berbeda.</li><li>Angin mati saat histori dan kembali ke kondisi semula saat realtime.</li></ul><figure class="cs-media-frame"><span class="cs-media-badge">Illustrative flow · Bukan kontrol aktif</span><div class="cs-schematic"><span>Rentang tanggal ≤ 31 hari</span><strong>Cache histori + tanggal belum tersedia</strong><span>Titik multi-hari · angin nonaktif</span></div><figcaption>Skema eksplorasi histori tanpa histogram atau angka kejadian palsu.</figcaption></figure></article>
+      <article id="hotspot-feature-wind" class="cs-chapter"><span class="cs-chapter-num">FEATURE 03 / ECMWF WIND</span><h3>ECMWF Wind Overlay</h3><p class="cs-chapter-desc">Komponen U10/V10 ECMWF IFS 0.25° disiapkan cron lalu divisualkan sebagai partikel melalui canvas GPU WebGL khusus.</p><ul class="cs-proofs"><li>Default aktif pada realtime, terpisah dari lifecycle marker Leaflet.</li><li>Fail-soft: kegagalan layer angin tidak menghilangkan titik hotspot.</li></ul><figure class="cs-media-frame"><span class="cs-media-badge">Illustrative flow · Model wind field</span><div class="cs-schematic"><span>U10 · komponen zonal</span><span>V10 · komponen meridional</span><strong>Custom WebGL particles</strong></div><figcaption>Bukan prediksi penyebaran api/asap atau pengamatan angin persis pada waktu setiap hotspot.</figcaption></figure></article>
+      <article id="hotspot-feature-context" class="cs-chapter"><span class="cs-chapter-num">FEATURE 04 / SPATIAL CONTEXT</span><h3>Concessions &amp; Peatland Context</h3><p class="cs-chapter-desc">Overlay palm, pulpwood, logging, mining, dan gambut dilengkapi batas kabupaten/kota serta delineasi IKN untuk membantu membaca konteks spasial.</p><ul class="cs-proofs"><li>GeoJSON lokal disaring menurut cakupan spasial.</li><li>Izin tambang dengan tanggal akhir tidak aktif tidak ditampilkan; data tetap snapshot.</li></ul><figure class="cs-media-frame"><span class="cs-media-badge">Screenshot proyek · Contextual layers</span><img src="../assets/images/hotspot/peta-hotspot-dan-area-konsesi.png" alt="Tampilan peta hotspot dengan overlay area konsesi dan angin" loading="lazy" decoding="async" /><figcaption>Polygon merupakan referensi spasial, bukan kesimpulan hak, legalitas, atau penyebab kebakaran.</figcaption></figure></article>
+      <article id="hotspot-feature-reports" class="cs-chapter"><span class="cs-chapter-num">FEATURE 05 / CARTOGRAPHIC EXPORT</span><h3>Regional Maps &amp; PDF Reports</h3><p class="cs-chapter-desc">Peta wilayah dirender Python menjadi gambar dan PDF setelah sinkronisasi. Galeri mengambil hasil dari cache serta manifest terbaru.</p><ul class="cs-proofs"><li>Laporan peta regional diunduh dari hasil server.</li><li>jsPDF di browser mengekspor tabel titik A4 landscape sesuai mode realtime/histori.</li></ul><figure class="cs-media-frame"><span class="cs-media-badge">Aset peta proyek</span><img src="../assets/images/hotspot/peta%20hotspot.png" alt="Contoh aset peta sebaran titik panas Kalimantan Timur" loading="lazy" decoding="async" /><figcaption>Aset peta yang tersedia pada proyek, bukan contoh hasil ekspor terbaru.</figcaption></figure></article>
+      <article id="hotspot-feature-refresh" class="cs-chapter"><span class="cs-chapter-num">FEATURE 06 / ENGINEERING RELIABILITY</span><h3>Resilient Data Refresh</h3><p class="cs-chapter-desc">Cron menit 05/35 memperbarui snapshot untuk API. Fallback sumber/tanggal, cache berkas, dan publikasi atomik membatasi dampak kegagalan alur terpisah.</p><ul class="cs-proofs"><li>Snapshot terakhir tidak dihapus ketika sinkronisasi gagal.</li><li>Wind job dicoba setelah hotspot sukses; kegagalan angin tidak membatalkan hasil hotspot.</li></ul><figure class="cs-media-frame"><span class="cs-media-badge">Illustrative flow · Failure boundaries</span><div class="cs-schematic"><span>Sync gagal · snapshot terakhir</span><strong>Atomic file publication</strong><span>Wind gagal · marker tetap tersedia</span></div><figcaption>Pola ketahanan data, bukan klaim SLA atau uptime terukur.</figcaption></figure></article>
+    </div></div></section>
+
+    <section id="system-architecture" class="cs-section cs-architecture" aria-labelledby="hotspot-architecture-title"><span class="cs-eyebrow">System Architecture · Sources to client</span><h2 id="hotspot-architecture-title">Empat domain, jalur terpisah.</h2><p class="cs-intro">Ringkasan konseptual berdasarkan brief modul: sumber eksternal, processing, persistence/API, dan visualisasi browser. Tidak ada API produksi yang dipanggil untuk menggambar diagram.</p><div class="cs-arch-nav" role="group" aria-label="Fokus domain hotspot"><button type="button" class="cs-filter-btn" data-layer-filter="all" aria-pressed="true">Overview</button><button type="button" class="cs-filter-btn" data-layer-filter="sources" aria-pressed="false">Sources</button><button type="button" class="cs-filter-btn" data-layer-filter="processing" aria-pressed="false">Processing</button><button type="button" class="cs-filter-btn" data-layer-filter="persistence" aria-pressed="false">Persistence / API</button><button type="button" class="cs-filter-btn" data-layer-filter="client" aria-pressed="false">Client</button></div>
+      <div class="cs-canvas"><div class="cs-zones">
+        <div class="cs-zone"><div class="cs-zone-header"><span class="cs-zone-title">01 · External data</span></div><div class="cs-components">
+          <div id="hotspot-node-ftp" class="cs-component" data-layer="sources"><button type="button" class="cs-component-btn" aria-pressed="false"><span class="cs-node-name">BMKG hotspot TSV</span><span class="cs-node-sub">FTP source / archive</span></button><div class="cs-node-detail"><p><strong>Output:</strong> TSV hotspot untuk sync terjadwal atau tanggal histori yang belum tercache.</p><p>API realtime tidak memanggil FTP; alamat host dan akses sumber tidak dipublikasikan.</p></div></div>
+          <div id="hotspot-node-ecmwf" class="cs-component" data-layer="sources"><button type="button" class="cs-component-btn" aria-pressed="false"><span class="cs-node-name">ECMWF IFS U10/V10</span><span class="cs-node-sub">0.25° · GRIB2 model data</span></button><div class="cs-node-detail"><p><strong>Output:</strong> komponen angin model untuk job terpisah.</p><p>Bukan inferensi arah kebakaran, asap, atau observasi angin bersamaan dengan tiap titik.</p></div></div>
+          <div id="hotspot-node-geo" class="cs-component" data-layer="sources"><button type="button" class="cs-component-btn" aria-pressed="false"><span class="cs-node-name">Local GeoJSON</span><span class="cs-node-sub">Concessions / peat / boundaries</span></button><div class="cs-node-detail"><p><strong>Output:</strong> konteks geografis melalui pembaca GeoJSON/konsesi.</p><p>Data snapshot lokal, disaring cakupan dan status tanggal izin terkait. Tidak tersinkron GIS eksternal saat halaman dibuka.</p></div></div>
+        </div></div>
+        <div class="cs-zone"><div class="cs-zone-header"><span class="cs-zone-title">02 · Scheduled processing</span></div><div class="cs-components">
+          <div id="hotspot-node-sync" class="cs-component" data-layer="processing"><button type="button" class="cs-component-btn" aria-pressed="false"><span class="cs-node-name">Cron + hotspot sync</span><span class="cs-node-sub">TSV validation / snapshot upsert</span></button><div class="cs-node-detail"><p><strong>Input:</strong> hotspot TSV. <strong>Output:</strong> MySQL snapshot dan data untuk renderer wilayah.</p><p>Cron berjalan menit 05/35. Wind job hanya dicoba setelah hotspot sukses; kegagalan wind diisolasi.</p></div></div>
+          <div id="hotspot-node-renderer" class="cs-component" data-layer="processing"><button type="button" class="cs-component-btn" aria-pressed="false"><span class="cs-node-name">Python region renderer</span><span class="cs-node-sub">Matplotlib / SHA-256 cache</span></button><div class="cs-node-detail"><p><strong>Input:</strong> data hotspot hasil sync. <strong>Output:</strong> gambar wilayah, PDF, dan latest.json.</p><p>Content cache membatasi rendering ulang; manifest terbaru dipublikasikan atomik.</p></div></div>
+          <div id="hotspot-node-windjob" class="cs-component" data-layer="processing"><button type="button" class="cs-component-btn" aria-pressed="false"><span class="cs-node-name">Wind sync + ecCodes</span><span class="cs-node-sub">Decode / temporal alignment</span></button><div class="cs-node-detail"><p><strong>Input:</strong> GRIB2 U10/V10 serta target waktu. <strong>Output:</strong> wind.json atomik.</p><p>Python/ecCodes mendekode data; interpolasi/nearest menyelaraskan waktu bila diperlukan. Kegagalan angin tidak menggagalkan hotspot.</p></div></div>
+        </div></div>
+        <div class="cs-zone"><div class="cs-zone-header"><span class="cs-zone-title">03 · Persistence &amp; APIs</span></div><div class="cs-components">
+          <div id="hotspot-node-snapshot" class="cs-component" data-layer="persistence"><button type="button" class="cs-component-btn" aria-pressed="false"><span class="cs-node-name">Latest snapshot API</span><span class="cs-node-sub">MySQL · hotspot_data · id=1</span></button><div class="cs-node-detail"><p><strong>Input:</strong> satu row snapshot diperbarui cron. <strong>Output:</strong> titik terbaru untuk browser.</p><p>mysql2 langsung, bukan Prisma. Tidak mengunduh FTP ketika endpoint realtime dibaca.</p></div></div>
+          <div id="hotspot-node-files" class="cs-component" data-layer="persistence"><button type="button" class="cs-component-btn" aria-pressed="false"><span class="cs-node-name">File readers / APIs</span><span class="cs-node-sub">Regional plots, wind JSON, GeoJSON</span></button><div class="cs-node-detail"><p><strong>Input:</strong> cache gambar/PDF, latest.json, wind.json, dan GeoJSON lokal.</p><p><strong>Output:</strong> API pembaca masing-masing produk, bukan satu file gabungan. Wind API membaca JSON dan memvalidasi ukuran grid; mtime cache dipakai pada layer terkait.</p></div></div>
+          <div id="hotspot-node-history" class="cs-component" data-layer="persistence"><button type="button" class="cs-component-btn" aria-pressed="false"><span class="cs-node-name">History API + MySQL</span><span class="cs-node-sub">hotspot_history · per source date</span></button><div class="cs-node-detail"><p><strong>Input:</strong> rentang hingga 31 hari. <strong>Output:</strong> gabungan tanggal histori.</p><p>Tanggal belum tercache dapat diambil dari FTP hingga 10 tanggal per request. Bukan salinan event stream dari row snapshot.</p></div></div>
+        </div></div>
+        <div class="cs-zone"><div class="cs-zone-header"><span class="cs-zone-title">04 · Client visualization</span></div><div class="cs-components">
+          <div id="hotspot-node-client" class="cs-component" data-layer="client"><button type="button" class="cs-component-btn" aria-pressed="false"><span class="cs-node-name">Leaflet + custom WebGL</span><span class="cs-node-sub">Markers, panes, wind, controls, jsPDF</span></button><div class="cs-node-detail"><p><strong>Input:</strong> snapshot/histori, GeoJSON, wind JSON, dan hasil peta regional.</p><p><strong>Output:</strong> peta interaktif serta ekspor tabel PDF. Leaflet imperative mengelola marker/layer; engine canvas GPU khusus menggambar angin, bukan plugin React Leaflet.</p><p>Histori menonaktifkan angin. UI realtime memperbarui tiap lima menit.</p></div></div>
+        </div></div>
+      </div><ul class="cs-connections" aria-label="Hubungan domain hotspot"><li data-from="hotspot-node-ftp" data-to="hotspot-node-sync">FTP TSV → scheduled sync dan validasi</li><li data-from="hotspot-node-sync" data-to="hotspot-node-snapshot">Sync → MySQL snapshot → realtime API</li><li data-from="hotspot-node-sync" data-to="hotspot-node-renderer">Data hasil sync → Python regional renderer</li><li data-from="hotspot-node-renderer" data-to="hotspot-node-files">Renderer → cache gambar/PDF dan manifest atomik</li><li data-from="hotspot-node-sync" data-to="hotspot-node-windjob" data-conditional="true">Hotspot sync sukses → mencoba wind job</li><li data-from="hotspot-node-ecmwf" data-to="hotspot-node-windjob">ECMWF GRIB2 → ecCodes dan temporal alignment</li><li data-from="hotspot-node-windjob" data-to="hotspot-node-files">Wind job → atomic wind.json → wind API</li><li data-from="hotspot-node-geo" data-to="hotspot-node-files">GeoJSON lokal → pembaca konteks spasial</li><li data-from="hotspot-node-snapshot" data-to="hotspot-node-client">Snapshot API → Leaflet markers</li><li data-from="hotspot-node-files" data-to="hotspot-node-client">API produk terpisah → peta, WebGL, dan galeri</li><li data-from="hotspot-node-client" data-to="hotspot-node-history" data-bidirectional="true">Browser ↔ history API / MySQL per tanggal</li><li data-from="hotspot-node-history" data-to="hotspot-node-ftp" data-bidirectional="true" data-conditional="true">Histori ↔ FTP · hanya tanggal belum tercache, maksimal 10 per request</li></ul><aside class="cs-inspector" aria-live="polite" aria-label="Detail komponen hotspot"><div class="cs-inspector-head"><h3>Overview</h3><span class="cs-eyebrow">Conceptual summary</span></div><div class="cs-inspector-body">Pilih komponen untuk membaca input dan output.</div><button type="button" class="cs-reset">Reset overview</button></aside></div>
+    </section>
+
+    <section id="tech-stack" class="cs-section cs-stack" aria-labelledby="hotspot-stack-title"><span class="cs-eyebrow">Tech Stack · Module-specific tools</span><h2 id="hotspot-stack-title">Web, geospasial, dan pemrosesan data.</h2><p class="cs-intro">Stack khusus Koordinat Hotspot berdasarkan brief modul. Tidak meminjam Prisma, React Leaflet, atau engine angin pihak ketiga dari modul lain.</p><div class="cs-editorial-layout"><nav class="cs-index" aria-label="Indeks stack hotspot"><a class="cs-index-link" href="#hotspot-stack-app">01 · Application</a><a class="cs-index-link" href="#hotspot-stack-map">02 · Geospatial</a><a class="cs-index-link" href="#hotspot-stack-wind">03 · Wind engine</a><a class="cs-index-link" href="#hotspot-stack-data">04 · Data &amp; state</a><a class="cs-index-link" href="#hotspot-stack-processing">05 · Processing</a><a class="cs-index-link" href="#hotspot-stack-export">06 · Export</a><a class="cs-index-link" href="#hotspot-stack-cache">07 · Reliability</a></nav><div class="cs-chapters">
+      <article id="hotspot-stack-app" class="cs-chapter"><span class="cs-chapter-num">01 / APPLICATION</span><h3>Next.js, React &amp; TypeScript</h3><p class="cs-chapter-desc">Next.js 16 App Router untuk halaman publik dan route handlers. React/TypeScript mengelola UI; Node.js menjalankan scripts terjadwal.</p><details class="cs-usage"><summary>How it’s used</summary><p>Frontend membaca API snapshot dan histori. Pemrosesan sumber dilakukan job terpisah, bukan unduhan FTP pada setiap kunjungan realtime.</p></details></article>
+      <article id="hotspot-stack-map" class="cs-chapter"><span class="cs-chapter-num">02 / GEOSPATIAL UI</span><h3>Leaflet 1.9.4 &amp; GeoJSON</h3><p class="cs-chapter-desc">Leaflet imperative mengatur marker, popup, panes, serta overlay batas dan konsesi. Esri World Imagery berperan sebagai basemap, bukan library pemrosesan.</p><details class="cs-usage"><summary>How it’s used</summary><p>GeoJSON merupakan data konteks lokal. Lifecycle marker tidak dicampur dengan rendering angin; modul ini tidak dinyatakan memakai React Leaflet.</p></details></article>
+      <article id="hotspot-stack-wind" class="cs-chapter"><span class="cs-chapter-num">03 / ANIMATION &amp; WIND</span><h3>Custom WebGL &amp; Canvas</h3><p class="cs-chapter-desc">Engine GPU khusus merender partikel dari U10/V10. ECMWF IFS 0.25° merupakan integrasi sumber data, bukan engine animasi.</p><details class="cs-usage"><summary>How it’s used</summary><p>Wind JSON disiapkan cron; canvas terpisah dari marker Leaflet. Bukan Windy API, pySTEPS, atau model prediksi penyebaran api.</p></details></article>
+      <article id="hotspot-stack-data" class="cs-chapter"><span class="cs-chapter-num">04 / DATA &amp; STATE</span><h3>MySQL, mysql2 &amp; Local Files</h3><p class="cs-chapter-desc">mysql2 mengakses snapshot terbaru dan histori per tanggal secara langsung. JSON/file lokal menyimpan angin, peta regional, dan konteks geografis.</p><details class="cs-usage"><summary>How it’s used</summary><p>hotspot_data id=1 untuk snapshot, hotspot_history untuk source date. Tidak memakai Prisma pada modul ini, dan tidak mengklaim cloud object storage.</p></details></article>
+      <article id="hotspot-stack-processing" class="cs-chapter"><span class="cs-chapter-num">05 / DATA PROCESSING</span><h3>Python, ecCodes &amp; Shell Cron</h3><p class="cs-chapter-desc">curl/shell dan scripts TypeScript menangani sinkronisasi sumber. Python/ecCodes mendekode GRIB2 serta menyelaraskan angin model.</p><details class="cs-usage"><summary>How it’s used</summary><p>Hotspot divalidasi sebelum snapshot diperbarui. Wind job dicoba setelah sync hotspot sukses, dengan kegagalan terpisah. Versi Python, Node.js, dan MySQL tidak ditebak.</p></details></article>
+      <article id="hotspot-stack-export" class="cs-chapter"><span class="cs-chapter-num">06 / CARTOGRAPHIC EXPORT</span><h3>Matplotlib &amp; jsPDF 4.2.1</h3><p class="cs-chapter-desc">Matplotlib menghasilkan peta wilayah di Python. jsPDF mengekspor tabel titik A4 landscape di browser sesuai mode aktif.</p><details class="cs-usage"><summary>How it’s used</summary><p>Gambar/PDF regional memakai cache server dan manifest terbaru. Ekspor tabel frontend bukan proses yang sama dengan renderer regional Python.</p></details></article>
+      <article id="hotspot-stack-cache" class="cs-chapter"><span class="cs-chapter-num">07 / RELIABILITY PATTERNS · NOT LIBRARIES</span><h3>Content Cache &amp; Atomic Publish</h3><p class="cs-chapter-desc">SHA-256 cache key, atomic rename, serta memory mtime cache membatasi pembacaan parsial dan pengolahan berulang.</p><details class="cs-usage"><summary>How it’s used</summary><p>Manifest dan wind JSON dipublikasikan secara atomik. Pola lokal ini tidak menyiratkan Redis, Kafka, atau queue daemon.</p></details></article>
+    </div></div><div class="cs-decisions"><h3>Engineering choices</h3><div class="cs-decisions-grid"><article class="cs-decision-card"><span class="cs-decision-num">01 / SNAPSHOT READS</span><h4>Kunjungan tidak bergantung FTP</h4><p>API realtime membaca MySQL; tanggal histori yang belum tercache memakai jalur on-demand tersendiri.</p></article><article class="cs-decision-card"><span class="cs-decision-num">02 / SEPARATE RENDERING</span><h4>WebGL di luar marker lifecycle</h4><p>Canvas GPU khusus menangani vektor angin, Leaflet mempertahankan marker dan konteks spasial.</p></article><article class="cs-decision-card"><span class="cs-decision-num">03 / CONSISTENT FILE OUTPUT</span><h4>Atomic publish dan content cache</h4><p>Hasil plot serta file angin dibaca setelah publikasi lengkap, dengan cache untuk mengurangi rendering ulang.</p></article></div></div></section>
+
+    <footer class="project-footer">
+      <a href="../index.html#projects" class="footer-btn">
+        <span>← Kembali ke Daftar Proyek</span>
+      </a>
+    </footer>
+  </main>
+
+  <dialog id="partner-image-modal" class="image-modal" aria-label="Gambar Peta Hotspot diperbesar">
+    <button class="image-modal-close" type="button" aria-label="Tutup gambar" autofocus>×</button>
+    <img src="../assets/images/hotspot/peta%20hotspot.png" alt="Peta sebaran titik panas Kaltim oleh BMKG Kaltim" />
+  </dialog>
+
+  <!-- GSAP & ScrollTrigger CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+  <!-- Flow Script -->
+  <script src="../src/js/atmos-wrf.js"></script>
+  <script src="../src/js/project-case-study.js"></script>
+</body>
+
+</html>

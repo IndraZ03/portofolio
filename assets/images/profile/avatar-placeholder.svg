@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <radialGradient id="avatarGrad" cx="35%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#2a2a30"/>
+      <stop offset="60%" stop-color="#141417"/>
+      <stop offset="100%" stop-color="#0a0a0c"/>
+    </radialGradient>
+    <linearGradient id="strokeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="rgba(255,255,255,0.2)"/>
+      <stop offset="100%" stop-color="rgba(255,255,255,0.02)"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="400" rx="32" fill="url(#avatarGrad)"/>
+  <rect width="398" height="398" x="1" y="1" rx="31" fill="none" stroke="url(#strokeGrad)" stroke-width="2"/>
+  <circle cx="200" cy="155" r="54" fill="#1f1f24" stroke="rgba(255,255,255,0.12)" stroke-width="2"/>
+  <path d="M110 320 C110 245, 150 225, 200 225 C250 225, 290 245, 290 320" fill="#1f1f24" stroke="rgba(255,255,255,0.12)" stroke-width="2"/>
+  <circle cx="200" cy="155" r="28" fill="#2d2d35"/>
+  <text x="200" y="360" text-anchor="middle" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="13" letter-spacing="1">INDRAZ03 [AVATAR PLACEHOLDER]</text>
+</svg>

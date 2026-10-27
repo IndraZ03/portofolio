@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <radialGradient id="bgSosmed" cx="30%" cy="30%" r="85%">
+      <stop offset="0%" stop-color="#221827"/>
+      <stop offset="60%" stop-color="#140f17"/>
+      <stop offset="100%" stop-color="#0a0a0b"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="600" rx="24" fill="url(#bgSosmed)"/>
+  <rect width="798" height="598" x="1" y="1" rx="23" fill="none" stroke="rgba(255,255,255,0.12)" stroke-width="2"/>
+  <g fill="none" stroke="rgba(255,255,255,0.15)" stroke-width="1.5">
+    <rect x="270" y="150" width="260" height="260" rx="48"/>
+    <circle cx="400" cy="280" r="70"/>
+    <circle cx="480" cy="200" r="14" fill="#f4f4f5" fill-opacity="0.7"/>
+    <path d="M 180 280 L 250 280 M 550 280 L 620 280"/>
+  </g>
+  <text x="40" y="540" fill="#a1a1aa" font-family="monospace" font-size="16" letter-spacing="2">AUTO SOSMED METAMORPH</text>
+  <text x="760" y="540" text-anchor="end" fill="#71717a" font-family="monospace" font-size="14">METEOFACTORY · META API</text>
+</svg>

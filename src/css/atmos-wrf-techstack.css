@@ -1,0 +1,250 @@
+/* ==========================================================================
+   ATMOS / WRF-WEB TECH STACK SECTION
+   Editorial Technology Index with Category Rail and Engineering Notes
+   ========================================================================== */
+
+.atmos-techstack {
+  position: relative;
+  z-index: 2;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 32px 100px;
+  border-top: 1px solid var(--border-subtle);
+}
+
+.atmos-techstack .stack-eyebrow {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+}
+
+.atmos-techstack h2 {
+  margin: 12px 0 16px;
+  font-family: var(--font-display);
+  font-size: clamp(2.8rem, 6vw, 4.6rem);
+  line-height: 1;
+  letter-spacing: 0.02em;
+  color: var(--text-primary);
+}
+
+.atmos-techstack .stack-intro {
+  max-width: 720px;
+  color: var(--text-muted);
+  line-height: 1.7;
+  font-size: 1rem;
+}
+
+/* Category Filter Rail */
+.atmos-techstack .stack-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 40px 0 32px;
+}
+
+.atmos-techstack .stack-nav-btn {
+  font-family: var(--font-mono);
+  font-size: 0.74rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 7px 14px;
+  border-radius: var(--radius-full);
+  background: var(--bg-surface);
+  border: 1px solid var(--border-highlight);
+  color: var(--text-muted);
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.atmos-techstack .stack-nav-btn:hover {
+  color: var(--text-primary);
+  border-color: var(--border-active);
+}
+
+.atmos-techstack .stack-nav-btn.active {
+  background: var(--text-primary);
+  color: var(--bg-primary);
+  border-color: var(--text-primary);
+  font-weight: 600;
+}
+
+/* Stack Groups List */
+.atmos-techstack .stack-groups {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+.atmos-techstack .stack-group {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-bottom: 32px;
+  border-bottom: 1px solid var(--border-subtle);
+  transition: opacity 0.3s ease;
+}
+
+.atmos-techstack .stack-group:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.atmos-techstack .stack-group.dimmed {
+  opacity: 0.3;
+}
+
+.atmos-techstack .stack-group-header {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.atmos-techstack .stack-group-title {
+  font-family: var(--font-display);
+  font-size: 1.8rem;
+  color: var(--text-primary);
+  letter-spacing: 0.02em;
+}
+
+.atmos-techstack .stack-group-desc {
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  line-height: 1.55;
+}
+
+/* Tabular Technology Table */
+.atmos-techstack .stack-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 8px;
+}
+
+.atmos-techstack .stack-table th,
+.atmos-techstack .stack-table td {
+  padding: 12px 14px;
+  text-align: left;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.atmos-techstack .stack-table th {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+  background: var(--bg-surface);
+}
+
+.atmos-techstack .stack-table tr:hover td {
+  background: var(--bg-surface);
+}
+
+.atmos-techstack .stack-tech-name {
+  font-family: var(--font-mono);
+  font-size: 0.86rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.atmos-techstack .stack-tech-tag {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  padding: 2px 6px;
+  border-radius: 4px;
+  background: var(--bg-clay);
+  border: 1px solid var(--border-subtle);
+  color: var(--text-dim);
+  margin-left: 8px;
+}
+
+.atmos-techstack .stack-tech-role {
+  font-size: 0.86rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+/* Engineering Insights Spotlight */
+.atmos-techstack .stack-insights {
+  margin-top: 64px;
+  padding: 32px;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-highlight);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--clay-shadow);
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.atmos-techstack .stack-insights-header {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.atmos-techstack .stack-insights-eyebrow {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+}
+
+.atmos-techstack .stack-insights-header h3 {
+  font-family: var(--font-display);
+  font-size: clamp(1.8rem, 3vw, 2.3rem);
+  letter-spacing: 0.02em;
+  color: var(--text-primary);
+}
+
+.atmos-techstack .stack-insights-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.atmos-techstack .stack-insight-card {
+  padding: 20px;
+  background: var(--bg-clay);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.atmos-techstack .stack-insight-card h4 {
+  font-family: var(--font-mono);
+  font-size: 0.88rem;
+  color: var(--text-primary);
+}
+
+.atmos-techstack .stack-insight-card p {
+  font-size: 0.84rem;
+  line-height: 1.65;
+  color: var(--text-muted);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .atmos-techstack .stack-insights-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .atmos-techstack {
+    padding: 60px 16px 80px;
+  }
+
+  .atmos-techstack .stack-table th:last-child,
+  .atmos-techstack .stack-table td:last-child {
+    display: none;
+  }
+
+  .atmos-techstack .stack-insights {
+    padding: 20px;
+  }
+}

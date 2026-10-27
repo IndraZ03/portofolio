@@ -1,0 +1,367 @@
+/* ==========================================================================
+   AUTO-SOSMED SYSTEM ARCHITECTURE SECTION
+   Tactile dark-clay architecture canvas with responsive layers and nodes
+   ========================================================================== */
+
+.sosmed-architecture {
+  position: relative;
+  z-index: 2;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 32px 100px;
+  border-top: 1px solid var(--border-subtle);
+}
+
+.sosmed-architecture .arch-eyebrow {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+}
+
+.sosmed-architecture h2 {
+  margin: 12px 0 16px;
+  font-family: var(--font-display);
+  font-size: clamp(2.8rem, 6vw, 4.6rem);
+  line-height: 1;
+  letter-spacing: 0.02em;
+  color: var(--text-primary);
+}
+
+.sosmed-architecture .arch-intro {
+  max-width: 720px;
+  color: var(--text-muted);
+  line-height: 1.7;
+  font-size: 1rem;
+}
+
+/* Layer filter pills */
+.arch-layers-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 40px 0 28px;
+}
+
+.arch-layer-btn {
+  font-family: var(--font-mono);
+  font-size: 0.74rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 7px 14px;
+  border-radius: var(--radius-full);
+  background: var(--bg-surface);
+  border: 1px solid var(--border-highlight);
+  color: var(--text-muted);
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.arch-layer-btn:hover {
+  color: var(--text-primary);
+  border-color: var(--border-active);
+}
+
+.arch-layer-btn.active {
+  background: var(--text-primary);
+  color: var(--bg-primary);
+  border-color: var(--text-primary);
+  font-weight: 600;
+}
+
+/* Architecture Canvas */
+.arch-canvas {
+  position: relative;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-highlight);
+  border-radius: var(--radius-lg);
+  padding: 32px;
+  box-shadow: var(--clay-shadow);
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+/* Zones layout */
+.arch-zones-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.arch-zone {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding: 20px;
+  background: var(--bg-clay);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  transition: border-color 0.3s ease, opacity 0.3s ease;
+}
+
+.arch-zone-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.arch-zone-title {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+}
+
+.arch-zone-badge {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  padding: 2px 6px;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: 4px;
+  color: var(--text-dim);
+}
+
+.arch-nodes-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Architecture Node Button */
+.arch-node {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 12px 14px;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-highlight);
+  border-radius: var(--radius-sm);
+  text-align: left;
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  color: var(--text-primary);
+  width: 100%;
+}
+
+.arch-node:hover {
+  border-color: var(--border-active);
+  transform: translateY(-2px);
+  background: var(--bg-clay-hover);
+}
+
+.arch-node:focus-visible {
+  outline: 2px solid var(--text-primary);
+  outline-offset: 2px;
+}
+
+.arch-node.selected {
+  border-color: var(--text-primary);
+  background: #242430;
+  box-shadow: 0 0 14px rgba(255, 255, 255, 0.15);
+}
+
+.arch-node.highlighted {
+  border-color: var(--border-active);
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.arch-node.dimmed {
+  opacity: 0.35;
+}
+
+.arch-node-name {
+  font-family: var(--font-sans);
+  font-weight: 600;
+  font-size: 0.88rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.arch-node-type {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  color: var(--text-dim);
+}
+
+.arch-node-sub {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--text-muted);
+}
+
+/* Connector flow guide */
+.arch-flow-guide {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+  padding: 14px 18px;
+  background: rgba(10, 10, 11, 0.6);
+  border: 1px dashed var(--border-highlight);
+  border-radius: var(--radius-sm);
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--text-muted);
+}
+
+.arch-flow-pill {
+  padding: 3px 8px;
+  border-radius: 4px;
+  background: var(--bg-clay);
+  color: var(--text-primary);
+}
+
+/* Detail inspector panel */
+.arch-inspector {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 20px 24px;
+  background: var(--bg-primary);
+  border: 1px solid var(--border-highlight);
+  border-radius: var(--radius-md);
+  min-height: 120px;
+}
+
+.arch-inspector-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.arch-inspector-meta {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.arch-inspector-tag {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+}
+
+.arch-inspector-title {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  letter-spacing: 0.02em;
+  color: var(--text-primary);
+}
+
+.arch-inspector-desc {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+.arch-inspector-connections {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 6px;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--text-dim);
+}
+
+.arch-inspector-reset {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  padding: 4px 10px;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: 4px;
+  color: var(--text-muted);
+  cursor: pointer;
+}
+
+.arch-inspector-reset:hover {
+  color: var(--text-primary);
+  border-color: var(--border-highlight);
+}
+
+/* Key Architectural Decisions */
+.arch-decisions {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+  margin-top: 40px;
+}
+
+.arch-decision-card {
+  padding: 20px;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.arch-decision-num {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--text-dim);
+}
+
+.arch-decision-card h4 {
+  font-family: var(--font-display);
+  font-size: 1.35rem;
+  letter-spacing: 0.02em;
+  color: var(--text-primary);
+}
+
+.arch-decision-card p {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .arch-zones-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .arch-decisions {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .sosmed-architecture {
+    padding: 60px 16px 80px;
+  }
+
+  .arch-canvas {
+    padding: 20px 16px;
+  }
+
+  .arch-zone {
+    padding: 16px;
+  }
+
+  .arch-inspector {
+    padding: 16px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .arch-node,
+  .arch-layer-btn,
+  .arch-zone {
+    transition: none !important;
+    transform: none !important;
+  }
+}

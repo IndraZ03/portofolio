@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <rect width="800" height="600" rx="24" fill="#0f1622"/>
+  <rect x="1" y="1" width="798" height="598" rx="23" fill="none" stroke="#f4f4f5" stroke-opacity="0.12" stroke-width="2"/>
+  <rect x="150" y="110" width="500" height="310" rx="14" fill="#151e2d" stroke="#f4f4f5" stroke-opacity="0.2" stroke-width="2"/>
+  <line x1="150" y1="160" x2="650" y2="160" stroke="#f4f4f5" stroke-opacity="0.2" stroke-width="2"/>
+  <circle cx="180" cy="135" r="5" fill="#f4f4f5" fill-opacity="0.5"/>
+  <circle cx="200" cy="135" r="5" fill="#f4f4f5" fill-opacity="0.5"/>
+  <circle cx="220" cy="135" r="5" fill="#f4f4f5" fill-opacity="0.5"/>
+  <rect x="250" y="125" width="280" height="20" rx="6" fill="#0f1622"/>
+  <text x="260" y="139" fill="#a1a1aa" font-family="monospace" font-size="11">kaltim.bmkg.go.id</text>
+  <path d="M 200 240 L 300 240 M 200 270 L 420 270 M 200 300 L 360 300" stroke="#f4f4f5" stroke-opacity="0.4" stroke-width="3" stroke-linecap="round"/>
+  <rect x="470" y="210" width="140" height="120" rx="10" fill="#0f1622" stroke="#f4f4f5" stroke-opacity="0.2" stroke-width="2"/>
+  <text x="40" y="525" fill="#f4f4f5" font-family="sans-serif" font-size="28">WEB BMKG KALTIM</text>
+  <text x="40" y="565" fill="#a1a1aa" font-family="monospace" font-size="16">SISTEM PELAYANAN DATA · API BMKG</text>
+</svg>

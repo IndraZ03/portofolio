@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <radialGradient id="bgMetar" cx="30%" cy="30%" r="85%">
+      <stop offset="0%" stop-color="#192329"/>
+      <stop offset="60%" stop-color="#0f1519"/>
+      <stop offset="100%" stop-color="#0a0a0b"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="600" rx="24" fill="url(#bgMetar)"/>
+  <rect width="798" height="598" x="1" y="1" rx="23" fill="none" stroke="rgba(255,255,255,0.12)" stroke-width="2"/>
+  <g fill="none" stroke="rgba(255,255,255,0.15)" stroke-width="1.5">
+    <rect x="220" y="140" width="360" height="240" rx="14"/>
+    <line x1="220" y1="190" x2="580" y2="190"/>
+    <line x1="250" y1="165" x2="270" y2="165"/>
+    <line x1="280" y1="165" x2="300" y2="165"/>
+    <line x1="310" y1="165" x2="330" y2="165"/>
+  </g>
+  <g fill="#f4f4f5" font-family="monospace" font-size="14">
+    <text x="250" y="235">METAR / SYNOP</text>
+    <text x="250" y="275">OBSERVASI &amp; KOORDINASI</text>
+    <text x="250" y="315">BMKGSoftv2 · WhatsApp</text>
+  </g>
+  <text x="40" y="540" fill="#a1a1aa" font-family="monospace" font-size="16" letter-spacing="2">MONITORING METAR &amp; SYNOP</text>
+  <text x="760" y="540" text-anchor="end" fill="#71717a" font-family="monospace" font-size="14">BMKGSOFTV2 · OBS</text>
+</svg>

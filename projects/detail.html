@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Cerita proyek Dwi Indra Prasetyo: pengembangan web dan otomatisasi untuk mendukung layanan meteorologi." />
+  <title>Cerita Proyek — IndraZ03</title>
+  <link rel="stylesheet" href="../src/css/style.css" />
+  <link rel="stylesheet" href="../src/css/responsive.css" />
+  <link rel="stylesheet" href="../src/css/project-detail.css" />
+</head>
+
+<body>
+  <a href="#project-content" class="skip-link">Lewati ke cerita proyek</a>
+  <div class="grid-bg-overlay" aria-hidden="true"></div>
+
+  <header class="site-header" role="banner">
+    <div class="nav-container">
+      <a href="../index.html#home" class="wordmark" aria-label="IndraZ03 Home">IndraZ03</a>
+      <nav class="nav-menu-desktop" aria-label="Main Navigation">
+        <a href="../index.html#home" class="nav-link">Home</a>
+        <a href="../index.html#projects" class="nav-link active" aria-current="page">Projects</a>
+        <a href="../index.html#about" class="nav-link">About Me</a>
+        <!-- <a href="../index.html#kind-words" class="nav-link">Kind Words</a> -->
+      </nav>
+      <a href="../index.html#contact" class="btn btn-clay nav-contact-btn">Let's Talk</a>
+      <button class="mobile-toggle" type="button" aria-label="Toggle navigation menu" aria-expanded="false"
+        aria-controls="mobile-nav">
+        <span class="mobile-toggle-bars" aria-hidden="true"><span></span><span></span></span>
+      </button>
+    </div>
+  </header>
+
+  <nav id="mobile-nav" class="mobile-drawer" aria-label="Mobile Navigation" aria-hidden="true">
+    <a href="../index.html#home" class="nav-link">Home</a>
+    <a href="../index.html#projects" class="nav-link active" aria-current="page">Projects</a>
+    <a href="../index.html#about" class="nav-link">About Me</a>
+    <!-- <a href="../index.html#kind-words" class="nav-link">Kind Words</a> -->
+    <a href="../index.html#contact" class="btn btn-primary">Let's Talk</a>
+  </nav>
+
+  <main id="project-content" class="project-story" tabindex="-1">
+    <a class="story-back" href="../index.html#projects">← Kembali ke daftar proyek</a>
+    <article id="project-article" hidden>
+      <header class="story-header">
+        <p id="project-category" class="story-eyebrow"></p>
+        <h1 id="project-title"></h1>
+        <p id="project-summary" class="story-lead"></p>
+      </header>
+      <figure class="story-cover">
+        <img id="project-image" alt="" width="800" height="600" />
+        <figcaption>Ilustrasi proyek · bukan tangkapan layar aplikasi</figcaption>
+      </figure>
+      <div id="project-sections" class="story-sections"></div>
+    </article>
+    <p id="project-message" role="status">Memuat cerita proyek…</p>
+    <noscript><p>Aktifkan JavaScript untuk membaca cerita proyek.</p></noscript>
+    <footer class="story-footer">
+      <a href="../index.html#projects" class="btn btn-clay">Kembali ke Daftar Proyek</a>
+    </footer>
+  </main>
+
+  <script type="module" src="../src/js/project-detail.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,302 @@
+/* ==========================================================================
+   STORY JOURNEY SECTION — 1:1 REPLICATION OF LESS RAIN HORIZON
+   https://codepen.io/luis-lessrain/pen/LERxVqv
+   Sticky WebGL viewport with smooth sky-to-storm sea cycle and black transitions
+   ========================================================================== */
+
+#story_wrapper {
+  position: relative;
+  width: 100%;
+  margin-top: 80px;
+  background: #0a0a0f;
+  border-top: 1px solid rgba(200, 255, 71, 0.18);
+  border-bottom: 1px solid rgba(200, 255, 71, 0.18);
+  --story-accent: #c8ff47;
+  --story-fg: #e8e4d9;
+  --story-muted: #6a6a7e;
+  --story-card-bg: rgba(10, 10, 15, 0.22);
+  --story-card-border: rgba(200, 255, 71, 0.2);
+  --story-font-display: "Bebas Neue", sans-serif;
+  --story-font-mono: "DM Mono", ui-monospace, monospace;
+}
+
+/* Seamless blend into portfolio base black at top and bottom */
+.story-vignette-top,
+.story-vignette-bottom {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 200px;
+  pointer-events: none;
+  z-index: 15;
+}
+.story-vignette-top {
+  top: 0;
+  background: linear-gradient(to bottom, #0a0a0b 0%, rgba(10, 10, 15, 0.9) 30%, transparent 100%);
+}
+.story-vignette-bottom {
+  bottom: 0;
+  background: linear-gradient(to top, #0a0a0b 0%, rgba(10, 10, 15, 0.9) 30%, transparent 100%);
+}
+
+/* STICKY WEBGL VIEWPORT — Background stays fixed in view while sections scroll past */
+.story-viewport {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  height: 100dvh;
+  overflow: hidden;
+  z-index: 1;
+}
+
+#webgl_canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  pointer-events: none;
+}
+
+/* Left side Scene Dots */
+#scene_strip {
+  position: absolute;
+  left: 2rem;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 20;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  pointer-events: none;
+}
+
+.scene-dot {
+  width: 0.25rem;
+  height: 0.25rem;
+  border-radius: 50%;
+  background: var(--story-muted);
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.scene-dot.active {
+  background: var(--story-accent);
+  transform: scale(2);
+}
+
+/* SCROLL CONTAINER (Scrolls over the sticky WebGL viewport) */
+#scroll_container {
+  position: relative;
+  z-index: 10;
+  margin-top: -100vh; /* pull sections right on top of the sticky viewport */
+}
+
+.story-section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 6rem 5rem;
+  box-sizing: border-box;
+}
+
+/* Text Cards exactly matching LessRain design tokens */
+.text-card {
+  max-width: 32rem;
+  padding: 2.25rem 2rem;
+  background: var(--story-card-bg);
+  border: 1px solid var(--story-card-border);
+  border-radius: 0.875rem;
+  backdrop-filter: blur(14px) saturate(130%);
+  -webkit-backdrop-filter: blur(14px) saturate(130%);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
+  font-family: var(--story-font-mono);
+  color: var(--story-fg);
+}
+
+.text-card.right {
+  margin-left: auto;
+  text-align: right;
+}
+
+.text-card.center {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  max-width: 36rem;
+}
+
+.text-card .tag {
+  font-family: var(--story-font-mono);
+  font-size: 0.6rem;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--story-accent);
+  margin-bottom: 1.1rem;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+.text-card .tag.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.text-card :is(h1, h2) {
+  font-family: var(--story-font-display);
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  line-height: 0.92;
+  color: var(--story-fg);
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity 0.5s ease 0.08s, transform 0.5s ease 0.08s;
+}
+
+.text-card h1 {
+  font-size: clamp(3rem, 7vw, 5.5rem);
+}
+.text-card h2 {
+  font-size: clamp(2.4rem, 5.5vw, 4.5rem);
+}
+
+.text-card :is(h1, h2).visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.text-card .body-text {
+  font-size: 0.78rem;
+  line-height: 1.8;
+  color: rgba(232, 228, 217, 0.65);
+  margin-top: 1.25rem;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.5s ease 0.2s, transform 0.5s ease 0.2s;
+}
+.text-card .body-text.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.h-line {
+  width: 3.125rem;
+  height: 1px;
+  background: var(--story-accent);
+  margin-bottom: 1.2rem;
+  opacity: 0;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+.h-line.visible {
+  opacity: 1;
+  transform: scaleX(1);
+}
+.text-card.right .h-line {
+  transform-origin: right;
+  margin-left: auto;
+}
+.text-card.center .h-line {
+  transform-origin: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.stat-row {
+  display: flex;
+  gap: 2.2rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.5s ease 0.3s, transform 0.5s ease 0.3s;
+}
+.stat-row.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.stat-num {
+  font-family: var(--story-font-display);
+  font-size: 2.2rem;
+  color: var(--story-accent);
+  line-height: 1;
+}
+
+.stat-label {
+  font-family: var(--story-font-mono);
+  font-size: 0.58rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--story-muted);
+}
+
+.cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-top: 1.75rem;
+  padding: 0.6rem 1.25rem;
+  border: 1px solid var(--story-accent);
+  color: var(--story-accent);
+  font-family: var(--story-font-mono);
+  font-size: 0.62rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 0.35rem;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.5s ease 0.35s, transform 0.5s ease 0.35s, background 0.2s, color 0.2s;
+}
+.cta.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.cta:hover {
+  background: var(--story-accent);
+  color: #0a0a0f;
+}
+.cta svg {
+  width: 0.68rem;
+  height: 0.68rem;
+}
+
+@media (max-width: 768px) {
+  .story-section {
+    padding: 4rem 1.25rem;
+  }
+  #hud {
+    right: 1.2rem;
+    top: 1.2rem;
+  }
+  #scene_strip {
+    display: none;
+  }
+  .text-card {
+    max-width: 100%;
+  }
+  .text-card.right,
+  .text-card.center {
+    margin-left: 0;
+    margin-right: 0;
+    text-align: left;
+  }
+  .text-card.right .h-line,
+  .text-card.center .h-line {
+    margin-left: 0;
+    transform-origin: left;
+  }
+  .stat-row {
+    gap: 1.5rem;
+  }
+}
