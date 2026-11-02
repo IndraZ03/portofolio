@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", () => {
       steps.forEach((step, i) => {
         const state = i < index ? "completed" : i === index ? "active" : "upcoming";
         step.dataset.state = state;
-        statuses[i].textContent = `${labels[i]} · ${stateLabels[state]}`;
+        statuses[i].textContent = [labels[i], stateLabels[state]].filter(Boolean).join(" · ");
         if (i === index) step.setAttribute("aria-current", "step");
         else step.removeAttribute("aria-current");
       });

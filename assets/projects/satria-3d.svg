@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <radialGradient id="bgSatria" cx="32%" cy="28%" r="85%">
+      <stop offset="0%" stop-color="#1a2430"/>
+      <stop offset="58%" stop-color="#10161c"/>
+      <stop offset="100%" stop-color="#0a0a0b"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="600" rx="24" fill="url(#bgSatria)"/>
+  <rect width="798" height="598" x="1" y="1" rx="23" fill="none" stroke="rgba(255,255,255,0.12)" stroke-width="2"/>
+  <g fill="none" stroke="rgba(255,255,255,0.16)" stroke-width="1.5">
+    <ellipse cx="400" cy="250" rx="168" ry="52"/>
+    <ellipse cx="400" cy="250" rx="112" ry="34"/>
+    <ellipse cx="400" cy="250" rx="56" ry="16"/>
+    <path d="M 232 250 Q 400 120 568 250 Q 400 380 232 250"/>
+    <path d="M 288 250 Q 400 168 512 250 Q 400 332 288 250"/>
+  </g>
+  <g fill="#f4f4f5">
+    <circle cx="360" cy="232" r="7"/>
+    <circle cx="430" cy="248" r="5" fill-opacity="0.75"/>
+    <circle cx="392" cy="276" r="4" fill-opacity="0.55"/>
+  </g>
+  <text x="40" y="530" fill="#f4f4f5" font-family="sans-serif" font-size="28">SATRIA-3D</text>
+  <text x="40" y="562" fill="#a1a1aa" font-family="monospace" font-size="15" letter-spacing="1.5">RADAR VOLUMETRIK · SEL KONVEKTIF</text>
+</svg>

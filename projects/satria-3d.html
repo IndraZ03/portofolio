@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Yudha Satrio Oktavandi dan Dwi Indra Prasetyo membangun SATRIA-3D, platform interaktif analisis volumetrik radar dengan visualisasi tiga dimensi dan pelacakan sel konvektif secara multitemporal sebagai sistem pendukung keputusan." />
+  <title>SATRIA-3D — Proyek</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../src/css/style.css" />
+  <link rel="stylesheet" href="../src/css/responsive.css" />
+  <link rel="stylesheet" href="../src/css/atmos-wrf.css" />
+  <link rel="stylesheet" href="../src/css/whatsapp-workflow.css" />
+  <link rel="stylesheet" href="../src/css/project-case-study.css" />
+  <link rel="stylesheet" href="../src/css/satria-3d.css" />
+</head>
+<body class="satria-page">
+  <div class="grid-bg-overlay" aria-hidden="true"></div>
+  <header class="site-header" role="banner">
+    <div class="nav-container">
+      <a href="../index.html#home" class="wordmark" aria-label="IndraZ03 Home">IndraZ03</a>
+      <nav class="nav-menu-desktop" aria-label="Main Navigation">
+        <a href="../index.html#home" class="nav-link">Home</a>
+        <a href="../index.html#projects" class="nav-link active" aria-current="page">Projects</a>
+        <a href="../index.html#about" class="nav-link">About Me</a>
+      </nav>
+      <a href="../index.html#contact" class="btn btn-clay nav-contact-btn">Let's Talk</a>
+      <button class="mobile-toggle" type="button" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobile-nav">
+        <div class="mobile-toggle-bars" aria-hidden="true"><span></span><span></span></div>
+      </button>
+    </div>
+  </header>
+  <nav id="mobile-nav" class="mobile-drawer" aria-label="Mobile Navigation" aria-hidden="true">
+    <a href="../index.html#home" class="nav-link">Home</a>
+    <a href="../index.html#projects" class="nav-link active">Projects</a>
+    <a href="../index.html#about" class="nav-link">About Me</a>
+    <a href="../index.html#contact" class="btn btn-primary" style="margin-top: 16px;">Let's Talk</a>
+  </nav>
+  <main>
+    <section class="hero-stage">
+      <div class="hero-tag">Analisis Radar · Visualisasi 3D</div>
+      <h1 class="hero-headline">SATRIA-3D</h1>
+      <p class="hero-desc">Yudha Satrio Oktavandi dan Dwi Indra Prasetyo membangun SATRIA-3D, platform interaktif analisis volumetrik radar yang menampilkan volume data dalam visualisasi tiga dimensi sekaligus melacak sel konvektif secara multitemporal, sehingga hasil bacaan radar dapat dipakai langsung sebagai sistem pendukung keputusan.</p>
+    </section>
+    <div class="satria-media">
+      <button class="satria-preview" type="button" data-video="../assets/videos/SATRIA_OMC_DISPLAY_FULL_1.webm" aria-label="Putar video SATRIA-3D pertama" aria-haspopup="dialog" aria-controls="satria-player">
+        <img src="../assets/images/satria-3d/video-1-poster.webp" width="1440" height="756" alt="" />
+        <span class="satria-play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z" /></svg></span>
+      </button>
+      <button class="satria-preview" type="button" data-video="../assets/videos/SATRIA_OMC_DISPLAY_FULL_2.webm" aria-label="Putar video SATRIA-3D kedua" aria-haspopup="dialog" aria-controls="satria-player">
+        <img src="../assets/images/satria-3d/video-2-poster.webp" width="1440" height="756" alt="" loading="lazy" />
+        <span class="satria-play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z" /></svg></span>
+      </button>
+      <section class="satria-carousel" aria-label="Galeri SATRIA-3D" aria-roledescription="carousel">
+        <div class="satria-viewport">
+          <div class="satria-track">
+            <div class="satria-slide" role="group" aria-roledescription="slide" aria-label="1 dari 3"><img src="../assets/images/satria-3d/1.webp" alt="Tampilan aplikasi SATRIA-3D, gambar 1" loading="lazy" /></div>
+            <div class="satria-slide" role="group" aria-roledescription="slide" aria-label="2 dari 3" aria-hidden="true"><img src="../assets/images/satria-3d/2.webp" alt="Tampilan aplikasi SATRIA-3D, gambar 2" loading="lazy" /></div>
+            <div class="satria-slide" role="group" aria-roledescription="slide" aria-label="3 dari 3" aria-hidden="true"><img src="../assets/images/satria-3d/3.webp" alt="Tampilan aplikasi SATRIA-3D, gambar 3" loading="lazy" /></div>
+          </div>
+          <button class="satria-arrow satria-prev" type="button" aria-label="Gambar sebelumnya">&#8249;</button>
+          <button class="satria-arrow satria-next" type="button" aria-label="Gambar berikutnya">&#8250;</button>
+        </div>
+        <div class="satria-dots" aria-label="Pilih gambar">
+          <button type="button" aria-label="Tampilkan gambar 1" aria-current="true"></button>
+          <button type="button" aria-label="Tampilkan gambar 2"></button>
+          <button type="button" aria-label="Tampilkan gambar 3"></button>
+        </div>
+        <p class="satria-sr-only" aria-live="polite" aria-atomic="true" id="satria-slide-status">Gambar 1 dari 3</p>
+      </section>
+    </div>
+    <div class="scroll-instruction">↓ Gulir untuk mengikuti alur proyek ↓</div>
+    <section class="scroll-wrapper" aria-label="Perjalanan proyek SATRIA-3D">
+      <div class="canvas" style="width: 3180px;">
+        <svg class="lines-layer" viewBox="0 0 3180 900" preserveAspectRatio="none" aria-hidden="true">
+          <path class="line-path" d="M 120 450 L 2830 450" />
+        </svg>
+        <div class="clay-element connector-dot gs-reveal" style="left: 120px; top: 450px;"></div>
+        <article class="clay-element flow-card gs-reveal" style="left: 400px; top: 450px;">
+          <button class="card-media-wrap card-image-trigger" type="button" aria-haspopup="dialog" aria-controls="partner-image-modal" aria-label="Perbesar ilustrasi visualisasi volume radar">
+            <img src="../assets/images/satria-3d/visualisasi.svg" alt="Ilustrasi volume radar untuk memahami struktur vertikal sel konvektif" />
+            <span class="card-image-hint">Klik untuk memperbesar</span>
+          </button>
+          <div class="card-body">
+            <h2 class="card-title">Periode El Niño &amp; Ilusi Inti Konvektif</h2>
+            <p class="card-desc">Pada periode El Niño, konveksi di banyak wilayah Indonesia cenderung melemah. Berkurangnya kelembapan dan gerak udara naik dapat menghambat pertumbuhan sel awan hingga tahap matang. Produk radar dua dimensi seperti CMAX menampilkan reflektivitas maksimum dalam kolom atmosfer, tetapi tidak menunjukkan ketinggian inti tersebut. Pantulan kuat pada peta belum cukup untuk memastikan posisi vertikal maupun kematangan sel konvektif.</p>
+          </div>
+        </article>
+        <div class="clay-element connector-dot gs-reveal" style="left: 740px; top: 450px;"></div>
+        <article class="clay-element flow-card gs-reveal" style="left: 1080px; top: 450px;">
+          <button class="card-media-wrap card-image-trigger" type="button" aria-haspopup="dialog" aria-controls="partner-image-modal" aria-label="Perbesar gambar kolaborasi SATRIA-3D">
+            <img src="../assets/images/satria-3d/kolaborasi.svg" alt="Ilustrasi kolaborasi Yudha Satrio Oktavandi dan Dwi Indra Prasetyo" />
+            <span class="card-image-hint">Klik untuk memperbesar</span>
+          </button>
+          <div class="card-body">
+            <h2 class="card-title">Kolaborasi Pembangun</h2>
+            <p class="card-desc">Meningkatnya kebutuhan Operasi Modifikasi Cuaca (OMC) mendorong Yudha Satrio Oktavandi dan Dwi Indra Prasetyo berinisiatif membangun SATRIA-3D. Platform interaktif untuk analisis volumetrik radar ini dikembangkan sebagai sistem pendukung keputusan saat pelaksanaan OMC.</p>
+          </div>
+        </article>
+        <div class="clay-element connector-dot gs-reveal" style="left: 1420px; top: 450px;"></div>
+        <article class="clay-element flow-card gs-reveal" style="left: 1760px; top: 450px;">
+          <button class="card-media-wrap card-image-trigger" type="button" aria-haspopup="dialog" aria-controls="partner-image-modal" aria-label="Perbesar gambar pelacakan sel konvektif">
+            <img src="../assets/images/satria-3d/pelacakan.svg" alt="Ilustrasi pelacakan sel konvektif secara multitemporal" />
+            <span class="card-image-hint">Klik untuk memperbesar</span>
+          </button>
+          <div class="card-body">
+            <h2 class="card-title">Pelacakan Multitemporal</h2>
+            <p class="card-desc">Sel konvektif dilacak secara multitemporal. Rangkaian bacaan lintas waktu itu yang menjadikan SATRIA-3D sistem pendukung keputusan.</p>
+          </div>
+        </article>
+        <div class="clay-element connector-dot gs-reveal" style="left: 2100px; top: 450px;"></div>
+        <article class="clay-element flow-card gs-reveal" style="left: 2440px; top: 450px;">
+          <button class="card-media-wrap card-image-trigger" type="button" aria-haspopup="dialog" aria-controls="partner-image-modal" aria-label="Perbesar tampilan SATRIA-3D untuk interpretasi radar">
+            <img src="../assets/images/satria-3d/3.webp" alt="Tampilan aplikasi SATRIA-3D sebagai konteks pembacaan data radar" loading="lazy" />
+            <span class="card-image-hint">Klik untuk memperbesar</span>
+          </button>
+          <div class="card-body">
+            <h2 class="card-title">Dari Visualisasi ke Interpretasi</h2>
+            <p class="card-desc">Struktur vertikal dan perubahan sel antarwaktu memberi konteks yang tidak cukup dibaca dari satu peta radar. SATRIA-3D dirancang untuk membantu analis meninjau informasi tersebut bersama kondisi atmosfer dan pengamatan lain saat OMC. Visualisasi menjadi bahan pertimbangan, bukan penentu otomatis kelayakan semai.</p>
+          </div>
+        </article>
+        <div class="clay-element connector-dot gs-reveal" style="left: 2830px; top: 450px;"></div>
+      </div>
+    </section>
+    <section id="how-it-works" class="wa-workflow satria-workflow" data-case-workflow aria-labelledby="satria-workflow-title">
+      <span class="workflow-eyebrow">How It Works · Radar volume to 3D</span>
+      <h2 id="satria-workflow-title">Dari sapuan radar ke struktur awan.</h2>
+      <div class="workflow-layout">
+        <ol class="workflow-steps">
+          <li class="workflow-step">
+            <span class="workflow-node" aria-hidden="true"></span>
+            <div class="workflow-step-copy"><span class="workflow-step-status"></span><h3>Volume Radar Masuk</h3><p>Satu volume mengumpulkan pengamatan pada beberapa elevasi. Setiap sweep tersusun atas ray pada berbagai azimut dan range gate sepanjang arah pemindaian. Struktur ini menjadi titik awal untuk membaca atmosfer secara volumetrik.</p></div>
+            <figure class="workflow-visual"><div class="workflow-stack"><span class="workflow-token is-emphasis">Satu volume radar</span><div class="workflow-diagram"><span class="workflow-token">Sweep</span><span class="workflow-arrow" aria-hidden="true">→</span><span class="workflow-token">Ray</span><span class="workflow-arrow" aria-hidden="true">→</span><span class="workflow-token">Range gate</span></div></div><figcaption>Visualisasi konseptual · format berkas, sumber radar, dan mekanisme ingest memerlukan verifikasi kode.</figcaption></figure>
+          </li>
+          <li class="workflow-step">
+            <span class="workflow-node" aria-hidden="true">02</span>
+            <div class="workflow-step-copy"><span class="workflow-step-status">Tahap 02</span><h3>Decode &amp; Quality Check</h3><p>Pembaca format mengurai metadata dan nilai pengamatan menjadi array. Sampel hilang atau tidak valid ditandai dengan mask, bukan disamakan dengan nilai nol. Cakupan pemeriksaan kualitas mengikuti decoder dan metode yang benar-benar tersedia.</p></div>
+            <figure class="workflow-visual"><div class="workflow-stack"><span class="workflow-token">Berkas radar + metadata</span><span class="workflow-arrow" aria-hidden="true">↓</span><span class="workflow-token is-emphasis">Array pengamatan + mask validitas</span><span class="workflow-token is-conditional">Missing / invalid · bukan nol</span></div><figcaption>Visualisasi konseptual · mask validitas tidak berarti seluruh gangguan radar sudah dikoreksi.</figcaption></figure>
+          </li>
+          <li class="workflow-step">
+            <span class="workflow-node" aria-hidden="true">03</span>
+            <div class="workflow-step-copy"><span class="workflow-step-status">Tahap 03</span><h3>Georeferensi dan Gridding</h3><p>Jarak, azimut, dan elevasi dipetakan ke posisi spasial tiga dimensi. Grid voxel membantu membaca struktur vertikal, tetapi sampel hasil interpolasi tetap berbeda dari pengamatan asli. Area tanpa dukungan pengamatan tidak diisi seolah-olah terukur.</p></div>
+            <figure class="workflow-visual"><div class="workflow-diagram"><span class="workflow-token">Polar · r, φ, θ</span><span class="workflow-arrow" aria-hidden="true">→</span><span class="workflow-token is-emphasis">Posisi 3D / grid voxel</span></div><div class="satria-data-legend"><span class="workflow-token">Pengamatan asli</span><span class="workflow-token satria-interpolated">Interpolasi</span><span class="workflow-token is-conditional">Tidak tersedia</span></div><figcaption>Visualisasi konseptual · garis solid: pengamatan; titik: interpolasi; putus-putus: tidak tersedia. Model geometri dan resolusi grid belum diverifikasi.</figcaption></figure>
+          </li>
+          <li class="workflow-step">
+            <span class="workflow-node" aria-hidden="true">04</span>
+            <div class="workflow-step-copy"><span class="workflow-step-status">Tahap 04</span><h3>Parameter Meteorologis</h3><p>Medan reflektivitas dapat diolah menjadi produk untuk membaca intensitas dan struktur vertikal, seperti CMAX, Echo Top, Echo Base, dan VIL, sesuai implementasi. CMAX merangkum maksimum satu kolom; produk lain menambahkan konteks ketinggian atau estimasi kandungan air.</p></div>
+            <figure class="workflow-visual"><div class="workflow-stack"><span class="workflow-token">Medan reflektivitas</span><div class="workflow-diagram"><span class="workflow-token">CMAX</span><span class="workflow-token">Echo Top / Base</span><span class="workflow-token is-conditional">VIL · estimasi</span></div><span class="workflow-token is-conditional">Profil termodinamika · sumber eksternal opsional</span></div><figcaption>Visualisasi konseptual · daftar produk, ambang, satuan, dan metode memerlukan validasi. Freezing level tidak diperoleh dari reflektivitas saja.</figcaption></figure>
+          </li>
+          <li class="workflow-step">
+            <span class="workflow-node conditional" aria-hidden="true">05</span>
+            <div class="workflow-step-copy"><span class="workflow-step-status">Tahap 05</span><h3>Evolusi Sel Konvektif</h3><p>Jika beberapa volume lintas waktu tersedia, objek konvektif dapat diidentifikasi dan dihubungkan antarpemindaian. Riwayat posisi dan perubahan struktur membantu membaca evolusi sel. Tahap ini tidak wajib untuk satu volume dan tidak otomatis merupakan nowcast.</p></div>
+            <figure class="workflow-visual"><div class="workflow-stack"><div class="workflow-diagram"><span class="workflow-token">Volume T₀</span><span class="workflow-token">Volume T₁</span><span class="workflow-token">Volume T₂</span></div><span class="workflow-token is-conditional">Identifikasi + asosiasi objek</span><span class="workflow-token is-emphasis">Riwayat sel / perubahan antarwaktu</span></div><figcaption>Visualisasi konseptual · tanpa lintasan atau angka pengamatan rekaan. Metode tracking dan kesesuaiannya dengan SCIT belum diverifikasi.</figcaption></figure>
+          </li>
+          <li class="workflow-step">
+            <span class="workflow-node" aria-hidden="true">06</span>
+            <div class="workflow-step-copy"><span class="workflow-step-status">Tahap 06</span><h3>Distribusi ke Browser</h3><p>Dalam rancangan, backend Python menyajikan data dan metadata melalui HTTP. Browser menerima snapshot untuk menyiapkan objek visual, sehingga pemrosesan radar terpisah dari presentasi. Snapshot tidak berarti streaming pengamatan secara langsung.</p></div>
+            <figure class="workflow-visual"><div class="workflow-stack"><span class="workflow-token">Python · data / metadata</span><span class="workflow-arrow" aria-hidden="true">↓ HTTP</span><span class="workflow-token is-emphasis">Snapshot terstruktur</span><span class="workflow-arrow" aria-hidden="true">↓</span><span class="workflow-token">Browser</span></div><figcaption>Visualisasi konseptual · endpoint, skema payload, cache, dan interval pembaruan memerlukan verifikasi implementasi.</figcaption></figure>
+          </li>
+          <li class="workflow-step">
+            <span class="workflow-node" aria-hidden="true">07</span>
+            <div class="workflow-step-copy"><span class="workflow-step-status">Tahap 07</span><h3>Eksplorasi Radar 3D</h3><p>Rancangan antarmuka Three.js/WebGL menempatkan data dalam ruang tiga dimensi agar bentuk dan hubungan vertikal lebih mudah dibaca. Pengguna dapat meninjau sudut pandang; probe voxel, profil vertikal, dan riwayat sel hanya dinyatakan sebagai fitur jika implementasinya terverifikasi.</p></div>
+            <figure class="workflow-visual"><div class="workflow-stack"><span class="workflow-token">Snapshot volume + hasil analisis</span><span class="workflow-arrow" aria-hidden="true">↓</span><span class="workflow-token is-emphasis">Three.js / WebGL · tampilan 3D</span><span class="workflow-token is-conditional">Probe / profil / riwayat · jika tersedia</span></div><figcaption>Visualisasi konseptual · ilustrasi alur, bukan canvas radar aktif. Tidak menyatakan akurasi, FPS, atau keberhasilan OMC.</figcaption></figure>
+          </li>
+        </ol>
+        <aside class="workflow-panel" aria-label="Visual konseptual tahap analisis radar"><span class="workflow-panel-label"></span><h3 class="workflow-panel-title">Volume Radar Masuk</h3><div class="workflow-panel-body"></div></aside>
+      </div>
+    </section>
+    <section id="key-features" class="cs-section cs-features satria-features" aria-labelledby="satria-features-title">
+      <span class="cs-eyebrow">Key Features · Studi desain</span>
+      <h2 id="satria-features-title">Bukan hanya peta. Baca struktur awan.</h2>
+      <div class="cs-editorial-layout">
+        <nav class="cs-index" aria-label="Indeks fitur SATRIA-3D">
+          <a class="cs-index-link" href="#satria-feature-volume">01 · Volume 3D</a>
+          <a class="cs-index-link" href="#satria-feature-parameters">02 · Parameter radar</a>
+          <a class="cs-index-link" href="#satria-feature-profile">03 · Profil vertikal</a>
+          <a class="cs-index-link" href="#satria-feature-tracking">04 · Pelacakan sel</a>
+          <a class="cs-index-link" href="#satria-feature-context">05 · Konteks OMC</a>
+        </nav>
+        <div class="cs-chapters">
+          <article id="satria-feature-volume" class="cs-chapter">
+            <span class="cs-chapter-num">01</span>
+            <h3>Eksplorasi volume radar 3D</h3>
+            <p class="cs-chapter-desc">Melihat sebaran reflektivitas dari beberapa elevasi dalam satu ruang membantu membaca hubungan horizontal dan vertikal yang tidak terlihat pada peta maksimum kolom saja.</p>
+            <ul class="cs-proofs"><li>Manfaat analitis: membandingkan posisi inti gema dengan struktur di sekitarnya.</li><li>Kontrol orbit, pemotongan ketinggian, dan resolusi voxel memerlukan verifikasi implementasi.</li></ul>
+            <figure class="cs-media-frame"><span class="cs-media-badge">Ilustrasi konseptual · Bukan data radar</span><div class="cs-schematic"><span>Elevasi atas · struktur vertikal</span><strong>Volume 3D · hubungan antar-lapisan</strong><span>Elevasi bawah · sebaran horizontal</span></div><figcaption>Lapisan menjelaskan cara membaca ruang, bukan ukuran voxel atau ketinggian awan aktual.</figcaption></figure>
+          </article>
+          <article id="satria-feature-parameters" class="cs-chapter">
+            <span class="cs-chapter-num">02</span>
+            <h3>Parameter radar, konteks berbeda</h3>
+            <p class="cs-chapter-desc">CMAX merangkum reflektivitas maksimum sepanjang kolom. Echo Top dan Echo Base membantu membaca rentang vertikal gema berdasarkan ambang yang dipilih. Keduanya menjawab pertanyaan berbeda, bukan saling menggantikan.</p>
+            <ul class="cs-proofs"><li>Manfaat analitis: membedakan intensitas maksimum dengan posisi vertikal gema.</li><li>VIL dan LWC merupakan estimasi berbasis asumsi, bukan pengukuran langsung seluruh air cair. Produk, ambang, dan satuan perlu diaudit.</li></ul>
+            <figure class="cs-media-frame"><span class="cs-media-badge">Perbandingan konseptual · Tanpa nilai pengamatan</span><div class="satria-feature-compare"><div class="cs-schematic"><strong>CMAX · peta 2D</strong><span>Maksimum satu kolom</span><span>Ketinggian maksimum tidak ditampilkan</span></div><div class="cs-schematic"><strong>Struktur vertikal</strong><span>Echo Top · batas gema atas</span><span>Echo Base · batas gema bawah</span></div></div><figcaption>Batas gema bergantung pada ambang; tidak identik dengan batas fisik seluruh awan. Tidak menyatakan tampilan 3D lebih akurat.</figcaption></figure>
+          </article>
+          <article id="satria-feature-profile" class="cs-chapter">
+            <span class="cs-chapter-num">03</span>
+            <h3>Profil dan penampang vertikal</h3>
+            <p class="cs-chapter-desc">Profil pada satu lokasi membantu memeriksa perubahan reflektivitas terhadap ketinggian. Penampang sepanjang lintasan A–B memberi konteks bagaimana struktur tersebut berubah dari satu posisi ke posisi lain.</p>
+            <ul class="cs-proofs"><li>Manfaat analitis: memisahkan pembacaan satu kolom dari irisan melintasi beberapa kolom.</li><li>Seleksi titik, raycasting, profil, dan vertical cross-section harus diverifikasi terpisah.</li></ul>
+            <figure class="cs-media-frame"><span class="cs-media-badge">Ilustrasi konseptual · Bukan kontrol analisis</span><div class="satria-feature-compare"><div class="cs-schematic"><span>Satu lokasi</span><strong>Profil vertikal</strong><span>Reflektivitas (dBZ) terhadap ketinggian</span></div><div class="cs-schematic"><span>Lintasan A–B</span><strong>Penampang vertikal</strong><span>Struktur sepanjang lintasan dan ketinggian</span></div></div><figcaption>Skema cakupan pembacaan, tanpa kurva atau angka rekaan yang menyerupai hasil pengukuran.</figcaption></figure>
+          </article>
+          <article id="satria-feature-tracking" class="cs-chapter">
+            <span class="cs-chapter-num">04 · Kondisional</span>
+            <h3>Perubahan sel lintas waktu</h3>
+            <p class="cs-chapter-desc">Deret volume memungkinkan pembandingan lokasi dan struktur sel antarwaktu. Riwayat intensitas, Echo Top, atau estimasi VIL dapat membantu mengenali perkembangan objek jika identifikasi dan asosiasi sel tersedia.</p>
+            <ul class="cs-proofs"><li>Manfaat analitis: membaca perubahan sel, bukan menyimpulkan evolusi dari satu snapshot.</li><li>Memerlukan beberapa volume dan metode asosiasi yang tervalidasi. Tidak mengklaim SCIT lengkap atau nowcast.</li></ul>
+            <figure class="cs-media-frame"><span class="cs-media-badge">Ilustrasi konseptual · Urutan waktu saja</span><div class="satria-feature-frames" aria-label="Enam waktu pengamatan konseptual"><span>T₀</span><span>T₁</span><span>T₂</span><span>T₃</span><span>T₄</span><span>T₅</span></div><div class="cs-schematic"><strong>Apakah objek yang sama masih dapat dihubungkan?</strong><span>Asosiasi sel perlu diuji, termasuk saat sel membelah atau bergabung.</span></div><figcaption>Tidak menampilkan lintasan, centroid, atau tren numerik tanpa dataset pendukung.</figcaption></figure>
+          </article>
+          <article id="satria-feature-context" class="cs-chapter">
+            <span class="cs-chapter-num">05 · Data eksternal opsional</span>
+            <h3>Konteks meteorologis untuk OMC</h3>
+            <p class="cs-chapter-desc">Struktur gema radar dapat dibaca bersama profil atmosfer dari sumber lain untuk membantu karakterisasi awan. Sumber, waktu, dan cakupan data perlu diperiksa sebelum informasi tersebut dipadukan.</p>
+            <ul class="cs-proofs"><li>Manfaat analitis: menempatkan struktur vertikal radar dalam konteks termodinamika.</li><li>Freezing level tidak diukur dari reflektivitas saja. Tidak memberikan keputusan kelayakan semai otomatis atau jaminan peningkatan hujan.</li></ul>
+            <figure class="cs-media-frame"><span class="cs-media-badge">Ilustrasi konseptual · Sumber berbeda</span><div class="satria-feature-compare"><div class="cs-schematic"><strong>Radar</strong><span>Reflektivitas dan geometri gema</span></div><div class="cs-schematic"><strong>Atmosfer eksternal · opsional</strong><span>Profil suhu / sounding beserta metadata</span></div></div><figcaption>Interpretasi bersama memerlukan kesesuaian ruang dan waktu; data termodinamika bukan produk reflektivitas langsung.</figcaption></figure>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section id="system-architecture" class="cs-section cs-architecture satria-architecture" aria-labelledby="satria-architecture-title">
+      <span class="cs-eyebrow">System Architecture · Arsitektur konseptual</span>
+      <h2 id="satria-architecture-title">Pemrosesan ilmiah. Eksplorasi di browser.</h2>
+      <div class="cs-arch-nav" role="group" aria-label="Fokus lapisan arsitektur">
+        <button type="button" class="cs-filter-btn" data-layer-filter="all" aria-pressed="true">Semua lapisan</button>
+        <button type="button" class="cs-filter-btn" data-layer-filter="input" aria-pressed="false">Sumber data</button>
+        <button type="button" class="cs-filter-btn" data-layer-filter="scientific" aria-pressed="false">Pemrosesan ilmiah</button>
+        <button type="button" class="cs-filter-btn" data-layer-filter="service" aria-pressed="false">Layanan data</button>
+        <button type="button" class="cs-filter-btn" data-layer-filter="client" aria-pressed="false">Browser</button>
+      </div>
+      <div class="cs-canvas">
+        <div class="cs-zones">
+          <div class="cs-zone"><div class="cs-zone-header"><span class="cs-zone-title">01 · Sumber data</span></div><div class="cs-components">
+            <div id="satria-arch-radar" class="cs-component" data-layer="input"><button type="button" class="cs-component-btn" aria-pressed="false"><span class="cs-node-name">Volume radar + metadata</span><span class="cs-node-sub">Sumber pengamatan · Rancangan</span></button><div class="cs-node-detail"><p><strong>Peran:</strong> menyediakan sweep, ray, range gate, waktu, dan geometri radar.</p><p><strong>Input:</strong> hasil pemindaian eksternal. <strong>Output:</strong> berkas volume dan metadata untuk decoder.</p><p><strong>Verifikasi:</strong> perlu audit sumber, format berkas, momen radar, serta mekanisme akuisisi. Tidak mengklaim live streaming atau vendor berdasarkan ekstensi berkas.</p></div></div>
+            <div id="satria-arch-temperature" class="cs-component" data-layer="input external"><button type="button" class="cs-component-btn" aria-pressed="false"><span class="cs-node-name">Profil suhu / sounding</span><span class="cs-node-sub">Opsional · Sumber eksternal</span></button><div class="cs-node-detail"><p><strong>Peran:</strong> memberi konteks termodinamika bila tersedia.</p><p><strong>Input:</strong> profil atmosfer beserta metadata ruang dan waktu. <strong>Output:</strong> informasi suhu untuk analisis yang memerlukannya.</p><p><strong>Verifikasi:</strong> sumber, pencocokan ruang-waktu, dan integrasi perlu audit. Freezing level tidak diperoleh dari reflektivitas saja.</p></div></div>
+            <div id="satria-arch-geo" class="cs-component" data-layer="input external"><button type="button" class="cs-component-btn" aria-pressed="false"><span class="cs-node-name">Referensi wilayah / GeoJSON</span><span class="cs-node-sub">Opsional · Konteks spasial</span></button><div class="cs-node-detail"><p><strong>Peran:</strong> menyediakan referensi geografis pada tampilan.</p><p><strong>Input:</strong> geometri wilayah dari sumber yang diizinkan. <strong>Output:</strong> overlay spasial untuk browser.</p><p><strong>Verifikasi:</strong> sumber, lisensi, proyeksi, dan kesesuaian koordinat perlu audit. Bukan pengamatan radar.</p></div></div>
+          </div></div>
+          <div class="cs-zone"><div class="cs-zone-header"><span class="cs-zone-title">02 · Pemrosesan ilmiah</span></div><div class="cs-components">
+            <div id="satria-arch-decode" class="cs-component" data-layer="scientific"><button type="button" class="cs-component-btn" aria-pressed="false"><span class="cs-node-name">Decoder / quality flags</span><span class="cs-node-sub">Nilai pengamatan + validitas</span></button><div class="cs-node-detail"><p><strong>Peran:</strong> mengurai format dan mempertahankan status sampel.</p><p><strong>Input:</strong> byte berkas dan metadata. <strong>Output:</strong> volume polar beserta mask missing atau invalid.</p><p><strong>Verifikasi:</strong> mapping nilai, kalibrasi, dan pemeriksaan kualitas perlu audit. Mask tidak membuktikan seluruh gangguan telah dikoreksi.</p></div></div>
+            <div id="satria-arch-grid" class="cs-component" data-layer="scientific"><button type="button" class="cs-component-btn" aria-pressed="false"><span class="cs-node-name">Georeferensi / grid spasial</span><span class="cs-node-sub">Koordinat 3D + dukungan observasi</span></button><div class="cs-node-detail"><p><strong>Peran:</strong> memetakan sampel polar ke representasi spasial.</p><p><strong>Input:</strong> pengamatan polar dan geometri radar. <strong>Output:</strong> data 3D beserta mask dan penanda interpolasi.</p><p><strong>Verifikasi:</strong> model geometri, transformasi koordinat, resolusi, dan interpolasi perlu audit. Sampel hasil interpolasi bukan pengamatan asli.</p></div></div>
+            <div id="satria-arch-engine" class="cs-component" data-layer="scientific"><button type="button" class="cs-component-btn" aria-pressed="false"><span class="cs-node-name">Mesin parameter radar</span><span class="cs-node-sub">Produk turunan · Rancangan</span></button><div class="cs-node-detail"><p><strong>Peran:</strong> menurunkan produk meteorologis sesuai metode yang tersedia.</p><p><strong>Input:</strong> representasi radar yang sesuai, ambang, serta konteks eksternal opsional. <strong>Output:</strong> array produk dan metadata variabel.</p><p><strong>Verifikasi:</strong> fungsi, satuan, ambang, representasi tiap produk, dan uji numerik perlu audit. CMAX/ETOP/EBAS berbeda dari estimasi VIL/LWC; jalur grid pada diagram adalah penyederhanaan konseptual.</p></div></div>
+            <div id="satria-arch-tracker" class="cs-component" data-layer="scientific temporal"><button type="button" class="cs-component-btn" aria-pressed="false"><span class="cs-node-name">Identifikasi / pelacakan sel</span><span class="cs-node-sub">Kondisional · Memerlukan riwayat</span></button><div class="cs-node-detail"><p><strong>Peran:</strong> menghubungkan identitas objek antarvolume.</p><p><strong>Input:</strong> beberapa volume dan atribut objek lintas waktu. <strong>Output:</strong> ID serta riwayat sel jika asosiasi valid.</p><p><strong>Verifikasi:</strong> segmentasi, matching, split/merge, dan penanganan volume hilang perlu audit. Tidak menyatakan SCIT lengkap maupun nowcast.</p></div></div>
+          </div></div>
+          <div class="cs-zone"><div class="cs-zone-header"><span class="cs-zone-title">03 · Layanan data</span></div><div class="cs-components">
+            <div id="satria-arch-results" class="cs-component" data-layer="service"><button type="button" class="cs-component-btn" aria-pressed="false"><span class="cs-node-name">Hasil analitis + metadata</span><span class="cs-node-sub">Batas data konseptual · Bukan DB</span></button><div class="cs-node-detail"><p><strong>Peran:</strong> memisahkan hasil ilmiah dari bentuk presentasinya.</p><p><strong>Input:</strong> data volume, produk, dan riwayat jika tersedia. <strong>Output:</strong> struktur hasil untuk dilayani melalui HTTP.</p><p><strong>Verifikasi:</strong> skema dan penyimpanan perlu audit. Node tidak menyiratkan cache, database, snapshot persisten, atau direktori tertentu.</p></div></div>
+            <div id="satria-arch-http" class="cs-component" data-layer="service"><button type="button" class="cs-component-btn" aria-pressed="false"><span class="cs-node-name">Python HTTP API</span><span class="cs-node-sub">ThreadingHTTPServer · Dalam rancangan</span></button><div class="cs-node-detail"><p><strong>Peran:</strong> menyajikan data dan metadata kepada browser.</p><p><strong>Input:</strong> request HTTP dan hasil pengolahan. <strong>Output:</strong> response HTTP dengan payload sesuai implementasi.</p><p><strong>Verifikasi:</strong> routes, schema, cadence, dan concurrency perlu audit. Thread handling request bukan bukti compute pipeline paralel, auto-retry, atau keamanan produksi. Endpoint draf bukan kontrak API final.</p></div></div>
+          </div></div>
+          <div class="cs-zone"><div class="cs-zone-header"><span class="cs-zone-title">04 · Browser</span></div><div class="cs-components">
+            <div id="satria-arch-client" class="cs-component" data-layer="client"><button type="button" class="cs-component-btn" aria-pressed="false"><span class="cs-node-name">HTML / CSS / JavaScript</span><span class="cs-node-sub">Request dan persiapan tampilan</span></button><div class="cs-node-detail"><p><strong>Peran:</strong> menerima data dan menyiapkan state antarmuka.</p><p><strong>Input:</strong> response HTTP. <strong>Output:</strong> data scene dan kontrol browser.</p><p><strong>Verifikasi:</strong> parsing payload, transformasi koordinat, serta penanganan error perlu audit. HTTP request/response bukan WebSocket atau live streaming.</p></div></div>
+            <div id="satria-arch-view" class="cs-component" data-layer="client"><button type="button" class="cs-component-btn" aria-pressed="false"><span class="cs-node-name">Three.js / WebGL</span><span class="cs-node-sub">Scene 3D dan interpretasi visual</span></button><div class="cs-node-detail"><p><strong>Peran:</strong> merender struktur radar dan referensi wilayah.</p><p><strong>Input:</strong> data scene, koordinat, dan GeoJSON opsional. <strong>Output:</strong> tampilan 3D serta interaksi jika tersedia.</p><p><strong>Verifikasi:</strong> InstancedMesh, kontrol kamera, Raycaster, profil, dan capture perlu audit. Rendering GPU pada browser tidak membuktikan komputasi meteorologi GPU di backend.</p></div></div>
+          </div></div>
+        </div>
+        <ul class="cs-connections" aria-label="Hubungan data konseptual">
+          <li data-from="satria-arch-radar" data-to="satria-arch-decode">Volume radar → decoder · berkas dan metadata</li>
+          <li data-from="satria-arch-decode" data-to="satria-arch-grid">Decoder → grid spasial · pengamatan polar dan mask</li>
+          <li data-from="satria-arch-grid" data-to="satria-arch-engine">Grid spasial → mesin parameter · representasi analitis sesuai produk</li>
+          <li data-from="satria-arch-grid" data-to="satria-arch-results">Grid spasial → hasil analitis · volume untuk visualisasi</li>
+          <li data-from="satria-arch-engine" data-to="satria-arch-results">Mesin parameter → hasil analitis · produk dan metadata</li>
+          <li data-from="satria-arch-grid" data-to="satria-arch-tracker" data-conditional="true">Grid spasial ⇢ pelacakan · jika deret volume tersedia</li>
+          <li data-from="satria-arch-tracker" data-to="satria-arch-results" data-conditional="true">Pelacakan ⇢ hasil analitis · riwayat jika asosiasi valid</li>
+          <li data-from="satria-arch-temperature" data-to="satria-arch-engine" data-conditional="true">Profil suhu eksternal ⇢ mesin parameter · jika diperlukan dan tersedia</li>
+          <li data-from="satria-arch-geo" data-to="satria-arch-view" data-conditional="true">GeoJSON ⇢ tampilan 3D · overlay opsional</li>
+          <li data-from="satria-arch-results" data-to="satria-arch-http">Hasil analitis → Python HTTP API · data yang dilayani</li>
+          <li data-from="satria-arch-client" data-to="satria-arch-http">Browser → Python HTTP API · request HTTP</li>
+          <li data-from="satria-arch-http" data-to="satria-arch-client">Python HTTP API → browser · response data dan metadata</li>
+          <li data-from="satria-arch-client" data-to="satria-arch-view">JavaScript → Three.js/WebGL · data scene dan UI</li>
+        </ul>
+        <aside class="cs-inspector" aria-label="Detail komponen arsitektur" aria-live="polite"><div class="cs-inspector-head"><h3>Ringkasan arsitektur</h3><span class="cs-eyebrow">Detail komponen</span></div><div class="cs-inspector-body">Pilih node untuk membaca peran, input, output, dan hal yang memerlukan verifikasi. Ringkasan node dan daftar hubungan tetap terbaca tanpa JavaScript.</div><button type="button" class="cs-reset">Tampilkan semua</button></aside>
+      </div>
+    </section>
+    <section id="tech-stack" class="cs-section cs-stack satria-stack" aria-labelledby="satria-stack-title">
+      <span class="cs-eyebrow">Tech Stack · Teknologi dalam rancangan</span>
+      <h2 id="satria-stack-title">Pemrosesan Python. Visualisasi native browser.</h2>
+      <div class="cs-editorial-layout">
+        <nav class="cs-index" aria-label="Indeks teknologi SATRIA-3D">
+          <a class="cs-index-link" href="#satria-stack-backend">01 · Backend ilmiah</a>
+          <a class="cs-index-link" href="#satria-stack-http">02 · Layanan HTTP</a>
+          <a class="cs-index-link" href="#satria-stack-graphics">03 · Grafis 3D</a>
+          <a class="cs-index-link" href="#satria-stack-interface">04 · Antarmuka web</a>
+          <a class="cs-index-link" href="#satria-stack-data">05 · Data dan wilayah</a>
+          <a class="cs-index-link" href="#satria-stack-media">06 · Media kondisional</a>
+        </nav>
+        <div class="cs-chapters">
+          <article id="satria-stack-backend" class="cs-chapter">
+            <span class="cs-chapter-num">01 / Backend ilmiah</span>
+            <h3>Python</h3>
+            <p class="cs-chapter-desc">Runtime dalam rancangan untuk pembacaan, pengelolaan, dan pengolahan data radar sebelum hasil disajikan ke browser.</p>
+            <ul class="cs-proofs"><li><strong>Peran:</strong> menampung logika pengolahan serta data-service sesuai implementasi.</li><li><strong>Manfaat:</strong> memisahkan perhitungan ilmiah dari representasi grafis.</li><li><strong>Batas:</strong> performa CPU dan memori bergantung algoritma serta ukuran volume. Tidak menyiratkan seluruh komputasi memakai standard library.</li><li><strong>Verifikasi:</strong> entry point, versi Python, imports, dependensi numerik, dan pengujian fungsi meteorologis belum tersedia untuk audit.</li></ul>
+          </article>
+          <article id="satria-stack-http" class="cs-chapter">
+            <span class="cs-chapter-num">02 / Layanan HTTP</span>
+            <h3>ThreadingHTTPServer</h3>
+            <p class="cs-chapter-desc">Komponen <code>http.server.ThreadingHTTPServer</code> disebut sebagai layanan HTTP Python untuk menjawab permintaan browser.</p>
+            <ul class="cs-proofs"><li><strong>Peran:</strong> menangani request dan mengirim response berisi data atau metadata.</li><li><strong>Manfaat:</strong> menyediakan batas pertukaran data antara backend dan antarmuka.</li><li><strong>Batas:</strong> thread untuk handling request bukan bukti komputasi numerik paralel. Server ini tidak otomatis siap atau aman untuk exposure internet.</li><li><strong>Verifikasi:</strong> kode server, rute, pembaruan data, penanganan error, dan asumsi concurrency perlu audit. Tidak menampilkan endpoint draf sebagai kontrak final.</li></ul>
+          </article>
+          <article id="satria-stack-graphics" class="cs-chapter">
+            <span class="cs-chapter-num">03 / Grafis 3D</span>
+            <h3>Three.js + WebGL</h3>
+            <p class="cs-chapter-desc">Lapisan grafis browser untuk mengatur scene, kamera, dan representasi volume radar dalam ruang tiga dimensi.</p>
+            <ul class="cs-proofs"><li><strong>Peran:</strong> Three.js mengelola objek grafis; WebGL menyediakan rendering pada browser.</li><li><strong>Manfaat:</strong> memungkinkan struktur vertikal dibaca dari berbagai sudut pandang.</li><li><strong>Batas:</strong> kemampuan GPU, driver, browser, transparansi, dan pembaruan buffer memengaruhi hasil. Rendering bukan validasi parameter meteorologi.</li><li><strong>Verifikasi:</strong> versi, imports, <code>WebGLRenderer</code>, <code>InstancedMesh</code>, dan <code>Raycaster</code> perlu diperiksa. Tidak ada klaim FPS atau jumlah voxel teruji.</li></ul>
+          </article>
+          <article id="satria-stack-interface" class="cs-chapter">
+            <span class="cs-chapter-num">04 / Antarmuka web</span>
+            <h3>HTML / CSS / JavaScript</h3>
+            <p class="cs-chapter-desc">Struktur panel, tata letak, kontrol, dan logika interaksi untuk workspace analisis radar dalam rancangan aplikasi.</p>
+            <ul class="cs-proofs"><li><strong>Peran:</strong> HTML membentuk struktur, CSS mengatur presentasi, JavaScript menghubungkan request data, state UI, dan scene.</li><li><strong>Manfaat:</strong> menyatukan kontrol analisis dan visualisasi pada browser.</li><li><strong>Batas:</strong> aksesibilitas, responsivitas, dan penanganan kegagalan data bergantung implementasi. Tidak mengasumsikan framework atau bundler tertentu.</li><li><strong>Verifikasi:</strong> berkas frontend SATRIA, event handling, dan sinkronisasi state perlu audit; kode halaman portofolio bukan penggantinya.</li></ul>
+          </article>
+          <article id="satria-stack-data" class="cs-chapter">
+            <span class="cs-chapter-num">05 / Data dan wilayah</span>
+            <h3>HTTP / JSON / GeoJSON</h3>
+            <p class="cs-chapter-desc">HTTP untuk pertukaran request/response, JSON untuk data terstruktur, dan GeoJSON untuk referensi geografis yang disebut dalam rancangan.</p>
+            <ul class="cs-proofs"><li><strong>Peran:</strong> membedakan transport, bentuk payload, dan format geometri wilayah.</li><li><strong>Manfaat:</strong> data analitis dan konteks spasial dapat dijelaskan terpisah dari tampilan.</li><li><strong>Batas:</strong> payload besar menambah transfer dan parsing. Tidak mengasumsikan seluruh volume dikirim sebagai JSON atau tersedia sebagai stream live.</li><li><strong>Verifikasi:</strong> payload aktual, unit, timestamp, mask validitas, CRS, transformasi koordinat, sumber, dan lisensi GeoJSON perlu audit.</li></ul>
+          </article>
+          <article id="satria-stack-media" class="cs-chapter">
+            <span class="cs-chapter-num">06 / Media · Kondisional, perlu validasi</span>
+            <h3>Capture API + MediaRecorder</h3>
+            <p class="cs-chapter-desc">Kemampuan dokumentasi sesi hanya dinyatakan tersedia bila recorder aplikasi dan hasil pengujiannya dapat dibuktikan.</p>
+            <ul class="cs-proofs"><li><strong>Peran:</strong> <code>captureStream()</code> dapat menyediakan stream kanvas; <code>getDisplayMedia()</code> meminta layar atau tab pilihan pengguna; <code>MediaRecorder</code> merekam stream yang didukung.</li><li><strong>Manfaat:</strong> membedakan dokumentasi kanvas visualisasi dari tangkapan layar yang dapat mencakup antarmuka lain.</li><li><strong>Batas:</strong> canvas capture tidak otomatis merekam seluruh HUD HTML. Display capture memerlukan izin dan dukungan browser. Framerate atau bitrate yang diminta bukan jaminan hasil.</li><li><strong>Verifikasi:</strong> UI recorder, permission handling, fallback, dukungan codec, dan berkas hasil lintas browser belum diaudit. Video demo pada portofolio bukan bukti recorder internal.</li></ul>
+          </article>
+        </div>
+      </div>
+    </section>
+    <footer class="project-footer">
+      <a href="../index.html#projects" class="footer-btn"><span>← Kembali ke Daftar Proyek</span></a>
+    </footer>
+  </main>
+  <dialog id="partner-image-modal" class="image-modal" aria-label="Gambar SATRIA-3D diperbesar">
+    <button class="image-modal-close" type="button" aria-label="Tutup gambar" autofocus>×</button>
+    <img src="../assets/images/satria-3d/visualisasi.svg" alt="Ilustrasi volume radar yang divisualisasikan dalam tiga dimensi" />
+  </dialog>
+  <dialog id="satria-player" class="satria-player" aria-label="Pemutar video SATRIA-3D">
+    <div class="satria-player-stage">
+    <button class="satria-player-close" type="button" aria-label="Tutup video" autofocus>×</button>
+    <p class="satria-player-notice" role="status">klik ESC untuk keluar dari full screen</p>
+    <video controls playsinline preload="none" aria-label="Video SATRIA-3D"></video>
+    <p class="satria-player-error" role="alert" hidden></p>
+    <a class="satria-player-file" hidden>Buka file video langsung</a>
+    </div>
+  </dialog>
+  <script src="../src/js/satria-3d.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="../src/js/atmos-wrf.js"></script>
+  <script src="../src/js/project-case-study.js"></script>
+</body>
+</html>

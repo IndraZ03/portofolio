@@ -1,0 +1,53 @@
+.satria-page .scroll-wrapper { isolation: isolate; overflow: clip; z-index: 1; }
+.satria-page .flow-card { transition-property: box-shadow, border-color; }
+.satria-features .satria-feature-compare { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+.satria-features .satria-feature-frames { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 8px; margin-bottom: 20px; }
+.satria-feature-frames span { padding: 20px 4px; text-align: center; border: 1px dashed var(--border-highlight); border-radius: 8px; color: var(--text-primary); }
+.satria-features .cs-index-link { min-height: 44px; }
+.satria-features .cs-index-link:focus-visible { outline: 2px solid var(--text-primary); outline-offset: 4px; }
+.satria-features .cs-media-frame { overflow-wrap: anywhere; }
+@media (max-width: 600px) { .satria-features .satria-feature-compare { grid-template-columns: minmax(0, 1fr); } .satria-features .satria-feature-frames { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+.satria-workflow .satria-data-legend { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 20px; }
+.satria-workflow .workflow-token.satria-interpolated { border-style: dotted; }
+.satria-workflow .workflow-node { border-radius: 50%; }
+.satria-workflow .workflow-visual { border-radius: 12px; }
+.satria-workflow .workflow-token { border-radius: 6px; }
+.satria-workflow .workflow-panel { top: calc(var(--header-height, 80px) + 24px); }
+.satria-media { max-width: 1200px; padding: 0 32px 64px; margin: auto; position: relative; z-index: 2; display: grid; gap: 40px; }
+.satria-preview { display: block; position: relative; width: 100%; aspect-ratio: 40 / 21; padding: 0; overflow: hidden; border: 1px solid var(--border-highlight); border-radius: 20px; background: var(--bg-surface); cursor: pointer; box-shadow: var(--clay-shadow); }
+.satria-preview img { display: block; width: 100%; height: 100%; object-fit: contain; transition: filter .3s; }
+.satria-play { position: absolute; inset: 0; margin: auto; width: 76px; height: 76px; display: grid; place-items: center; border: 1px solid rgba(255,255,255,.6); border-radius: 50%; background: rgba(10,10,11,.7); color: var(--text-primary); backdrop-filter: blur(10px); transition: transform .3s, background .3s; }
+.satria-play svg { width: 34px; height: 34px; fill: currentColor; }
+.satria-preview:hover .satria-play { transform: scale(1.1); background: rgba(10,10,11,.9); }
+.satria-preview:hover img { filter: brightness(.85); }
+.satria-page button:focus-visible { outline: 2px solid var(--text-primary); outline-offset: 4px; }
+.satria-viewport { position: relative; overflow: hidden; border: 1px solid var(--border-highlight); border-radius: 20px; background: var(--bg-surface); box-shadow: var(--clay-shadow); }
+.satria-track { display: flex; transition: transform .55s cubic-bezier(.25,.8,.25,1); }
+.satria-slide { flex: 0 0 100%; min-width: 0; aspect-ratio: 16 / 10; }
+.satria-slide img { width: 100%; height: 100%; display: block; object-fit: contain; }
+.satria-arrow, .satria-player-close { width: 44px; height: 44px; display: grid; place-items: center; border: 1px solid var(--border-highlight); border-radius: 50%; background: rgba(18,18,23,.9); color: var(--text-primary); cursor: pointer; font-size: 2rem; line-height: 1; }
+.satria-arrow { position: absolute; top: 50%; transform: translateY(-50%); padding: 0; font-size: 0; }
+.satria-arrow::before { content: ''; position: absolute; inset: 0; margin: auto; width: 12px; height: 20px; background: currentColor; clip-path: polygon(0 0, 25% 0, 100% 50%, 25% 100%, 0 100%, 75% 50%); }
+.satria-prev::before { transform: rotate(180deg); }
+.satria-next::before { transform: none; }
+.satria-prev { left: 16px; } .satria-next { right: 16px; }
+.satria-dots { display: flex; justify-content: center; gap: 4px; margin-top: 12px; }
+.satria-dots button { width: 44px; height: 44px; border: 0; background: transparent; display: grid; place-items: center; cursor: pointer; }
+.satria-dots button::after { content: ''; width: 9px; height: 9px; border-radius: 50%; background: var(--text-dim); transition: background .2s, transform .2s; }
+.satria-dots button[aria-current]::after { background: var(--text-primary); transform: scale(1.35); }
+.satria-sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+.satria-page .scroll-instruction { visibility: hidden; }
+.satria-page .scroll-instruction.satria-instruction-visible { visibility: visible; }
+.satria-player { margin: auto; padding: 0; width: min(1200px, calc(100vw - 32px)); max-width: none; max-height: calc(100dvh - 32px); border: 1px solid var(--border-highlight); border-radius: 16px; color: var(--text-primary); background: #000; }
+.satria-player-stage { position: relative; padding: 58px 16px 16px; background: #000; color: var(--text-primary); }
+.satria-player::backdrop { background: rgba(0,0,0,.92); }
+.satria-player-stage:fullscreen { width: 100%; height: 100%; padding: 58px 16px 16px; }
+.satria-player video { display: block; width: 100%; height: auto; max-height: calc(100dvh - 110px); object-fit: contain; }
+.satria-player-stage:fullscreen video { height: calc(100dvh - 80px); max-height: none; }
+.satria-player-close { position: absolute; right: 12px; top: 8px; z-index: 2; }
+.satria-player-notice { position: absolute; left: 16px; right: 68px; top: 20px; font-size: .8rem; color: var(--text-muted); }
+.satria-player-error, .satria-player-file { margin-top: 12px; color: var(--text-primary); }
+.satria-player [hidden] { display: none; }
+@media (max-width: 900px) { .satria-media { padding: 0 20px 40px; gap: 24px; } }
+@media (max-width: 600px) { .satria-media { padding-left: 16px; padding-right: 16px; } .satria-preview, .satria-viewport { border-radius: 12px; } .satria-play { width: 56px; height: 56px; } .satria-prev { left: 6px; } .satria-next { right: 6px; } .satria-player-notice { font-size: .7rem; top: 14px; } }
+@media (prefers-reduced-motion: reduce) { .satria-track, .satria-preview img, .satria-play, .satria-dots button::after { transition: none; } }

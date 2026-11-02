@@ -172,5 +172,37 @@ export const projectsData = [
         ]
       }
     ]
+  },
+  {
+    id: "satria-3d",
+    title: "SATRIA-3D",
+    category: "Radar / Sistem Pendukung Keputusan",
+    summary: "Yudha Satrio Oktavandi dan Dwi Indra Prasetyo membangun SATRIA-3D, platform interaktif analisis volumetrik radar yang menampilkan volume data dalam visualisasi tiga dimensi sekaligus melacak sel konvektif secara multitemporal, sehingga hasil bacaan radar dapat dipakai langsung sebagai sistem pendukung keputusan.",
+    description: "Yudha Satrio Oktavandi dan Dwi Indra Prasetyo membangun SATRIA-3D, platform interaktif analisis volumetrik radar yang menampilkan volume data dalam visualisasi tiga dimensi sekaligus melacak sel konvektif secara multitemporal, sehingga hasil bacaan radar dapat dipakai langsung sebagai sistem pendukung keputusan.",
+    technologies: ["Radar Volumetrik", "Visualisasi 3D", "Pelacakan Sel", "Sistem Pendukung Keputusan"],
+    image: "assets/projects/satria-3d.svg",
+    demoUrl: "projects/satria-3d.html",
+    sourceUrl: "#",
+    featured: true,
+    sections: [
+      {
+        title: "Platform Analisis Volumetrik",
+        paragraphs: [
+          "Yudha Satrio Oktavandi dan Dwi Indra Prasetyo membangun SATRIA-3D sebagai platform interaktif untuk analisis volumetrik radar."
+        ]
+      },
+      {
+        title: "Visualisasi Tiga Dimensi",
+        paragraphs: [
+          "Volume data radar ditampilkan dalam visualisasi tiga dimensi, sehingga struktur sel tidak hanya terbaca sebagai bidang datar."
+        ]
+      },
+      {
+        title: "Pelacakan Multitemporal",
+        paragraphs: [
+          "Sel konvektif dilacak secara multitemporal. Rangkaian bacaan lintas waktu itu yang menjadikan SATRIA-3D sistem pendukung keputusan."
+        ]
+      }
+    ]
   }
 ];

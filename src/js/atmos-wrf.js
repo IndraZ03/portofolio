@@ -138,8 +138,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if (!canvas || !wrapper) return;
 
-  // Active fallback wheel listener for pinned containers on Windows browsers
-  wrapper.addEventListener("wheel", (e) => {
+  const isSatria = document.body.classList.contains("satria-page");
+  // SATRIA uses native scrolling: adding scrollBy to a passive wheel handler
+  // doubles the browser's scroll and can skip the beginning of the timeline.
+  if (!isSatria) wrapper.addEventListener("wheel", (e) => {
     if (Math.abs(e.deltaY) > 0.5) {
       window.scrollBy({ top: e.deltaY, behavior: "auto" });
     }
@@ -155,8 +157,8 @@ document.addEventListener("DOMContentLoaded", () => {
     scrollTrigger: {
       trigger: wrapper,
       pin: true,
-      anticipatePin: 1,
-      scrub: 1.2,
+      anticipatePin: isSatria ? 0 : 1,
+      scrub: isSatria ? 0.5 : 1.2,
       start: "top top",
       end: () => "+=" + getScrollMax(),
       invalidateOnRefresh: true
@@ -187,7 +189,11 @@ document.addEventListener("DOMContentLoaded", () => {
       opacity: 0,
       duration: 0.7,
       ease: "back.out(1.5)",
-      scrollTrigger: {
+      scrollTrigger: isSatria && el.offsetLeft <= window.innerWidth - 160 ? {
+        trigger: wrapper,
+        start: "top 65%",
+        toggleActions: "play none none reverse"
+      } : {
         trigger: el,
         containerAnimation: horizontalTween,
         start: "left right-=160",

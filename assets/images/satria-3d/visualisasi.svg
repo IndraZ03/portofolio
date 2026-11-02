@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" width="100%" height="100%">
+  <rect width="640" height="400" fill="#10161c"/>
+  <g fill="none" stroke="#f4f4f5" stroke-opacity="0.28" stroke-width="1.6">
+    <ellipse cx="320" cy="190" rx="150" ry="46"/>
+    <ellipse cx="320" cy="190" rx="98" ry="30"/>
+    <ellipse cx="320" cy="190" rx="48" ry="14"/>
+    <path d="M 170 190 Q 320 78 470 190 Q 320 302 170 190"/>
+  </g>
+  <circle cx="292" cy="176" r="7" fill="#f4f4f5"/>
+  <circle cx="348" cy="198" r="5" fill="#f4f4f5" fill-opacity="0.7"/>
+  <text x="40" y="340" fill="#a1a1aa" font-family="monospace" font-size="14" letter-spacing="1.4">VOLUME RADAR · TIGA DIMENSI</text>
+</svg>
